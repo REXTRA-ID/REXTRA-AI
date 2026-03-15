@@ -22,7 +22,7 @@ Struktur proyek ini mengacu pada pola *Domain-Driven Design* (DDD) yang dimodifi
 
 ## 🚀 AI Feature Roadmap & Progress
 
-Status pengembangan fitur AI pada branch `feature/kenali-diri`:
+Status pengembangan fitur AI pada branch `dev`??:
 
 | Fitur | Sub-Fitur | Status | Deskripsi Teknis |
 | :--- | :--- | :--- | :--- |
