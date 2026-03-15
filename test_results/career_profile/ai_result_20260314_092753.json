@@ -1,0 +1,63 @@
+{
+  "run_at": "2026-03-14 09:27:19",
+  "mode": "fit_check",
+  "target_riasec": "S",
+  "hasil_riasec": "S",
+  "target_tercapai": true,
+  "persona": "Dian - Developer Advocate",
+  "riasec_scores_raw": {
+    "R": 36,
+    "I": 36,
+    "A": 18,
+    "S": 55,
+    "E": 18,
+    "C": 18
+  },
+  "fit_check_result": {
+    "session_token": "0a293f2e-a34a-4778-b990-565593b712a0",
+    "user_first_name": "Dian",
+    "test_completed_at": "2026-03-14T02:27:49.338851+00:00",
+    "user_riasec": {
+      "riasec_code": "S",
+      "riasec_title": "Social",
+      "top_types": [
+        "Social"
+      ],
+      "total_candidates_found": null
+    },
+    "target_profession": {
+      "profession_id": 5,
+      "name": "Site Reliability Engineer",
+      "riasec_code": "RI",
+      "riasec_title": "Realistic – Investigative"
+    },
+    "fit_check_result": {
+      "match_category": "LOW",
+      "match_label": "Kecocokan Rendah",
+      "match_stars": 1,
+      "rule_type": "mismatch",
+      "dominant_letter_same": false,
+      "is_adjacent_hexagon": false,
+      "match_score": null,
+      "explanation": {
+        "meaning": "Kecocokan Rendah menunjukkan bahwa minat dominan profil karier berbeda dan tidak berada pada spektrum yang berdekatan dengan karakter utama profesi. Tingkat keselarasan relatif rendah.",
+        "reason_points": [
+          "Profil berkode S, sedangkan profesi ini berkode RI.",
+          "Huruf dominan berbeda (S pada profil, R pada profesi) dan tidak berada pada posisi bertetangga dalam model RIASEC, sehingga arah minat utamanya tidak sejalan."
+        ],
+        "implication": "Profesi ini tetap dapat dipilih, tetapi biasanya memerlukan adaptasi yang lebih besar dan pertimbangan yang lebih matang.",
+        "next_steps": [
+          "Tinjau kembali alasan memilih profesi ini.",
+          "Eksplorasi profesi lain yang lebih selaras dengan profil karier.",
+          "Jika tetap memilih profesi ini, siapkan strategi adaptasi yang lebih intens."
+        ],
+        "cta_primary": "Cari Alternatif",
+        "cta_secondary": "Tetap Lanjut",
+        "match_label": "Kecocokan Rendah",
+        "match_stars": 1
+      }
+    },
+    "points_awarded": null,
+    "TODO_points": "Implementasi poin Rextra belum aktif. Tambahkan setelah tabel points dikonfirmasi."
+  }
+}

@@ -1,0 +1,862 @@
+{
+  "run_at": "2026-02-28 06:25:15",
+  "target_riasec": "SEC",
+  "hasil_riasec": "SEC",
+  "target_tercapai": true,
+  "persona": "Dian - Developer Advocate",
+  "kalibrasi_avg": {
+    "S": 4.5,
+    "E": 4.3,
+    "C": 4.0,
+    "R": 2.0,
+    "I": 1.7,
+    "A": 1.7
+  },
+  "riasec_scores_raw": {
+    "R": 30,
+    "I": 18,
+    "A": 18,
+    "S": 54,
+    "E": 54,
+    "C": 47
+  },
+  "jawaban_riasec": [
+    {
+      "no": 1,
+      "skor": 3,
+      "tipe": "R",
+      "soal": "Saya senang merakit dan memperbaiki perangkat elektronik atau komponen teknologi"
+    },
+    {
+      "no": 2,
+      "skor": 2,
+      "tipe": "R",
+      "soal": "Saya tertarik membangun dan mengatur infrastruktur jaringan komputer atau sistem penyimpanan data"
+    },
+    {
+      "no": 3,
+      "skor": 3,
+      "tipe": "R",
+      "soal": "Saya suka memasang dan mengatur perangkat otomatis (sensor, IoT) untuk memantau kondisi sistem fisik atau lingkungan"
+    },
+    {
+      "no": 4,
+      "skor": 2,
+      "tipe": "R",
+      "soal": "Saya merasa puas ketika berhasil menggunakan software teknis untuk desain atau simulasi sistem kompleks"
+    },
+    {
+      "no": 5,
+      "skor": 3,
+      "tipe": "R",
+      "soal": "Saya senang mengatur dan menyiapkan peralatan recording, streaming, atau equipment untuk produksi konten digital"
+    },
+    {
+      "no": 6,
+      "skor": 2,
+      "tipe": "R",
+      "soal": "Saya tertarik mengoptimalkan performa sistem digital, server, atau infrastruktur jaringan"
+    },
+    {
+      "no": 7,
+      "skor": 3,
+      "tipe": "R",
+      "soal": "Saya yakin bisa mengoperasikan dan merawat perangkat elektronik presisi tinggi yang sensitif"
+    },
+    {
+      "no": 8,
+      "skor": 2,
+      "tipe": "R",
+      "soal": "Saya yakin mampu mengatur sistem pelacakan dan monitoring untuk operasi logistik atau distribusi"
+    },
+    {
+      "no": 9,
+      "skor": 3,
+      "tipe": "R",
+      "soal": "Saya percaya diri bisa mengatur infrastruktur teknologi atau sistem pembayaran digital"
+    },
+    {
+      "no": 10,
+      "skor": 2,
+      "tipe": "R",
+      "soal": "Saya suka mengatur, merawat, dan memelihara server, sistem komputer, atau infrastruktur IT"
+    },
+    {
+      "no": 11,
+      "skor": 3,
+      "tipe": "R",
+      "soal": "Saya tertarik mencoba dan mengeksplorasi teknologi otomasi seperti chatbot, AI assistant, atau sistem pintar"
+    },
+    {
+      "no": 12,
+      "skor": 2,
+      "tipe": "R",
+      "soal": "Saya senang menggunakan sistem digital untuk mengelola dan mengorganisir berbagai keperluan"
+    },
+    {
+      "no": 13,
+      "skor": 2,
+      "tipe": "I",
+      "soal": "Saya senang menganalisis data transaksi atau keuangan untuk menemukan pola, anomali, atau wawasan bisnis"
+    },
+    {
+      "no": 14,
+      "skor": 1,
+      "tipe": "I",
+      "soal": "Saya tertarik meneliti dan menganalisis kumpulan data yang kompleks untuk menemukan pola atau insight penting"
+    },
+    {
+      "no": 15,
+      "skor": 2,
+      "tipe": "I",
+      "soal": "Saya suka menggunakan analisis data untuk meningkatkan efisiensi dan produktivitas operasional suatu sistem"
+    },
+    {
+      "no": 16,
+      "skor": 1,
+      "tipe": "I",
+      "soal": "Saya merasa tertantang untuk menganalisis kelemahan keamanan, celah sistem, atau ancaman digital"
+    },
+    {
+      "no": 17,
+      "skor": 2,
+      "tipe": "I",
+      "soal": "Saya senang meneliti perilaku pengguna dan tren pasar untuk mendukung keputusan strategis"
+    },
+    {
+      "no": 18,
+      "skor": 1,
+      "tipe": "I",
+      "soal": "Saya tertarik menganalisis data operasional untuk meningkatkan efisiensi proses dan pengambilan keputusan"
+    },
+    {
+      "no": 19,
+      "skor": 2,
+      "tipe": "I",
+      "soal": "Saya yakin bisa menganalisis performa konten digital atau engagement untuk optimasi strategi"
+    },
+    {
+      "no": 20,
+      "skor": 1,
+      "tipe": "I",
+      "soal": "Saya percaya diri dapat menganalisis data aset atau investasi untuk menghasilkan wawasan strategis"
+    },
+    {
+      "no": 21,
+      "skor": 2,
+      "tipe": "I",
+      "soal": "Saya yakin mampu meneliti dan menganalisis data sumber daya untuk keberlanjutan dan efisiensi"
+    },
+    {
+      "no": 22,
+      "skor": 1,
+      "tipe": "I",
+      "soal": "Saya suka menganalisis informasi secara mendalam untuk membuat kesimpulan atau keputusan yang tepat"
+    },
+    {
+      "no": 23,
+      "skor": 2,
+      "tipe": "I",
+      "soal": "Saya tertarik melakukan riset mendalam tentang suatu topik atau masalah yang kompleks"
+    },
+    {
+      "no": 24,
+      "skor": 1,
+      "tipe": "I",
+      "soal": "Saya senang menggunakan tools atau aplikasi untuk mengolah dan menganalisis data"
+    },
+    {
+      "no": 25,
+      "skor": 1,
+      "tipe": "A",
+      "soal": "Saya senang mendesain tampilan antarmuka digital (UI/UX) yang menarik dan mudah digunakan"
+    },
+    {
+      "no": 26,
+      "skor": 2,
+      "tipe": "A",
+      "soal": "Saya tertarik membuat konten kreatif visual untuk media sosial dan kampanye digital"
+    },
+    {
+      "no": 27,
+      "skor": 1,
+      "tipe": "A",
+      "soal": "Saya suka mendesain identitas visual dan brand untuk perusahaan atau produk digital"
+    },
+    {
+      "no": 28,
+      "skor": 2,
+      "tipe": "A",
+      "soal": "Saya merasa kreatif ketika membuat konten edukasi, infografis, atau materi visual pembelajaran"
+    },
+    {
+      "no": 29,
+      "skor": 1,
+      "tipe": "A",
+      "soal": "Saya senang mendesain visualisasi data atau dashboard yang menarik dan mudah dipahami"
+    },
+    {
+      "no": 30,
+      "skor": 2,
+      "tipe": "A",
+      "soal": "Saya tertarik membuat video, motion graphics, animasi, atau konten multimedia interaktif"
+    },
+    {
+      "no": 31,
+      "skor": 1,
+      "tipe": "A",
+      "soal": "Saya yakin bisa mendesain materi presentasi visual atau konten marketing yang persuasif dan menarik"
+    },
+    {
+      "no": 32,
+      "skor": 2,
+      "tipe": "A",
+      "soal": "Saya percaya diri dapat mendesain antarmuka aplikasi yang user-friendly untuk sistem yang kompleks"
+    },
+    {
+      "no": 33,
+      "skor": 1,
+      "tipe": "A",
+      "soal": "Saya yakin mampu membuat kampanye kreatif atau visual storytelling yang engaging untuk berbagai produk"
+    },
+    {
+      "no": 34,
+      "skor": 2,
+      "tipe": "A",
+      "soal": "Saya suka membuat dan mengeksplorasi berbagai bentuk konten visual seperti poster, infografis, atau video"
+    },
+    {
+      "no": 35,
+      "skor": 1,
+      "tipe": "A",
+      "soal": "Saya tertarik menggunakan aplikasi atau tools desain untuk menciptakan karya visual yang kreatif"
+    },
+    {
+      "no": 36,
+      "skor": 2,
+      "tipe": "A",
+      "soal": "Saya senang membuat presentasi visual atau laporan yang menarik dan mudah dipahami"
+    },
+    {
+      "no": 37,
+      "skor": 5,
+      "tipe": "S",
+      "soal": "Saya senang membangun dan mengelola komunitas online atau grup diskusi digital"
+    },
+    {
+      "no": 38,
+      "skor": 4,
+      "tipe": "S",
+      "soal": "Saya tertarik menjadi instruktur, mentor, atau fasilitator untuk mengajarkan keterampilan digital"
+    },
+    {
+      "no": 39,
+      "skor": 5,
+      "tipe": "S",
+      "soal": "Saya suka melakukan riset pengguna, wawancara, atau user testing untuk memahami kebutuhan orang lain"
+    },
+    {
+      "no": 40,
+      "skor": 4,
+      "tipe": "S",
+      "soal": "Saya merasa puas ketika bisa membantu orang lain menggunakan teknologi atau sistem digital dengan lebih baik"
+    },
+    {
+      "no": 41,
+      "skor": 5,
+      "tipe": "S",
+      "soal": "Saya senang memfasilitasi pelatihan, workshop, atau sesi pembelajaran tentang adopsi teknologi"
+    },
+    {
+      "no": 42,
+      "skor": 4,
+      "tipe": "S",
+      "soal": "Saya tertarik membantu usaha kecil atau komunitas menggunakan teknologi digital untuk berkembang"
+    },
+    {
+      "no": 43,
+      "skor": 5,
+      "tipe": "S",
+      "soal": "Saya yakin bisa berkolaborasi dengan tim jarak jauh menggunakan tools kolaborasi digital dengan efektif"
+    },
+    {
+      "no": 44,
+      "skor": 4,
+      "tipe": "S",
+      "soal": "Saya percaya diri dapat berkontribusi dalam proyek teknologi yang berdampak sosial atau kemanusiaan"
+    },
+    {
+      "no": 45,
+      "skor": 5,
+      "tipe": "S",
+      "soal": "Saya yakin mampu memberikan dukungan dan bantuan teknis kepada pengguna melalui saluran digital"
+    },
+    {
+      "no": 46,
+      "skor": 4,
+      "tipe": "S",
+      "soal": "Saya suka membantu orang lain menyelesaikan masalah teknologi atau mengajarkan cara menggunakan aplikasi baru"
+    },
+    {
+      "no": 47,
+      "skor": 5,
+      "tipe": "S",
+      "soal": "Saya tertarik berpartisipasi atau mengorganisir acara online, webinar, atau diskusi virtual"
+    },
+    {
+      "no": 48,
+      "skor": 4,
+      "tipe": "S",
+      "soal": "Saya senang berinteraksi dan membantu orang lain melalui berbagai platform digital"
+    },
+    {
+      "no": 49,
+      "skor": 4,
+      "tipe": "E",
+      "soal": "Saya tertarik membangun startup teknologi atau bisnis digital dari nol"
+    },
+    {
+      "no": 50,
+      "skor": 5,
+      "tipe": "E",
+      "soal": "Saya senang memimpin kampanye digital marketing dan strategi pertumbuhan bisnis"
+    },
+    {
+      "no": 51,
+      "skor": 4,
+      "tipe": "E",
+      "soal": "Saya merasa termotivasi ketika memimpin proyek inovasi teknologi atau transformasi digital"
+    },
+    {
+      "no": 52,
+      "skor": 5,
+      "tipe": "E",
+      "soal": "Saya tertarik mengembangkan bisnis pembelajaran online atau platform edukasi digital"
+    },
+    {
+      "no": 53,
+      "skor": 4,
+      "tipe": "E",
+      "soal": "Saya suka memimpin inisiatif transformasi digital untuk meningkatkan efektivitas organisasi"
+    },
+    {
+      "no": 54,
+      "skor": 5,
+      "tipe": "E",
+      "soal": "Saya senang mengidentifikasi dan mengembangkan peluang bisnis dengan memanfaatkan teknologi modern"
+    },
+    {
+      "no": 55,
+      "skor": 4,
+      "tipe": "E",
+      "soal": "Saya yakin bisa memimpin tim penjualan atau pengembangan bisnis untuk produk teknologi"
+    },
+    {
+      "no": 56,
+      "skor": 5,
+      "tipe": "E",
+      "soal": "Saya percaya diri dapat mengembangkan strategi bisnis dan model inovasi untuk sektor digital"
+    },
+    {
+      "no": 57,
+      "skor": 4,
+      "tipe": "E",
+      "soal": "Saya yakin mampu memimpin tim untuk mengembangkan solusi digital yang scalable dan inovatif"
+    },
+    {
+      "no": 58,
+      "skor": 5,
+      "tipe": "E",
+      "soal": "Saya suka terlibat dalam kegiatan kewirausahaan, mengembangkan bisnis, atau proyek yang saya inisiasi sendiri"
+    },
+    {
+      "no": 59,
+      "skor": 4,
+      "tipe": "E",
+      "soal": "Saya tertarik memimpin tim, proyek, atau mengambil inisiatif kepemimpinan dalam berbagai konteks"
+    },
+    {
+      "no": 60,
+      "skor": 5,
+      "tipe": "E",
+      "soal": "Saya senang mencari dan menganalisis peluang bisnis, tren pasar, atau model bisnis baru"
+    },
+    {
+      "no": 61,
+      "skor": 4,
+      "tipe": "C",
+      "soal": "Saya senang membuat dokumentasi teknis, prosedur kerja, atau panduan sistem yang terstruktur"
+    },
+    {
+      "no": 62,
+      "skor": 4,
+      "tipe": "C",
+      "soal": "Saya tertarik mengelola database dan memastikan akurasi serta integritas data"
+    },
+    {
+      "no": 63,
+      "skor": 3,
+      "tipe": "C",
+      "soal": "Saya suka mengoptimalkan alur kerja dan proses bisnis menggunakan tools otomatisasi atau sistem"
+    },
+    {
+      "no": 64,
+      "skor": 5,
+      "tipe": "C",
+      "soal": "Saya merasa penting untuk memastikan kepatuhan terhadap regulasi, standar, atau prosedur yang berlaku"
+    },
+    {
+      "no": 65,
+      "skor": 4,
+      "tipe": "C",
+      "soal": "Saya senang mengelola inventori, tracking data, atau sistem pencatatan dengan rapi dan terorganisir"
+    },
+    {
+      "no": 66,
+      "skor": 4,
+      "tipe": "C",
+      "soal": "Saya tertarik memastikan kualitas, testing, dan quality assurance untuk software atau sistem"
+    },
+    {
+      "no": 67,
+      "skor": 3,
+      "tipe": "C",
+      "soal": "Saya yakin bisa mengelola aset digital, perpustakaan konten, atau sistem manajemen informasi dengan sistematis"
+    },
+    {
+      "no": 68,
+      "skor": 5,
+      "tipe": "C",
+      "soal": "Saya percaya diri dapat membuat dan memelihara sistem checklist, tracking progress, atau monitoring yang detail"
+    },
+    {
+      "no": 69,
+      "skor": 4,
+      "tipe": "C",
+      "soal": "Saya yakin mampu mengaudit, memeriksa, dan memastikan akurasi data atau dokumen dengan teliti"
+    },
+    {
+      "no": 70,
+      "skor": 4,
+      "tipe": "C",
+      "soal": "Saya suka mengatur jadwal, timeline proyek, atau perencanaan sumber daya dengan sistematis"
+    },
+    {
+      "no": 71,
+      "skor": 3,
+      "tipe": "C",
+      "soal": "Saya senang menggunakan spreadsheet, sistem database, atau tools untuk mengorganisir informasi"
+    },
+    {
+      "no": 72,
+      "skor": 4,
+      "tipe": "C",
+      "soal": "Saya tertarik memastikan efisiensi operasional dan pengelolaan resource dengan cermat"
+    }
+  ],
+  "ikigai_kandidat": [
+    {
+      "id": 39,
+      "name": "Technical Project Manager",
+      "dimension_content": {
+        "what_you_love": "Kamu akan merasa bersemangat saat berhasil memimpin tim teknis menyelesaikan proyek kompleks. Mengatasi hambatan dan memastikan kelancaran eksekusi memberikan rasa pencapaian.",
+        "what_you_are_good_at": "Kamu unggul dalam perencanaan proyek, manajemen risiko, dan komunikasi lintas fungsi. Kemampuanmu mengkoordinasikan sumber daya teknis sangat krusial.",
+        "what_the_world_needs": "Kamu memastikan inovasi teknologi dapat terwujud dan memberikan solusi nyata. Kontribusimu mempercepat pengembangan produk yang mengubah cara kita hidup.",
+        "what_you_can_be_paid_for": "Kamu berpeluang mendapatkan gaji kompetitif dan jenjang karier yang stabil. Permintaan tinggi untuk profesional yang mampu mengelola proyek teknologi."
+      }
+    },
+    {
+      "id": 42,
+      "name": "People & Culture Manager",
+      "dimension_content": {
+        "what_you_love": "Kamu akan menikmati membangun budaya kerja yang positif dan memberdayakan. Membantu orang berkembang dan merasa dihargai di tempat kerja adalah sumber kebahagiaanmu.",
+        "what_you_are_good_at": "Kamu memiliki empati tinggi, kemampuan komunikasi yang baik, dan pemahaman mendalam tentang dinamika organisasi. Keahlianmu dalam memfasilitasi hubungan antarindividu sangat berharga.",
+        "what_the_world_needs": "Kamu menciptakan lingkungan kerja yang sehat dan produktif bagi karyawan. Dampakmu terasa pada peningkatan kesejahteraan dan performa organisasi.",
+        "what_you_can_be_paid_for": "Kamu bisa mendapatkan kompensasi yang stabil dengan peluang berkembang di bidang HR. Perusahaan sangat membutuhkan peran ini untuk menjaga talenta terbaik."
+      }
+    },
+    {
+      "id": 44,
+      "name": "Customer Success Manager (Tech)",
+      "dimension_content": {
+        "what_you_love": "Kamu akan sangat menikmati membantu pelanggan meraih kesuksesan menggunakan produkmu. Melihat dampak positif yang kamu berikan pada bisnis mereka akan sangat memuaskan.",
+        "what_you_are_good_at": "Kamu ahli dalam memahami kebutuhan pelanggan, memberikan panduan onboarding, dan mengidentifikasi peluang peningkatan penggunaan produk. Komunikasi dan empati adalah kekuatanmu.",
+        "what_the_world_needs": "Kamu memastikan pelanggan mendapatkan nilai maksimal dari investasi teknologi mereka. Kontribusimu membantu bisnis tumbuh dan mencapai tujuan mereka.",
+        "what_you_can_be_paid_for": "Kamu dapat memperoleh gaji yang stabil dengan potensi bonus berdasarkan retensi pelanggan. Peran ini sangat penting untuk keberlanjutan bisnis SaaS."
+      }
+    },
+    {
+      "id": 27,
+      "name": "Product Growth Manager",
+      "dimension_content": {
+        "what_you_love": "Kamu akan sangat menikmati merancang strategi pertumbuhan produk yang inovatif. Menemukan cara baru untuk menarik dan mempertahankan pengguna akan memberimu kepuasan luar biasa.",
+        "what_you_are_good_at": "Kamu mahir dalam menganalisis data pengguna untuk mengidentifikasi peluang optimasi. Keahlianmu dalam merancang eksperimen A/B testing dan growth loop sangat dibutuhkan.",
+        "what_the_world_needs": "Kamu membantu perusahaan menciptakan produk yang lebih baik dan berkelanjutan. Dampakmu terasa pada kemudahan akses informasi dan layanan bagi banyak orang.",
+        "what_you_can_be_paid_for": "Kamu dapat memperoleh kompensasi menarik seiring dengan pertumbuhan produk yang kamu kelola. Peluang karier terbuka lebar di industri teknologi yang dinamis."
+      }
+    },
+    {
+      "id": 36,
+      "name": "Technology Sales Engineer",
+      "dimension_content": {
+        "what_you_love": "Kamu akan merasa tertantang dan bersemangat saat berhasil memenangkan deal besar melalui solusi teknis. Menggabungkan keahlian teknis dan negosiasi adalah passionmu.",
+        "what_you_are_good_at": "Kamu mahir menjelaskan konsep teknis yang kompleks kepada audiens non-teknis. Kemampuanmu dalam mendemonstrasikan produk dan menangani keberatan sangat krusial.",
+        "what_the_world_needs": "Kamu membantu bisnis mengadopsi teknologi yang tepat untuk meningkatkan efisiensi. Kontribusimu mendorong adopsi solusi inovatif di berbagai industri.",
+        "what_you_can_be_paid_for": "Kamu berpeluang mendapatkan penghasilan yang sangat menarik, termasuk komisi besar. Prospek karier sangat cerah di sektor teknologi yang terus berkembang."
+      }
+    }
+  ],
+  "ikigai_jawaban": {
+    "what_you_love": {
+      "pilihan": [
+        "Product Growth Manager"
+      ],
+      "alasan": "Saya paling bergairah saat mendefinisikan roadmap produk dan melihat fitur yang saya champion akhirnya shipped dan digunakan oleh ribuan pengguna, yang sangat selaras dengan 'merancang strategi pertumbuhan produk yang inovatif' dan 'menemukan cara baru untuk menarik dan mempertahankan pengguna' pada ID 27. Kepuasan saya datang dari melihat dampak nyata produk yang saya bantu kembangkan, serta kemampuan untuk membuat keputusan berdasarkan data untuk mendorong pertumbuhan tersebut, yang merupakan inti dari peran Product Growth Manager."
+    },
+    "what_you_are_good_at": {
+      "pilihan": [
+        "Product Growth Manager"
+      ],
+      "alasan": "Saya paling yakin bisa mengerjakan analisis data pengguna untuk mengidentifikasi peluang optimasi, merancang eksperimen A/B testing, dan growth loop tanpa banyak persiapan. Ini sejalan dengan keahlian saya dalam membaca data produk, melakukan exploratory analysis dengan Python, dan mentranslasikan data ke keputusan prioritas yang masuk akal secara teknis maupun bisnis. Pengalaman saya dalam membangun pipeline data dan memastikan kualitasnya juga membuat saya percaya diri dalam mengolah dan memahami data pengguna secara mendalam untuk mendorong pertumbuhan produk."
+    },
+    "what_the_world_needs": {
+      "pilihan": [
+        "Product Growth Manager"
+      ],
+      "alasan": "Saya memilih ID 27 karena pandangan saya bahwa dunia membutuhkan jembatan antara teknologi yang kompleks dan penggunanya, serta produk yang dibuat berdasarkan kebutuhan nyata, bukan hanya kemampuan teknis. Opsi 'Kamu membantu perusahaan menciptakan produk yang lebih baik dan berkelanjutan. Dampakmu terasa pada kemudahan akses informasi dan layanan bagi banyak orang' sangat selaras dengan keinginan saya untuk menjembatani gap antara apa yang bisa dibangun secara teknis dan apa yang benar-benar dibutuhkan pengguna, memastikan produk memberikan nilai dan kemudahan akses informasi yang lebih luas."
+    },
+    "what_you_can_be_paid_for": {
+      "pilihan": [
+        "Product Growth Manager"
+      ],
+      "alasan": "Saya memilih ID 27 (Product Growth Manager) karena opsi 'Kamu dapat memperoleh kompensasi menarik seiring dengan pertumbuhan produk yang kamu kelola. Peluang karier terbuka lebar di industri teknologi yang dinamis.' sangat selaras dengan pandangan hidup saya yang menginginkan equity + kompetitif base salary dengan otonomi penuh atas product area, terutama di growth-stage startup atau scaleup. Ini mencerminkan keinginan saya untuk terlibat langsung dalam pertumbuhan produk dan mendapatkan imbalan yang sepadan dengan dampaknya, bukan sekadar gaji stabil. Fleksibilitas dan potensi pertumbuhan karier di industri teknologi yang dinamis juga menjadi daya tarik utama."
+    }
+  },
+  "rekomendasi_akhir": {
+    "session_token": "cf6cf179-e308-48c2-8592-019c460b7d95",
+    "user_first_name": "Dian",
+    "test_completed_at": "2026-02-27T23:26:24.093429+00:00",
+    "riasec_summary": {
+      "riasec_code": "SEC",
+      "riasec_title": "Social – Enterprising – Conventional",
+      "top_types": [
+        "Social",
+        "Enterprising",
+        "Conventional"
+      ],
+      "total_candidates_found": 7
+    },
+    "riasec_scores_raw": {
+      "R": 30,
+      "I": 18,
+      "A": 18,
+      "S": 54,
+      "E": 54,
+      "C": 47
+    },
+    "candidate_profession_names": [
+      {
+        "profession_id": 39,
+        "name": "Technical Project Manager"
+      },
+      {
+        "profession_id": 42,
+        "name": "People & Culture Manager"
+      },
+      {
+        "profession_id": 44,
+        "name": "Customer Success Manager (Tech)"
+      },
+      {
+        "profession_id": 27,
+        "name": "Product Growth Manager"
+      },
+      {
+        "profession_id": 36,
+        "name": "Technology Sales Engineer"
+      },
+      {
+        "profession_id": 45,
+        "name": "Digital Operations Manager"
+      },
+      {
+        "profession_id": 31,
+        "name": "Technical Developer Advocate"
+      }
+    ],
+    "display_candidates": [
+      {
+        "profession_id": 39,
+        "name": "Technical Project Manager",
+        "congruence_type": "subset_adjacent",
+        "expansion_tier": 3,
+        "is_display_candidate": true
+      },
+      {
+        "profession_id": 42,
+        "name": "People & Culture Manager",
+        "congruence_type": "subset_adjacent",
+        "expansion_tier": 3,
+        "is_display_candidate": true
+      },
+      {
+        "profession_id": 44,
+        "name": "Customer Success Manager (Tech)",
+        "congruence_type": "subset_adjacent",
+        "expansion_tier": 3,
+        "is_display_candidate": true
+      },
+      {
+        "profession_id": 27,
+        "name": "Product Growth Manager",
+        "congruence_type": "subset_adjacent",
+        "expansion_tier": 3,
+        "is_display_candidate": true
+      },
+      {
+        "profession_id": 36,
+        "name": "Technology Sales Engineer",
+        "congruence_type": "subset_adjacent",
+        "expansion_tier": 3,
+        "is_display_candidate": true
+      }
+    ],
+    "congruent_candidates": [
+      {
+        "profession_id": 45,
+        "name": "Digital Operations Manager",
+        "congruence_type": "subset_adjacent",
+        "expansion_tier": 3,
+        "is_display_candidate": false
+      },
+      {
+        "profession_id": 31,
+        "name": "Technical Developer Advocate",
+        "congruence_type": "dominant_single",
+        "expansion_tier": 4,
+        "is_display_candidate": false
+      }
+    ],
+    "ikigai_profile_summary": {
+      "what_you_love": "Kamu menemukan kepuasan mendalam dalam merancang strategi pertumbuhan produk yang inovatif dan melihat fitur yang kamu dukung berhasil diluncurkan serta diadopsi oleh banyak pengguna. Gairahmu terpicu oleh dampak nyata dari produk yang kamu kembangkan, serta kemampuan untuk memanfaatkan data dalam mendorong pertumbuhan yang berkelanjutan.",
+      "what_you_are_good_at": "Kamu memiliki keahlian alami dalam menganalisis data pengguna untuk menemukan peluang optimasi, merancang eksperimen A/B testing, dan membangun growth loop dengan cepat. Kemampuanmu dalam membaca data produk, melakukan analisis eksploratif menggunakan Python, dan menerjemahkan temuan data menjadi keputusan prioritas yang cerdas secara teknis maupun bisnis sangatlah kuat.",
+      "what_the_world_needs": "Kamu percaya bahwa dunia membutuhkan jembatan yang efektif antara teknologi yang kompleks dan penggunanya, serta produk yang benar-benar dibangun berdasarkan kebutuhan nyata. Keinginanmu adalah memastikan produk memberikan nilai tambah dan kemudahan akses informasi yang lebih luas bagi masyarakat.",
+      "what_you_can_be_paid_for": "Kamu mencari peluang karier yang menawarkan kompensasi menarik seiring dengan pertumbuhan produk yang dikelola, dengan potensi otonomi penuh atas area produk di startup atau scaleup yang dinamis. Fleksibilitas, potensi pertumbuhan karier, dan imbalan yang sepadan dengan dampakmu adalah prioritas utama dalam perjalanan profesionalmu."
+    },
+    "recommended_professions": [
+      {
+        "rank": 1,
+        "profession_id": 27,
+        "profession_name": "Product Growth Manager",
+        "match_percentage": 98.0,
+        "match_reasoning": "Profesi ini cocok karena hasratmu dalam mendefinisikan roadmap produk dan melihat fitur yang kamu dukung diadopsi pengguna sangat selaras dengan fokus utama Product Growth Manager dalam mendorong pertumbuhan produk. Pengalamanmu dalam analisis data pengguna dan eksperimen akan memungkinkanmu untuk mengoptimalkan funnel dan growth loop secara efektif dalam profesi ini.",
+        "riasec_alignment": {
+          "user_code": "SEC",
+          "profession_code": "-",
+          "congruence_type": "",
+          "congruence_score": 0.75
+        },
+        "score_breakdown": {
+          "total_score": 98.0,
+          "intrinsic_score": 49.0,
+          "extrinsic_score": 49.0,
+          "score_what_you_love": 24.5,
+          "score_what_you_are_good_at": 24.5,
+          "score_what_the_world_needs": 24.5,
+          "score_what_you_can_be_paid_for": 24.5
+        }
+      },
+      {
+        "rank": 2,
+        "profession_id": 44,
+        "profession_name": "Customer Success Manager (Tech)",
+        "match_percentage": 22.4,
+        "match_reasoning": "Profesi ini cocok karena keahlianmu dalam analisis data pengguna dan pemahaman mendalam terhadap kebutuhan pengguna dapat berkontribusi dalam memastikan pelanggan mendapatkan nilai maksimal dari produk. Pengalamanmu dalam mentranslasikan data menjadi keputusan yang masuk akal secara bisnis akan membantu dalam strategi adopsi dan retensi pelanggan.",
+        "riasec_alignment": {
+          "user_code": "SEC",
+          "profession_code": "-",
+          "congruence_type": "",
+          "congruence_score": 0.75
+        },
+        "score_breakdown": {
+          "total_score": 22.4,
+          "intrinsic_score": 9.17,
+          "extrinsic_score": 13.24,
+          "score_what_you_love": 4.17,
+          "score_what_you_are_good_at": 5.0,
+          "score_what_the_world_needs": 10.59,
+          "score_what_you_can_be_paid_for": 2.65
+        }
+      }
+    ],
+    "riasec_profile": {
+      "riasec_code": "SEC",
+      "riasec_title": "Social Enterprising Conventional (SEC)",
+      "riasec_description": "Kombinasi yang menggabungkan kepedulian sosial, ambisi, dan organisasi. Kamu adalah pemimpin yang membangun organisasi untuk kebaikan. Ideal untuk nonprofit CEO, social enterprise founder, atau healthcare system executive.",
+      "strengths": [
+        "Organizational impact: Memimpin untuk skala dan sustainability",
+        "Efficient mission: Sistem yang memaksimalkan dampak per resource",
+        "Governance: Membangun struktur yang accountable",
+        "Sustainable growth: Ekspansi yang tidak mengorbankan mission"
+      ],
+      "challenges": [
+        "Mission drift: Pertumbuhan bisa menggeser focus",
+        "Bureaucratization: Organisasi besar bisa kehilangan soul",
+        "Personal disconnection: Jauh dari yang dilayani saat scaling"
+      ],
+      "strategies": [
+        "Mission metrics: Mengukur apa yang truly matters",
+        "Culture intentionality: Menjaga values di setiap level",
+        "Stay connected: Regular contact dengan frontline dan yang dilayani"
+      ],
+      "interaction_styles": [
+        "Board communication: Bekerja dengan governance",
+        "Staff inspiration: Memotivasi tentang mission",
+        "Stakeholder management: Balancing berbagai kepentingan"
+      ],
+      "work_environments": [
+        "Nonprofit leadership: CEO atau executive director",
+        "Social enterprise: Memimpin bisnis dengan misi",
+        "Healthcare executive: Mengelola sistem untuk kesehatan"
+      ]
+    },
+    "points_awarded": null,
+    "test_duration_minutes": 1
+  },
+  "riasec_profil": {
+    "riasec_code": "SEC",
+    "riasec_title": "Social Enterprising Conventional (SEC)",
+    "riasec_description": "Kombinasi yang menggabungkan kepedulian sosial, ambisi, dan organisasi. Kamu adalah pemimpin yang membangun organisasi untuk kebaikan. Ideal untuk nonprofit CEO, social enterprise founder, atau healthcare system executive.",
+    "strengths": [
+      "Organizational impact: Memimpin untuk skala dan sustainability",
+      "Efficient mission: Sistem yang memaksimalkan dampak per resource",
+      "Governance: Membangun struktur yang accountable",
+      "Sustainable growth: Ekspansi yang tidak mengorbankan mission"
+    ],
+    "challenges": [
+      "Mission drift: Pertumbuhan bisa menggeser focus",
+      "Bureaucratization: Organisasi besar bisa kehilangan soul",
+      "Personal disconnection: Jauh dari yang dilayani saat scaling"
+    ],
+    "strategies": [
+      "Mission metrics: Mengukur apa yang truly matters",
+      "Culture intentionality: Menjaga values di setiap level",
+      "Stay connected: Regular contact dengan frontline dan yang dilayani"
+    ],
+    "interaction_styles": [
+      "Board communication: Bekerja dengan governance",
+      "Staff inspiration: Memotivasi tentang mission",
+      "Stakeholder management: Balancing berbagai kepentingan"
+    ],
+    "work_environments": [
+      "Nonprofit leadership: CEO atau executive director",
+      "Social enterprise: Memimpin bisnis dengan misi",
+      "Healthcare executive: Mengelola sistem untuk kesehatan"
+    ]
+  },
+  "ikigai_profil_per_dimensi": {
+    "what_you_love": "Kamu menemukan kepuasan mendalam dalam merancang strategi pertumbuhan produk yang inovatif dan melihat fitur yang kamu dukung berhasil diluncurkan serta diadopsi oleh banyak pengguna. Gairahmu terpicu oleh dampak nyata dari produk yang kamu kembangkan, serta kemampuan untuk memanfaatkan data dalam mendorong pertumbuhan yang berkelanjutan.",
+    "what_you_are_good_at": "Kamu memiliki keahlian alami dalam menganalisis data pengguna untuk menemukan peluang optimasi, merancang eksperimen A/B testing, dan membangun growth loop dengan cepat. Kemampuanmu dalam membaca data produk, melakukan analisis eksploratif menggunakan Python, dan menerjemahkan temuan data menjadi keputusan prioritas yang cerdas secara teknis maupun bisnis sangatlah kuat.",
+    "what_the_world_needs": "Kamu percaya bahwa dunia membutuhkan jembatan yang efektif antara teknologi yang kompleks dan penggunanya, serta produk yang benar-benar dibangun berdasarkan kebutuhan nyata. Keinginanmu adalah memastikan produk memberikan nilai tambah dan kemudahan akses informasi yang lebih luas bagi masyarakat.",
+    "what_you_can_be_paid_for": "Kamu mencari peluang karier yang menawarkan kompensasi menarik seiring dengan pertumbuhan produk yang dikelola, dengan potensi otonomi penuh atas area produk di startup atau scaleup yang dinamis. Fleksibilitas, potensi pertumbuhan karier, dan imbalan yang sepadan dengan dampakmu adalah prioritas utama dalam perjalanan profesionalmu."
+  },
+  "kandidat_display": [
+    {
+      "profession_id": 39,
+      "name": "Technical Project Manager",
+      "congruence_type": "subset_adjacent",
+      "expansion_tier": 3,
+      "is_display_candidate": true
+    },
+    {
+      "profession_id": 42,
+      "name": "People & Culture Manager",
+      "congruence_type": "subset_adjacent",
+      "expansion_tier": 3,
+      "is_display_candidate": true
+    },
+    {
+      "profession_id": 44,
+      "name": "Customer Success Manager (Tech)",
+      "congruence_type": "subset_adjacent",
+      "expansion_tier": 3,
+      "is_display_candidate": true
+    },
+    {
+      "profession_id": 27,
+      "name": "Product Growth Manager",
+      "congruence_type": "subset_adjacent",
+      "expansion_tier": 3,
+      "is_display_candidate": true
+    },
+    {
+      "profession_id": 36,
+      "name": "Technology Sales Engineer",
+      "congruence_type": "subset_adjacent",
+      "expansion_tier": 3,
+      "is_display_candidate": true
+    }
+  ],
+  "kandidat_backup": [
+    {
+      "profession_id": 45,
+      "name": "Digital Operations Manager",
+      "congruence_type": "subset_adjacent",
+      "expansion_tier": 3,
+      "is_display_candidate": false
+    },
+    {
+      "profession_id": 31,
+      "name": "Technical Developer Advocate",
+      "congruence_type": "dominant_single",
+      "expansion_tier": 4,
+      "is_display_candidate": false
+    }
+  ],
+  "top_rekomendasi": [
+    {
+      "rank": 1,
+      "profession_id": 27,
+      "profession_name": "Product Growth Manager",
+      "match_percentage": 98.0,
+      "match_reasoning": "Profesi ini cocok karena hasratmu dalam mendefinisikan roadmap produk dan melihat fitur yang kamu dukung diadopsi pengguna sangat selaras dengan fokus utama Product Growth Manager dalam mendorong pertumbuhan produk. Pengalamanmu dalam analisis data pengguna dan eksperimen akan memungkinkanmu untuk mengoptimalkan funnel dan growth loop secara efektif dalam profesi ini.",
+      "riasec_alignment": {
+        "user_code": "SEC",
+        "profession_code": "-",
+        "congruence_type": "",
+        "congruence_score": 0.75
+      },
+      "score_breakdown": {
+        "total_score": 98.0,
+        "intrinsic_score": 49.0,
+        "extrinsic_score": 49.0,
+        "score_what_you_love": 24.5,
+        "score_what_you_are_good_at": 24.5,
+        "score_what_the_world_needs": 24.5,
+        "score_what_you_can_be_paid_for": 24.5
+      }
+    },
+    {
+      "rank": 2,
+      "profession_id": 44,
+      "profession_name": "Customer Success Manager (Tech)",
+      "match_percentage": 22.4,
+      "match_reasoning": "Profesi ini cocok karena keahlianmu dalam analisis data pengguna dan pemahaman mendalam terhadap kebutuhan pengguna dapat berkontribusi dalam memastikan pelanggan mendapatkan nilai maksimal dari produk. Pengalamanmu dalam mentranslasikan data menjadi keputusan yang masuk akal secara bisnis akan membantu dalam strategi adopsi dan retensi pelanggan.",
+      "riasec_alignment": {
+        "user_code": "SEC",
+        "profession_code": "-",
+        "congruence_type": "",
+        "congruence_score": 0.75
+      },
+      "score_breakdown": {
+        "total_score": 22.4,
+        "intrinsic_score": 9.17,
+        "extrinsic_score": 13.24,
+        "score_what_you_love": 4.17,
+        "score_what_you_are_good_at": 5.0,
+        "score_what_the_world_needs": 10.59,
+        "score_what_you_can_be_paid_for": 2.65
+      }
+    }
+  ]
+}

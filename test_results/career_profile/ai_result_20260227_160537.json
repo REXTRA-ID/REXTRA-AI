@@ -1,0 +1,1059 @@
+{
+  "run_at": "2026-02-27 16:04:17",
+  "target_riasec": "RI",
+  "hasil_riasec": "RI",
+  "target_tercapai": true,
+  "persona": "Raka - Cloud & DevOps Engineer",
+  "kalibrasi_avg": {
+    "R": 4.3,
+    "I": 4.0,
+    "A": 2.8,
+    "S": 1.7,
+    "E": 1.7,
+    "C": 1.7
+  },
+  "riasec_scores_raw": {
+    "R": 52,
+    "I": 46,
+    "A": 33,
+    "S": 18,
+    "E": 12,
+    "C": 14
+  },
+  "jawaban_riasec": [
+    {
+      "no": 1,
+      "skor": 5,
+      "tipe": "R",
+      "soal": "Saya senang merakit dan memperbaiki perangkat elektronik atau komponen teknologi"
+    },
+    {
+      "no": 2,
+      "skor": 4,
+      "tipe": "R",
+      "soal": "Saya tertarik membangun dan mengatur infrastruktur jaringan komputer atau sistem penyimpanan data"
+    },
+    {
+      "no": 3,
+      "skor": 4,
+      "tipe": "R",
+      "soal": "Saya suka memasang dan mengatur perangkat otomatis (sensor, IoT) untuk memantau kondisi sistem fisik atau lingkungan"
+    },
+    {
+      "no": 4,
+      "skor": 5,
+      "tipe": "R",
+      "soal": "Saya merasa puas ketika berhasil menggunakan software teknis untuk desain atau simulasi sistem kompleks"
+    },
+    {
+      "no": 5,
+      "skor": 4,
+      "tipe": "R",
+      "soal": "Saya senang mengatur dan menyiapkan peralatan recording, streaming, atau equipment untuk produksi konten digital"
+    },
+    {
+      "no": 6,
+      "skor": 5,
+      "tipe": "R",
+      "soal": "Saya tertarik mengoptimalkan performa sistem digital, server, atau infrastruktur jaringan"
+    },
+    {
+      "no": 7,
+      "skor": 4,
+      "tipe": "R",
+      "soal": "Saya yakin bisa mengoperasikan dan merawat perangkat elektronik presisi tinggi yang sensitif"
+    },
+    {
+      "no": 8,
+      "skor": 4,
+      "tipe": "R",
+      "soal": "Saya yakin mampu mengatur sistem pelacakan dan monitoring untuk operasi logistik atau distribusi"
+    },
+    {
+      "no": 9,
+      "skor": 4,
+      "tipe": "R",
+      "soal": "Saya percaya diri bisa mengatur infrastruktur teknologi atau sistem pembayaran digital"
+    },
+    {
+      "no": 10,
+      "skor": 5,
+      "tipe": "R",
+      "soal": "Saya suka mengatur, merawat, dan memelihara server, sistem komputer, atau infrastruktur IT"
+    },
+    {
+      "no": 11,
+      "skor": 4,
+      "tipe": "R",
+      "soal": "Saya tertarik mencoba dan mengeksplorasi teknologi otomasi seperti chatbot, AI assistant, atau sistem pintar"
+    },
+    {
+      "no": 12,
+      "skor": 4,
+      "tipe": "R",
+      "soal": "Saya senang menggunakan sistem digital untuk mengelola dan mengorganisir berbagai keperluan"
+    },
+    {
+      "no": 13,
+      "skor": 4,
+      "tipe": "I",
+      "soal": "Saya senang menganalisis data transaksi atau keuangan untuk menemukan pola, anomali, atau wawasan bisnis"
+    },
+    {
+      "no": 14,
+      "skor": 4,
+      "tipe": "I",
+      "soal": "Saya tertarik meneliti dan menganalisis kumpulan data yang kompleks untuk menemukan pola atau insight penting"
+    },
+    {
+      "no": 15,
+      "skor": 4,
+      "tipe": "I",
+      "soal": "Saya suka menggunakan analisis data untuk meningkatkan efisiensi dan produktivitas operasional suatu sistem"
+    },
+    {
+      "no": 16,
+      "skor": 4,
+      "tipe": "I",
+      "soal": "Saya merasa tertantang untuk menganalisis kelemahan keamanan, celah sistem, atau ancaman digital"
+    },
+    {
+      "no": 17,
+      "skor": 3,
+      "tipe": "I",
+      "soal": "Saya senang meneliti perilaku pengguna dan tren pasar untuk mendukung keputusan strategis"
+    },
+    {
+      "no": 18,
+      "skor": 4,
+      "tipe": "I",
+      "soal": "Saya tertarik menganalisis data operasional untuk meningkatkan efisiensi proses dan pengambilan keputusan"
+    },
+    {
+      "no": 19,
+      "skor": 4,
+      "tipe": "I",
+      "soal": "Saya yakin bisa menganalisis performa konten digital atau engagement untuk optimasi strategi"
+    },
+    {
+      "no": 20,
+      "skor": 4,
+      "tipe": "I",
+      "soal": "Saya percaya diri dapat menganalisis data aset atau investasi untuk menghasilkan wawasan strategis"
+    },
+    {
+      "no": 21,
+      "skor": 4,
+      "tipe": "I",
+      "soal": "Saya yakin mampu meneliti dan menganalisis data sumber daya untuk keberlanjutan dan efisiensi"
+    },
+    {
+      "no": 22,
+      "skor": 4,
+      "tipe": "I",
+      "soal": "Saya suka menganalisis informasi secara mendalam untuk membuat kesimpulan atau keputusan yang tepat"
+    },
+    {
+      "no": 23,
+      "skor": 3,
+      "tipe": "I",
+      "soal": "Saya tertarik melakukan riset mendalam tentang suatu topik atau masalah yang kompleks"
+    },
+    {
+      "no": 24,
+      "skor": 4,
+      "tipe": "I",
+      "soal": "Saya senang menggunakan tools atau aplikasi untuk mengolah dan menganalisis data"
+    },
+    {
+      "no": 25,
+      "skor": 3,
+      "tipe": "A",
+      "soal": "Saya senang mendesain tampilan antarmuka digital (UI/UX) yang menarik dan mudah digunakan"
+    },
+    {
+      "no": 26,
+      "skor": 2,
+      "tipe": "A",
+      "soal": "Saya tertarik membuat konten kreatif visual untuk media sosial dan kampanye digital"
+    },
+    {
+      "no": 27,
+      "skor": 3,
+      "tipe": "A",
+      "soal": "Saya suka mendesain identitas visual dan brand untuk perusahaan atau produk digital"
+    },
+    {
+      "no": 28,
+      "skor": 3,
+      "tipe": "A",
+      "soal": "Saya merasa kreatif ketika membuat konten edukasi, infografis, atau materi visual pembelajaran"
+    },
+    {
+      "no": 29,
+      "skor": 3,
+      "tipe": "A",
+      "soal": "Saya senang mendesain visualisasi data atau dashboard yang menarik dan mudah dipahami"
+    },
+    {
+      "no": 30,
+      "skor": 2,
+      "tipe": "A",
+      "soal": "Saya tertarik membuat video, motion graphics, animasi, atau konten multimedia interaktif"
+    },
+    {
+      "no": 31,
+      "skor": 3,
+      "tipe": "A",
+      "soal": "Saya yakin bisa mendesain materi presentasi visual atau konten marketing yang persuasif dan menarik"
+    },
+    {
+      "no": 32,
+      "skor": 3,
+      "tipe": "A",
+      "soal": "Saya percaya diri dapat mendesain antarmuka aplikasi yang user-friendly untuk sistem yang kompleks"
+    },
+    {
+      "no": 33,
+      "skor": 2,
+      "tipe": "A",
+      "soal": "Saya yakin mampu membuat kampanye kreatif atau visual storytelling yang engaging untuk berbagai produk"
+    },
+    {
+      "no": 34,
+      "skor": 3,
+      "tipe": "A",
+      "soal": "Saya suka membuat dan mengeksplorasi berbagai bentuk konten visual seperti poster, infografis, atau video"
+    },
+    {
+      "no": 35,
+      "skor": 3,
+      "tipe": "A",
+      "soal": "Saya tertarik menggunakan aplikasi atau tools desain untuk menciptakan karya visual yang kreatif"
+    },
+    {
+      "no": 36,
+      "skor": 3,
+      "tipe": "A",
+      "soal": "Saya senang membuat presentasi visual atau laporan yang menarik dan mudah dipahami"
+    },
+    {
+      "no": 37,
+      "skor": 1,
+      "tipe": "S",
+      "soal": "Saya senang membangun dan mengelola komunitas online atau grup diskusi digital"
+    },
+    {
+      "no": 38,
+      "skor": 2,
+      "tipe": "S",
+      "soal": "Saya tertarik menjadi instruktur, mentor, atau fasilitator untuk mengajarkan keterampilan digital"
+    },
+    {
+      "no": 39,
+      "skor": 2,
+      "tipe": "S",
+      "soal": "Saya suka melakukan riset pengguna, wawancara, atau user testing untuk memahami kebutuhan orang lain"
+    },
+    {
+      "no": 40,
+      "skor": 1,
+      "tipe": "S",
+      "soal": "Saya merasa puas ketika bisa membantu orang lain menggunakan teknologi atau sistem digital dengan lebih baik"
+    },
+    {
+      "no": 41,
+      "skor": 2,
+      "tipe": "S",
+      "soal": "Saya senang memfasilitasi pelatihan, workshop, atau sesi pembelajaran tentang adopsi teknologi"
+    },
+    {
+      "no": 42,
+      "skor": 1,
+      "tipe": "S",
+      "soal": "Saya tertarik membantu usaha kecil atau komunitas menggunakan teknologi digital untuk berkembang"
+    },
+    {
+      "no": 43,
+      "skor": 2,
+      "tipe": "S",
+      "soal": "Saya yakin bisa berkolaborasi dengan tim jarak jauh menggunakan tools kolaborasi digital dengan efektif"
+    },
+    {
+      "no": 44,
+      "skor": 1,
+      "tipe": "S",
+      "soal": "Saya percaya diri dapat berkontribusi dalam proyek teknologi yang berdampak sosial atau kemanusiaan"
+    },
+    {
+      "no": 45,
+      "skor": 2,
+      "tipe": "S",
+      "soal": "Saya yakin mampu memberikan dukungan dan bantuan teknis kepada pengguna melalui saluran digital"
+    },
+    {
+      "no": 46,
+      "skor": 1,
+      "tipe": "S",
+      "soal": "Saya suka membantu orang lain menyelesaikan masalah teknologi atau mengajarkan cara menggunakan aplikasi baru"
+    },
+    {
+      "no": 47,
+      "skor": 2,
+      "tipe": "S",
+      "soal": "Saya tertarik berpartisipasi atau mengorganisir acara online, webinar, atau diskusi virtual"
+    },
+    {
+      "no": 48,
+      "skor": 1,
+      "tipe": "S",
+      "soal": "Saya senang berinteraksi dan membantu orang lain melalui berbagai platform digital"
+    },
+    {
+      "no": 49,
+      "skor": 1,
+      "tipe": "E",
+      "soal": "Saya tertarik membangun startup teknologi atau bisnis digital dari nol"
+    },
+    {
+      "no": 50,
+      "skor": 1,
+      "tipe": "E",
+      "soal": "Saya senang memimpin kampanye digital marketing dan strategi pertumbuhan bisnis"
+    },
+    {
+      "no": 51,
+      "skor": 1,
+      "tipe": "E",
+      "soal": "Saya merasa termotivasi ketika memimpin proyek inovasi teknologi atau transformasi digital"
+    },
+    {
+      "no": 52,
+      "skor": 1,
+      "tipe": "E",
+      "soal": "Saya tertarik mengembangkan bisnis pembelajaran online atau platform edukasi digital"
+    },
+    {
+      "no": 53,
+      "skor": 1,
+      "tipe": "E",
+      "soal": "Saya suka memimpin inisiatif transformasi digital untuk meningkatkan efektivitas organisasi"
+    },
+    {
+      "no": 54,
+      "skor": 1,
+      "tipe": "E",
+      "soal": "Saya senang mengidentifikasi dan mengembangkan peluang bisnis dengan memanfaatkan teknologi modern"
+    },
+    {
+      "no": 55,
+      "skor": 1,
+      "tipe": "E",
+      "soal": "Saya yakin bisa memimpin tim penjualan atau pengembangan bisnis untuk produk teknologi"
+    },
+    {
+      "no": 56,
+      "skor": 1,
+      "tipe": "E",
+      "soal": "Saya percaya diri dapat mengembangkan strategi bisnis dan model inovasi untuk sektor digital"
+    },
+    {
+      "no": 57,
+      "skor": 1,
+      "tipe": "E",
+      "soal": "Saya yakin mampu memimpin tim untuk mengembangkan solusi digital yang scalable dan inovatif"
+    },
+    {
+      "no": 58,
+      "skor": 1,
+      "tipe": "E",
+      "soal": "Saya suka terlibat dalam kegiatan kewirausahaan, mengembangkan bisnis, atau proyek yang saya inisiasi sendiri"
+    },
+    {
+      "no": 59,
+      "skor": 1,
+      "tipe": "E",
+      "soal": "Saya tertarik memimpin tim, proyek, atau mengambil inisiatif kepemimpinan dalam berbagai konteks"
+    },
+    {
+      "no": 60,
+      "skor": 1,
+      "tipe": "E",
+      "soal": "Saya senang mencari dan menganalisis peluang bisnis, tren pasar, atau model bisnis baru"
+    },
+    {
+      "no": 61,
+      "skor": 1,
+      "tipe": "C",
+      "soal": "Saya senang membuat dokumentasi teknis, prosedur kerja, atau panduan sistem yang terstruktur"
+    },
+    {
+      "no": 62,
+      "skor": 2,
+      "tipe": "C",
+      "soal": "Saya tertarik mengelola database dan memastikan akurasi serta integritas data"
+    },
+    {
+      "no": 63,
+      "skor": 1,
+      "tipe": "C",
+      "soal": "Saya suka mengoptimalkan alur kerja dan proses bisnis menggunakan tools otomatisasi atau sistem"
+    },
+    {
+      "no": 64,
+      "skor": 1,
+      "tipe": "C",
+      "soal": "Saya merasa penting untuk memastikan kepatuhan terhadap regulasi, standar, atau prosedur yang berlaku"
+    },
+    {
+      "no": 65,
+      "skor": 1,
+      "tipe": "C",
+      "soal": "Saya senang mengelola inventori, tracking data, atau sistem pencatatan dengan rapi dan terorganisir"
+    },
+    {
+      "no": 66,
+      "skor": 2,
+      "tipe": "C",
+      "soal": "Saya tertarik memastikan kualitas, testing, dan quality assurance untuk software atau sistem"
+    },
+    {
+      "no": 67,
+      "skor": 1,
+      "tipe": "C",
+      "soal": "Saya yakin bisa mengelola aset digital, perpustakaan konten, atau sistem manajemen informasi dengan sistematis"
+    },
+    {
+      "no": 68,
+      "skor": 1,
+      "tipe": "C",
+      "soal": "Saya percaya diri dapat membuat dan memelihara sistem checklist, tracking progress, atau monitoring yang detail"
+    },
+    {
+      "no": 69,
+      "skor": 1,
+      "tipe": "C",
+      "soal": "Saya yakin mampu mengaudit, memeriksa, dan memastikan akurasi data atau dokumen dengan teliti"
+    },
+    {
+      "no": 70,
+      "skor": 1,
+      "tipe": "C",
+      "soal": "Saya suka mengatur jadwal, timeline proyek, atau perencanaan sumber daya dengan sistematis"
+    },
+    {
+      "no": 71,
+      "skor": 1,
+      "tipe": "C",
+      "soal": "Saya senang menggunakan spreadsheet, sistem database, atau tools untuk mengorganisir informasi"
+    },
+    {
+      "no": 72,
+      "skor": 1,
+      "tipe": "C",
+      "soal": "Saya tertarik memastikan efisiensi operasional dan pengelolaan resource dengan cermat"
+    }
+  ],
+  "ikigai_kandidat": [
+    {
+      "id": 1,
+      "name": "Backend Engineer",
+      "dimension_content": {
+        "what_you_love": "Kamu akan merasa tertantang dan bersemangat dalam merancang arsitektur sistem yang scalable dan efisien. Membangun fondasi teknis yang kokoh untuk produk digital adalah pencapaian yang memuaskan.",
+        "what_you_are_good_at": "Kamu ahli dalam membangun dan memelihara sistem sisi server, termasuk API, logika bisnis, dan database. Kemampuanmu dalam analisis arsitektur sistem dan optimasi performa sangat dihargai.",
+        "what_the_world_needs": "Kamu menciptakan tulang punggung teknologi yang memungkinkan aplikasi dan layanan digital berjalan cepat, aman, dan andal. Kontribusimu mendukung inovasi dan kemudahan akses informasi bagi masyarakat.",
+        "what_you_can_be_paid_for": "Kamu memiliki prospek karier yang cerah dengan potensi penghasilan yang sangat baik di industri teknologi. Permintaan akan keahlianmu terus meningkat seiring pertumbuhan ekosistem digital global."
+      }
+    },
+    {
+      "id": 5,
+      "name": "Site Reliability Engineer",
+      "dimension_content": {
+        "what_you_love": "Kamu akan menemukan kesenangan dalam memastikan sistem beroperasi tanpa hambatan, bahkan di bawah beban kerja yang sangat tinggi. Menganalisis akar masalah kegagalan dan membangun solusi pencegahan adalah tantangan yang memotivasi.",
+        "what_you_are_good_at": "Kamu unggul dalam mengintegrasikan prinsip-prinsip rekayasa perangkat lunak dengan operasi sistem untuk mencapai keandalan dan skalabilitas. Kemampuanmu dalam mendefinisikan metrik performa dan membangun sistem otomatis sangat krusial.",
+        "what_the_world_needs": "Kamu memastikan layanan digital yang vital berjalan stabil dan selalu tersedia bagi jutaan pengguna. Kontribusimu menjaga kelancaran operasional bisnis dan aksesibilitas informasi penting.",
+        "what_you_can_be_paid_for": "Kamu memiliki prospek karier yang sangat baik di perusahaan teknologi besar dengan kompensasi yang sangat kompetitif. Permintaan akan keahlianmu terus meningkat seiring kompleksitas sistem yang bertambah."
+      }
+    },
+    {
+      "id": 6,
+      "name": "Web Backend Developer",
+      "dimension_content": {
+        "what_you_love": "Kamu akan menikmati merancang dan membangun fondasi logis di balik aplikasi web yang kompleks. Memastikan data mengalir dengan aman dan efisien dari server ke pengguna adalah kepuasan tersendiri.",
+        "what_you_are_good_at": "Kamu mahir dalam mengembangkan API yang kuat, mengelola basis data, dan mengintegrasikan layanan pihak ketiga. Kemampuanmu dalam berpikir analitis tentang alur data dan keamanan sangat dibutuhkan.",
+        "what_the_world_needs": "Kamu membangun infrastruktur digital yang memungkinkan berbagai layanan online berfungsi. Kontribusimu memastikan transaksi aman, data terlindungi, dan pengalaman pengguna yang mulus.",
+        "what_you_can_be_paid_for": "Kamu memiliki peluang karier yang solid di berbagai industri dengan potensi penghasilan yang terus meningkat. Kebutuhan akan pengembang backend yang handal sangat tinggi di pasar kerja saat ini."
+      }
+    },
+    {
+      "id": 9,
+      "name": "Flutter Mobile Developer",
+      "dimension_content": {
+        "what_you_love": "Kamu akan menikmati proses membangun aplikasi yang indah dan fungsional yang dapat digunakan di berbagai platform. Melihat aplikasi yang kamu buat berjalan mulus di perangkat pengguna adalah sumber kebahagiaan.",
+        "what_you_are_good_at": "Kamu mahir dalam menggunakan Flutter dan Dart untuk mengembangkan aplikasi cross-platform yang efisien. Kemampuanmu dalam mengelola state aplikasi dan mengoptimalkan performa rendering sangat penting.",
+        "what_the_world_needs": "Kamu menciptakan pengalaman aplikasi yang konsisten dan berkualitas tinggi bagi pengguna di berbagai ekosistem perangkat. Kontribusimu memudahkan akses ke fitur dan layanan digital.",
+        "what_you_can_be_paid_for": "Kamu memiliki peluang karier yang luas di industri mobile development dengan potensi penghasilan yang menarik. Kebutuhan akan pengembang aplikasi cross-platform yang handal terus meningkat."
+      }
+    },
+    {
+      "id": 11,
+      "name": "Frontend Engineer",
+      "dimension_content": {
+        "what_you_love": "Kamu akan sangat menikmati mengubah desain visual menjadi antarmuka interaktif yang responsif. Merasakan kepuasan saat melihat pengguna berinteraksi mulus dengan kreasi digitalmu adalah hal yang membuatmu bersemangat.",
+        "what_you_are_good_at": "Kamu mahir dalam menerjemahkan mockup menjadi kode yang bersih dan efisien, memastikan pengalaman pengguna yang optimal di berbagai perangkat. Kemampuanmu dalam optimasi performa dan aksesibilitas sangat dihargai.",
+        "what_the_world_needs": "Kamu menciptakan jembatan digital yang mudah diakses, memungkinkan siapa saja untuk terhubung dan memanfaatkan teknologi. Kontribusimu memastikan informasi dan layanan digital dapat dinikmati oleh semua kalangan.",
+        "what_you_can_be_paid_for": "Kamu memiliki peluang karier yang luas di industri teknologi dengan potensi penghasilan yang kompetitif seiring bertambahnya pengalaman. Pasar kerja terus membutuhkan keahlianmu untuk membangun produk digital yang inovatif."
+      }
+    }
+  ],
+  "ikigai_jawaban": {
+    "what_you_love": {
+      "pilihan": [
+        "Site Reliability Engineer"
+      ],
+      "alasan": "Saya paling antusias saat merancang arsitektur backend dari nol dan memecahkan masalah performance yang tricky, yang sangat selaras dengan opsi Site Reliability Engineer yang menyebutkan 'menemukan kesenangan dalam memastikan sistem beroperasi tanpa hambatan, bahkan di bawah beban kerja yang sangat tinggi' serta 'menganalisis akar masalah kegagalan dan membangun solusi pencegahan'. Pengalaman saya dalam debugging infrastructure yang rumit dan melihat sistem stabil di production setelah insiden memberikan kepuasan mendalam, dan ini adalah inti dari SRE."
+    },
+    "what_you_are_good_at": {
+      "pilihan": [
+        "Site Reliability Engineer"
+      ],
+      "alasan": "Saya paling yakin bisa mengerjakan tugas yang berkaitan dengan Site Reliability Engineer karena keahlian saya dalam mengintegrasikan prinsip rekayasa perangkat lunak dengan operasi sistem untuk mencapai keandalan dan skalabilitas. Pengalaman saya dalam mendiagnosis bottleneck sistem, mengelola cloud platforms seperti AWS/GCP, dan scripting otomasi dengan Bash/Python memungkinkan saya untuk cepat mengidentifikasi dan menyelesaikan masalah infrastruktur, serta membangun sistem otomatis yang krusial untuk menjaga performa dan ketersediaan layanan tanpa banyak persiapan."
+    },
+    "what_the_world_needs": {
+      "pilihan": [
+        "Site Reliability Engineer"
+      ],
+      "alasan": "Saya memilih Site Reliability Engineer karena saya sangat meyakini bahwa dunia membutuhkan infrastruktur digital yang reliabel dan scalable. Pernyataan bahwa 'Kamu memastikan layanan digital yang vital berjalan stabil dan selalu tersedia bagi jutaan pengguna' sangat selaras dengan keinginan saya untuk menjadi fondasi yang krusial namun tidak terlihat, memastikan produk digital yang digunakan jutaan orang dapat berjalan tanpa hambatan. Pengalaman saya dalam mengotomasi deployment dan monitoring membuat saya memahami betapa pentingnya stabilitas dan ketersediaan sistem, yang merupakan inti dari SRE."
+    },
+    "what_you_can_be_paid_for": {
+      "pilihan": [
+        "Site Reliability Engineer"
+      ],
+      "alasan": "Saya memilih Site Reliability Engineer karena opsi \"Kamu memiliki prospek karier yang sangat baik di perusahaan teknologi besar dengan kompensasi yang sangat kompetitif. Permintaan akan keahlianmu terus meningkat seiring kompleksitas sistem yang bertambah\" paling sesuai dengan preferensi saya untuk bekerja di perusahaan tech dengan infrastruktur kompleks, baik startup tahap lanjut maupun enterprise. Kompensasi yang kompetitif dan potensi pertumbuhan ke level Staff/Principal Engineer sangat menarik, sejalan dengan keinginan saya untuk memiliki ownership teknis dan berkembang. Model kerja remote/hybrid dengan kompensasi berbasis seniority dan on-call allowance juga sangat cocok dengan gaya kerja yang saya inginkan untuk stabilitas dan fleksibilitas jangka panjang."
+    }
+  },
+  "rekomendasi_akhir": {
+    "session_token": "0c206cca-357c-4bd2-b35d-a66188563cce",
+    "user_first_name": "Raka",
+    "test_completed_at": "2026-02-27T09:05:19.804960+00:00",
+    "riasec_summary": {
+      "riasec_code": "RI",
+      "riasec_title": "Realistic – Investigative",
+      "top_types": [
+        "Realistic",
+        "Investigative"
+      ],
+      "total_candidates_found": 18
+    },
+    "riasec_scores_raw": {
+      "R": 52,
+      "I": 46,
+      "A": 33,
+      "S": 18,
+      "E": 12,
+      "C": 14
+    },
+    "candidate_profession_names": [
+      {
+        "profession_id": 1,
+        "name": "Backend Engineer"
+      },
+      {
+        "profession_id": 5,
+        "name": "Site Reliability Engineer"
+      },
+      {
+        "profession_id": 6,
+        "name": "Web Backend Developer"
+      },
+      {
+        "profession_id": 9,
+        "name": "Flutter Mobile Developer"
+      },
+      {
+        "profession_id": 11,
+        "name": "Frontend Engineer"
+      },
+      {
+        "profession_id": 20,
+        "name": "Full Stack Developer"
+      },
+      {
+        "profession_id": 46,
+        "name": "Game Developer"
+      },
+      {
+        "profession_id": 4,
+        "name": "Backend Systems Architect"
+      },
+      {
+        "profession_id": 10,
+        "name": "Security Engineer"
+      },
+      {
+        "profession_id": 13,
+        "name": "Data Engineer"
+      },
+      {
+        "profession_id": 47,
+        "name": "Web3 / Blockchain Developer"
+      },
+      {
+        "profession_id": 16,
+        "name": "AI/LLM Engineer"
+      },
+      {
+        "profession_id": 22,
+        "name": "UX Researcher"
+      },
+      {
+        "profession_id": 34,
+        "name": "SEO & Content Strategist"
+      },
+      {
+        "profession_id": 2,
+        "name": "Cloud Infrastructure Engineer"
+      },
+      {
+        "profession_id": 7,
+        "name": "Mobile Android Developer"
+      },
+      {
+        "profession_id": 8,
+        "name": "Mobile iOS Developer"
+      },
+      {
+        "profession_id": 48,
+        "name": "IoT / Embedded Systems Engineer"
+      }
+    ],
+    "display_candidates": [
+      {
+        "profession_id": 1,
+        "name": "Backend Engineer",
+        "congruence_type": "exact_match",
+        "expansion_tier": 1,
+        "is_display_candidate": true
+      },
+      {
+        "profession_id": 5,
+        "name": "Site Reliability Engineer",
+        "congruence_type": "exact_match",
+        "expansion_tier": 1,
+        "is_display_candidate": true
+      },
+      {
+        "profession_id": 6,
+        "name": "Web Backend Developer",
+        "congruence_type": "exact_match",
+        "expansion_tier": 1,
+        "is_display_candidate": true
+      },
+      {
+        "profession_id": 9,
+        "name": "Flutter Mobile Developer",
+        "congruence_type": "exact_match",
+        "expansion_tier": 1,
+        "is_display_candidate": true
+      },
+      {
+        "profession_id": 11,
+        "name": "Frontend Engineer",
+        "congruence_type": "exact_match",
+        "expansion_tier": 1,
+        "is_display_candidate": true
+      }
+    ],
+    "congruent_candidates": [
+      {
+        "profession_id": 20,
+        "name": "Full Stack Developer",
+        "congruence_type": "exact_match",
+        "expansion_tier": 1,
+        "is_display_candidate": false
+      },
+      {
+        "profession_id": 46,
+        "name": "Game Developer",
+        "congruence_type": "exact_match",
+        "expansion_tier": 1,
+        "is_display_candidate": false
+      },
+      {
+        "profession_id": 4,
+        "name": "Backend Systems Architect",
+        "congruence_type": "congruent_primer",
+        "expansion_tier": 2,
+        "is_display_candidate": false
+      },
+      {
+        "profession_id": 10,
+        "name": "Security Engineer",
+        "congruence_type": "congruent_primer",
+        "expansion_tier": 2,
+        "is_display_candidate": false
+      },
+      {
+        "profession_id": 13,
+        "name": "Data Engineer",
+        "congruence_type": "congruent_primer",
+        "expansion_tier": 2,
+        "is_display_candidate": false
+      },
+      {
+        "profession_id": 47,
+        "name": "Web3 / Blockchain Developer",
+        "congruence_type": "congruent_primer",
+        "expansion_tier": 2,
+        "is_display_candidate": false
+      },
+      {
+        "profession_id": 16,
+        "name": "AI/LLM Engineer",
+        "congruence_type": "subset_adjacent",
+        "expansion_tier": 3,
+        "is_display_candidate": false
+      },
+      {
+        "profession_id": 22,
+        "name": "UX Researcher",
+        "congruence_type": "subset_adjacent",
+        "expansion_tier": 3,
+        "is_display_candidate": false
+      },
+      {
+        "profession_id": 34,
+        "name": "SEO & Content Strategist",
+        "congruence_type": "subset_adjacent",
+        "expansion_tier": 3,
+        "is_display_candidate": false
+      },
+      {
+        "profession_id": 2,
+        "name": "Cloud Infrastructure Engineer",
+        "congruence_type": "dominant_single",
+        "expansion_tier": 4,
+        "is_display_candidate": false
+      },
+      {
+        "profession_id": 7,
+        "name": "Mobile Android Developer",
+        "congruence_type": "dominant_single",
+        "expansion_tier": 4,
+        "is_display_candidate": false
+      },
+      {
+        "profession_id": 8,
+        "name": "Mobile iOS Developer",
+        "congruence_type": "dominant_single",
+        "expansion_tier": 4,
+        "is_display_candidate": false
+      },
+      {
+        "profession_id": 48,
+        "name": "IoT / Embedded Systems Engineer",
+        "congruence_type": "dominant_single",
+        "expansion_tier": 4,
+        "is_display_candidate": false
+      }
+    ],
+    "ikigai_profile_summary": {
+      "what_you_love": "Kamu menemukan kepuasan mendalam dalam merancang fondasi sistem dari awal dan mengatasi tantangan performa yang kompleks. Pengalamanmu dalam menstabilkan infrastruktur yang rumit dan menyaksikan sistem berjalan lancar di bawah tekanan tinggi memberikan rasa pencapaian yang kuat, menunjukkan gairahmu pada keandalan operasional.",
+      "what_you_are_good_at": "Kamu memiliki keyakinan kuat pada kemampuanmu untuk mengintegrasikan prinsip rekayasa perangkat lunak dengan operasi sistem demi mencapai skalabilitas dan keandalan. Keahlianmu dalam mendiagnosis hambatan, mengelola platform cloud, dan scripting otomatisasi memungkinkanmu untuk secara efisien mengidentifikasi dan memperbaiki masalah infrastruktur, serta membangun solusi otomatis yang esensial.",
+      "what_the_world_needs": "Kamu sangat meyakini kebutuhan dunia akan infrastruktur digital yang stabil dan mampu berkembang. Keinginanmu untuk menjadi bagian penting namun tak terlihat dari layanan yang diandalkan jutaan orang, memastikan kelancaran operasional produk digital, selaras dengan kebutuhan global akan ketersediaan dan reliabilitas sistem.",
+      "what_you_can_be_paid_for": "Kamu memiliki preferensi kuat untuk berkarir di perusahaan teknologi dengan infrastruktur yang kompleks, baik startup maupun enterprise, di mana kompensasi yang kompetitif dan potensi pertumbuhan menjadi daya tarik utama. Model kerja remote/hybrid dengan insentif yang sesuai dengan senioritas dan tugas on-call juga sangat mendukung stabilitas dan fleksibilitas jangka panjang yang kamu cari."
+    },
+    "recommended_professions": [
+      {
+        "rank": 1,
+        "profession_id": 5,
+        "profession_name": "Site Reliability Engineer",
+        "match_percentage": 99.0,
+        "match_reasoning": "Profesi ini cocok karena antusiasmemu dalam merancang arsitektur backend dari nol dan memecahkan masalah performa selaras dengan inti aktivitas Site Reliability Engineer dalam memastikan sistem beroperasi tanpa hambatan, bahkan di bawah beban kerja tinggi. Pengalamanmu dalam debugging infrastruktur yang rumit dan membangun solusi pencegahan akan langsung berkontribusi pada keandalan dan skalabilitas sistem.",
+        "riasec_alignment": {
+          "user_code": "RI",
+          "profession_code": "-",
+          "congruence_type": "",
+          "congruence_score": 1.0
+        },
+        "score_breakdown": {
+          "total_score": 99.0,
+          "intrinsic_score": 50.0,
+          "extrinsic_score": 49.0,
+          "score_what_you_love": 25.0,
+          "score_what_you_are_good_at": 25.0,
+          "score_what_the_world_needs": 24.5,
+          "score_what_you_can_be_paid_for": 24.5
+        }
+      },
+      {
+        "rank": 2,
+        "profession_id": 2,
+        "profession_name": "Cloud Infrastructure Engineer",
+        "match_percentage": 51.32,
+        "match_reasoning": "Profesi ini cocok karena keahlianmu dalam mengintegrasikan prinsip rekayasa perangkat lunak dengan operasi sistem untuk mencapai keandalan dan skalabilitas sangat relevan dengan pengelolaan lapisan infrastruktur cloud. Pengalamanmu dalam mendiagnosis bottleneck sistem, mengelola cloud platforms, dan scripting otomasi akan memungkinkamu untuk memastikan sistem produksi berjalan reliabel dan efisien.",
+        "riasec_alignment": {
+          "user_code": "RI",
+          "profession_code": "-",
+          "congruence_type": "",
+          "congruence_score": 0.55
+        },
+        "score_breakdown": {
+          "total_score": 51.32,
+          "intrinsic_score": 24.75,
+          "extrinsic_score": 26.57,
+          "score_what_you_love": 11.25,
+          "score_what_you_are_good_at": 13.5,
+          "score_what_the_world_needs": 13.24,
+          "score_what_you_can_be_paid_for": 13.33
+        }
+      }
+    ],
+    "riasec_profile": {
+      "riasec_code": "RI",
+      "riasec_title": "Realistic Investigative (RI)",
+      "riasec_description": "Kombinasi Realistic dan Investigative menciptakan tipe yang menggabungkan kemampuan praktis dengan pemikiran analitis. Ini adalah kombinasi langka yang sangat berharga di bidang teknis. Kamu bukan hanya bisa mengeksekusi, tetapi juga memahami teori di baliknya.",
+      "strengths": [
+        "Sintesis teknis dan analitis: Kamu bisa merancang eksperimen atau sistem dan juga mengimplementasikannya sendiri",
+        "Diagnosis masalah: Kamu mendekati pemecahan masalah secara sistematis dengan membentuk hipotesis",
+        "Penerjemahan penelitian: Kamu bisa mengambil konsep teoretis dan membangun aplikasi praktis",
+        "Praktik berbasis bukti: Keputusanmu berdasarkan data dan pengujian"
+      ],
+      "challenges": [
+        "Tidak sabar dengan teori murni atau eksekusi murni: Kamu frustrasi kalau terjebak hanya melakukan salah satu",
+        "Komunikasi dengan orang non-teknis: Menjelaskan pekerjaanmu adalah tantangan ganda",
+        "Perfeksionisme dalam metodologi: Menginginkan teori dan implementasi sempurna bisa memperlambatmu"
+      ],
+      "strategies": [
+        "Cari peran yang hybrid: Cari posisi yang menggabungkan riset dengan implementasi",
+        "Dokumentasikan alasanmu: Ketika mengimplementasikan, jelaskan mengapa",
+        "Tetapkan tujuan iterasi: Rencanakan untuk beberapa versi"
+      ],
+      "interaction_styles": [
+        "Tunjukkan dan jelaskan: Kamu lebih suka mendemonstrasikan sambil menjelaskan logikanya",
+        "Menghargai dialog teknis: Menikmati diskusi yang menyeimbangkan teori dengan praktis",
+        "Dokumentasi teknis tertulis: Preferensi kuat untuk dokumentasi yang detail"
+      ],
+      "work_environments": [
+        "Lingkungan riset dan pengembangan: Laboratorium atau tim inovasi",
+        "Otonomi teknis: Kebebasan untuk merancang pendekatan dan mengeksekusinya",
+        "Sumber daya untuk eksperimen: Akses ke alat, data, dan anggaran untuk menguji ide"
+      ]
+    },
+    "points_awarded": null,
+    "test_duration_minutes": 1
+  },
+  "riasec_profil": {
+    "riasec_code": "RI",
+    "riasec_title": "Realistic Investigative (RI)",
+    "riasec_description": "Kombinasi Realistic dan Investigative menciptakan tipe yang menggabungkan kemampuan praktis dengan pemikiran analitis. Ini adalah kombinasi langka yang sangat berharga di bidang teknis. Kamu bukan hanya bisa mengeksekusi, tetapi juga memahami teori di baliknya.",
+    "strengths": [
+      "Sintesis teknis dan analitis: Kamu bisa merancang eksperimen atau sistem dan juga mengimplementasikannya sendiri",
+      "Diagnosis masalah: Kamu mendekati pemecahan masalah secara sistematis dengan membentuk hipotesis",
+      "Penerjemahan penelitian: Kamu bisa mengambil konsep teoretis dan membangun aplikasi praktis",
+      "Praktik berbasis bukti: Keputusanmu berdasarkan data dan pengujian"
+    ],
+    "challenges": [
+      "Tidak sabar dengan teori murni atau eksekusi murni: Kamu frustrasi kalau terjebak hanya melakukan salah satu",
+      "Komunikasi dengan orang non-teknis: Menjelaskan pekerjaanmu adalah tantangan ganda",
+      "Perfeksionisme dalam metodologi: Menginginkan teori dan implementasi sempurna bisa memperlambatmu"
+    ],
+    "strategies": [
+      "Cari peran yang hybrid: Cari posisi yang menggabungkan riset dengan implementasi",
+      "Dokumentasikan alasanmu: Ketika mengimplementasikan, jelaskan mengapa",
+      "Tetapkan tujuan iterasi: Rencanakan untuk beberapa versi"
+    ],
+    "interaction_styles": [
+      "Tunjukkan dan jelaskan: Kamu lebih suka mendemonstrasikan sambil menjelaskan logikanya",
+      "Menghargai dialog teknis: Menikmati diskusi yang menyeimbangkan teori dengan praktis",
+      "Dokumentasi teknis tertulis: Preferensi kuat untuk dokumentasi yang detail"
+    ],
+    "work_environments": [
+      "Lingkungan riset dan pengembangan: Laboratorium atau tim inovasi",
+      "Otonomi teknis: Kebebasan untuk merancang pendekatan dan mengeksekusinya",
+      "Sumber daya untuk eksperimen: Akses ke alat, data, dan anggaran untuk menguji ide"
+    ]
+  },
+  "ikigai_profil_per_dimensi": {
+    "what_you_love": "Kamu menemukan kepuasan mendalam dalam merancang fondasi sistem dari awal dan mengatasi tantangan performa yang kompleks. Pengalamanmu dalam menstabilkan infrastruktur yang rumit dan menyaksikan sistem berjalan lancar di bawah tekanan tinggi memberikan rasa pencapaian yang kuat, menunjukkan gairahmu pada keandalan operasional.",
+    "what_you_are_good_at": "Kamu memiliki keyakinan kuat pada kemampuanmu untuk mengintegrasikan prinsip rekayasa perangkat lunak dengan operasi sistem demi mencapai skalabilitas dan keandalan. Keahlianmu dalam mendiagnosis hambatan, mengelola platform cloud, dan scripting otomatisasi memungkinkanmu untuk secara efisien mengidentifikasi dan memperbaiki masalah infrastruktur, serta membangun solusi otomatis yang esensial.",
+    "what_the_world_needs": "Kamu sangat meyakini kebutuhan dunia akan infrastruktur digital yang stabil dan mampu berkembang. Keinginanmu untuk menjadi bagian penting namun tak terlihat dari layanan yang diandalkan jutaan orang, memastikan kelancaran operasional produk digital, selaras dengan kebutuhan global akan ketersediaan dan reliabilitas sistem.",
+    "what_you_can_be_paid_for": "Kamu memiliki preferensi kuat untuk berkarir di perusahaan teknologi dengan infrastruktur yang kompleks, baik startup maupun enterprise, di mana kompensasi yang kompetitif dan potensi pertumbuhan menjadi daya tarik utama. Model kerja remote/hybrid dengan insentif yang sesuai dengan senioritas dan tugas on-call juga sangat mendukung stabilitas dan fleksibilitas jangka panjang yang kamu cari."
+  },
+  "kandidat_display": [
+    {
+      "profession_id": 1,
+      "name": "Backend Engineer",
+      "congruence_type": "exact_match",
+      "expansion_tier": 1,
+      "is_display_candidate": true
+    },
+    {
+      "profession_id": 5,
+      "name": "Site Reliability Engineer",
+      "congruence_type": "exact_match",
+      "expansion_tier": 1,
+      "is_display_candidate": true
+    },
+    {
+      "profession_id": 6,
+      "name": "Web Backend Developer",
+      "congruence_type": "exact_match",
+      "expansion_tier": 1,
+      "is_display_candidate": true
+    },
+    {
+      "profession_id": 9,
+      "name": "Flutter Mobile Developer",
+      "congruence_type": "exact_match",
+      "expansion_tier": 1,
+      "is_display_candidate": true
+    },
+    {
+      "profession_id": 11,
+      "name": "Frontend Engineer",
+      "congruence_type": "exact_match",
+      "expansion_tier": 1,
+      "is_display_candidate": true
+    }
+  ],
+  "kandidat_backup": [
+    {
+      "profession_id": 20,
+      "name": "Full Stack Developer",
+      "congruence_type": "exact_match",
+      "expansion_tier": 1,
+      "is_display_candidate": false
+    },
+    {
+      "profession_id": 46,
+      "name": "Game Developer",
+      "congruence_type": "exact_match",
+      "expansion_tier": 1,
+      "is_display_candidate": false
+    },
+    {
+      "profession_id": 4,
+      "name": "Backend Systems Architect",
+      "congruence_type": "congruent_primer",
+      "expansion_tier": 2,
+      "is_display_candidate": false
+    },
+    {
+      "profession_id": 10,
+      "name": "Security Engineer",
+      "congruence_type": "congruent_primer",
+      "expansion_tier": 2,
+      "is_display_candidate": false
+    },
+    {
+      "profession_id": 13,
+      "name": "Data Engineer",
+      "congruence_type": "congruent_primer",
+      "expansion_tier": 2,
+      "is_display_candidate": false
+    },
+    {
+      "profession_id": 47,
+      "name": "Web3 / Blockchain Developer",
+      "congruence_type": "congruent_primer",
+      "expansion_tier": 2,
+      "is_display_candidate": false
+    },
+    {
+      "profession_id": 16,
+      "name": "AI/LLM Engineer",
+      "congruence_type": "subset_adjacent",
+      "expansion_tier": 3,
+      "is_display_candidate": false
+    },
+    {
+      "profession_id": 22,
+      "name": "UX Researcher",
+      "congruence_type": "subset_adjacent",
+      "expansion_tier": 3,
+      "is_display_candidate": false
+    },
+    {
+      "profession_id": 34,
+      "name": "SEO & Content Strategist",
+      "congruence_type": "subset_adjacent",
+      "expansion_tier": 3,
+      "is_display_candidate": false
+    },
+    {
+      "profession_id": 2,
+      "name": "Cloud Infrastructure Engineer",
+      "congruence_type": "dominant_single",
+      "expansion_tier": 4,
+      "is_display_candidate": false
+    },
+    {
+      "profession_id": 7,
+      "name": "Mobile Android Developer",
+      "congruence_type": "dominant_single",
+      "expansion_tier": 4,
+      "is_display_candidate": false
+    },
+    {
+      "profession_id": 8,
+      "name": "Mobile iOS Developer",
+      "congruence_type": "dominant_single",
+      "expansion_tier": 4,
+      "is_display_candidate": false
+    },
+    {
+      "profession_id": 48,
+      "name": "IoT / Embedded Systems Engineer",
+      "congruence_type": "dominant_single",
+      "expansion_tier": 4,
+      "is_display_candidate": false
+    }
+  ],
+  "top_rekomendasi": [
+    {
+      "rank": 1,
+      "profession_id": 5,
+      "profession_name": "Site Reliability Engineer",
+      "match_percentage": 99.0,
+      "match_reasoning": "Profesi ini cocok karena antusiasmemu dalam merancang arsitektur backend dari nol dan memecahkan masalah performa selaras dengan inti aktivitas Site Reliability Engineer dalam memastikan sistem beroperasi tanpa hambatan, bahkan di bawah beban kerja tinggi. Pengalamanmu dalam debugging infrastruktur yang rumit dan membangun solusi pencegahan akan langsung berkontribusi pada keandalan dan skalabilitas sistem.",
+      "riasec_alignment": {
+        "user_code": "RI",
+        "profession_code": "-",
+        "congruence_type": "",
+        "congruence_score": 1.0
+      },
+      "score_breakdown": {
+        "total_score": 99.0,
+        "intrinsic_score": 50.0,
+        "extrinsic_score": 49.0,
+        "score_what_you_love": 25.0,
+        "score_what_you_are_good_at": 25.0,
+        "score_what_the_world_needs": 24.5,
+        "score_what_you_can_be_paid_for": 24.5
+      }
+    },
+    {
+      "rank": 2,
+      "profession_id": 2,
+      "profession_name": "Cloud Infrastructure Engineer",
+      "match_percentage": 51.32,
+      "match_reasoning": "Profesi ini cocok karena keahlianmu dalam mengintegrasikan prinsip rekayasa perangkat lunak dengan operasi sistem untuk mencapai keandalan dan skalabilitas sangat relevan dengan pengelolaan lapisan infrastruktur cloud. Pengalamanmu dalam mendiagnosis bottleneck sistem, mengelola cloud platforms, dan scripting otomasi akan memungkinkamu untuk memastikan sistem produksi berjalan reliabel dan efisien.",
+      "riasec_alignment": {
+        "user_code": "RI",
+        "profession_code": "-",
+        "congruence_type": "",
+        "congruence_score": 0.55
+      },
+      "score_breakdown": {
+        "total_score": 51.32,
+        "intrinsic_score": 24.75,
+        "extrinsic_score": 26.57,
+        "score_what_you_love": 11.25,
+        "score_what_you_are_good_at": 13.5,
+        "score_what_the_world_needs": 13.24,
+        "score_what_you_can_be_paid_for": 13.33
+      }
+    }
+  ]
+}

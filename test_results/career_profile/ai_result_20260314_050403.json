@@ -1,0 +1,63 @@
+{
+  "run_at": "2026-03-14 05:03:46",
+  "mode": "fit_check",
+  "target_riasec": "C",
+  "hasil_riasec": "C",
+  "target_tercapai": true,
+  "persona": "Fira - Data & QA Engineer",
+  "riasec_scores_raw": {
+    "R": 32,
+    "I": 32,
+    "A": 16,
+    "S": 16,
+    "E": 16,
+    "C": 54
+  },
+  "fit_check_result": {
+    "session_token": "4ae6d83c-bb8d-4b46-9226-1c8b06565ac0",
+    "user_first_name": "Fira",
+    "test_completed_at": "2026-03-13T22:03:57.847558+00:00",
+    "user_riasec": {
+      "riasec_code": "C",
+      "riasec_title": "Conventional",
+      "top_types": [
+        "Conventional"
+      ],
+      "total_candidates_found": null
+    },
+    "target_profession": {
+      "profession_id": 5,
+      "name": "Site Reliability Engineer",
+      "riasec_code": "RI",
+      "riasec_title": "Realistic – Investigative"
+    },
+    "fit_check_result": {
+      "match_category": "MEDIUM",
+      "match_label": "Kecocokan Sedang",
+      "match_stars": 2,
+      "rule_type": "adjacent_dominant",
+      "dominant_letter_same": false,
+      "is_adjacent_hexagon": true,
+      "match_score": 0.67,
+      "explanation": {
+        "meaning": "Kecocokan Sedang menunjukkan adanya keselarasan pada sebagian komponen minat, namun terdapat perbedaan pada dominansi atau minat pendukung. Profesi masih relevan, tetapi memerlukan penyesuaian.",
+        "reason_points": [
+          "Profil berkode C, sedangkan profesi ini berkode RI.",
+          "Huruf dominan berbeda (C pada profil, R pada profesi) namun keduanya bertetangga dalam model RIASEC. Hal ini menunjukkan kedekatan minat meski orientasi aktivitas tidak sepenuhnya identik."
+        ],
+        "implication": "Profesi ini tetap dapat dipertimbangkan dengan strategi penguatan yang tepat.",
+        "next_steps": [
+          "Identifikasi komponen minat yang berbeda.",
+          "Susun strategi adaptasi pada aspek tersebut.",
+          "Bandingkan dengan profesi lain yang lebih selaras."
+        ],
+        "cta_primary": "Lihat Rekomendasi",
+        "cta_secondary": "Strategi Adaptasi",
+        "match_label": "Kecocokan Sedang",
+        "match_stars": 2
+      }
+    },
+    "points_awarded": null,
+    "TODO_points": "Implementasi poin Rextra belum aktif. Tambahkan setelah tabel points dikonfirmasi."
+  }
+}

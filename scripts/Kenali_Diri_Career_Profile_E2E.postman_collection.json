@@ -1,0 +1,631 @@
+{
+    "info": {
+        "name": "Kenali Diri - Career Profile E2E (With Edge Cases)",
+        "description": "Postman Collection for E2E Testing of Career Profile modules: Recommendation, Fit Check, and Negative Scenarios based on Use Cases.",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "variable": [
+        {
+            "key": "baseUrl",
+            "value": "http://localhost:8010/api/v1",
+            "type": "string"
+        },
+        {
+            "key": "userId",
+            "value": "123e4567-e89b-12d3-a456-426614174000",
+            "type": "string"
+        },
+        {
+            "key": "recSessionToken",
+            "value": "",
+            "type": "string"
+        },
+        {
+            "key": "fitCheckSessionToken",
+            "value": "",
+            "type": "string"
+        },
+        {
+            "key": "negativeSessionToken",
+            "value": "",
+            "type": "string"
+        }
+    ],
+    "item": [
+        {
+            "name": "1. SIKLUS A: Recommendation Flow",
+            "description": "Alur sukses untuk mendapatkan rekomendasi profesi berbayar 3 token.",
+            "item": [
+                {
+                    "name": "1A. Memulai Sesi RECOMMENDATION",
+                    "event": [
+                        {
+                            "listen": "test",
+                            "script": {
+                                "exec": [
+                                    "var jsonData = pm.response.json();",
+                                    "if (jsonData.session_token) {",
+                                    "    pm.collectionVariables.set(\"recSessionToken\", jsonData.session_token);",
+                                    "}"
+                                ],
+                                "type": "text/javascript"
+                            }
+                        }
+                    ],
+                    "request": {
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "x-user-id",
+                                "value": "{{userId}}",
+                                "type": "text"
+                            },
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json",
+                                "type": "text"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n    \"persona_type\": \"PATHFINDER\"\n}"
+                        },
+                        "url": {
+                            "raw": "{{baseUrl}}/career-profile/recommendation/start",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "career-profile",
+                                "recommendation",
+                                "start"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "1B. Submit Jawaban RIASEC (72 Soal)",
+                    "request": {
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "x-user-id",
+                                "value": "{{userId}}",
+                                "type": "text"
+                            },
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json",
+                                "type": "text"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n    \"session_token\": \"{{recSessionToken}}\",\n    \"responses\": [{\"question_id\": 1, \"question_type\": \"R\", \"answer_value\": 2, \"answered_at\": \"2026-02-22T01:17:29.733132+00:00\"}, {\"question_id\": 2, \"question_type\": \"R\", \"answer_value\": 3, \"answered_at\": \"2026-02-22T01:17:29.733144+00:00\"}, {\"question_id\": 3, \"question_type\": \"R\", \"answer_value\": 4, \"answered_at\": \"2026-02-22T01:17:29.733147+00:00\"}, {\"question_id\": 4, \"question_type\": \"R\", \"answer_value\": 5, \"answered_at\": \"2026-02-22T01:17:29.733149+00:00\"}, {\"question_id\": 5, \"question_type\": \"R\", \"answer_value\": 1, \"answered_at\": \"2026-02-22T01:17:29.733153+00:00\"}, {\"question_id\": 6, \"question_type\": \"R\", \"answer_value\": 2, \"answered_at\": \"2026-02-22T01:17:29.733155+00:00\"}, {\"question_id\": 7, \"question_type\": \"R\", \"answer_value\": 3, \"answered_at\": \"2026-02-22T01:17:29.733157+00:00\"}, {\"question_id\": 8, \"question_type\": \"R\", \"answer_value\": 4, \"answered_at\": \"2026-02-22T01:17:29.733163+00:00\"}, {\"question_id\": 9, \"question_type\": \"R\", \"answer_value\": 5, \"answered_at\": \"2026-02-22T01:17:29.733165+00:00\"}, {\"question_id\": 10, \"question_type\": \"R\", \"answer_value\": 1, \"answered_at\": \"2026-02-22T01:17:29.733167+00:00\"}, {\"question_id\": 11, \"question_type\": \"R\", \"answer_value\": 2, \"answered_at\": \"2026-02-22T01:17:29.733168+00:00\"}, {\"question_id\": 12, \"question_type\": \"R\", \"answer_value\": 3, \"answered_at\": \"2026-02-22T01:17:29.733170+00:00\"}, {\"question_id\": 13, \"question_type\": \"I\", \"answer_value\": 4, \"answered_at\": \"2026-02-22T01:17:29.733171+00:00\"}, {\"question_id\": 14, \"question_type\": \"I\", \"answer_value\": 5, \"answered_at\": \"2026-02-22T01:17:29.733173+00:00\"}, {\"question_id\": 15, \"question_type\": \"I\", \"answer_value\": 1, \"answered_at\": \"2026-02-22T01:17:29.733174+00:00\"}, {\"question_id\": 16, \"question_type\": \"I\", \"answer_value\": 2, \"answered_at\": \"2026-02-22T01:17:29.733176+00:00\"}, {\"question_id\": 17, \"question_type\": \"I\", \"answer_value\": 3, \"answered_at\": \"2026-02-22T01:17:29.733177+00:00\"}, {\"question_id\": 18, \"question_type\": \"I\", \"answer_value\": 4, \"answered_at\": \"2026-02-22T01:17:29.733179+00:00\"}, {\"question_id\": 19, \"question_type\": \"I\", \"answer_value\": 5, \"answered_at\": \"2026-02-22T01:17:29.733181+00:00\"}, {\"question_id\": 20, \"question_type\": \"I\", \"answer_value\": 1, \"answered_at\": \"2026-02-22T01:17:29.733182+00:00\"}, {\"question_id\": 21, \"question_type\": \"I\", \"answer_value\": 2, \"answered_at\": \"2026-02-22T01:17:29.733184+00:00\"}, {\"question_id\": 22, \"question_type\": \"I\", \"answer_value\": 3, \"answered_at\": \"2026-02-22T01:17:29.733185+00:00\"}, {\"question_id\": 23, \"question_type\": \"I\", \"answer_value\": 4, \"answered_at\": \"2026-02-22T01:17:29.733187+00:00\"}, {\"question_id\": 24, \"question_type\": \"I\", \"answer_value\": 5, \"answered_at\": \"2026-02-22T01:17:29.733189+00:00\"}, {\"question_id\": 25, \"question_type\": \"A\", \"answer_value\": 1, \"answered_at\": \"2026-02-22T01:17:29.733190+00:00\"}, {\"question_id\": 26, \"question_type\": \"A\", \"answer_value\": 2, \"answered_at\": \"2026-02-22T01:17:29.733192+00:00\"}, {\"question_id\": 27, \"question_type\": \"A\", \"answer_value\": 3, \"answered_at\": \"2026-02-22T01:17:29.733193+00:00\"}, {\"question_id\": 28, \"question_type\": \"A\", \"answer_value\": 4, \"answered_at\": \"2026-02-22T01:17:29.733195+00:00\"}, {\"question_id\": 29, \"question_type\": \"A\", \"answer_value\": 5, \"answered_at\": \"2026-02-22T01:17:29.733196+00:00\"}, {\"question_id\": 30, \"question_type\": \"A\", \"answer_value\": 1, \"answered_at\": \"2026-02-22T01:17:29.733198+00:00\"}, {\"question_id\": 31, \"question_type\": \"A\", \"answer_value\": 2, \"answered_at\": \"2026-02-22T01:17:29.733199+00:00\"}, {\"question_id\": 32, \"question_type\": \"A\", \"answer_value\": 3, \"answered_at\": \"2026-02-22T01:17:29.733201+00:00\"}, {\"question_id\": 33, \"question_type\": \"A\", \"answer_value\": 4, \"answered_at\": \"2026-02-22T01:17:29.733202+00:00\"}, {\"question_id\": 34, \"question_type\": \"A\", \"answer_value\": 5, \"answered_at\": \"2026-02-22T01:17:29.733204+00:00\"}, {\"question_id\": 35, \"question_type\": \"A\", \"answer_value\": 1, \"answered_at\": \"2026-02-22T01:17:29.733206+00:00\"}, {\"question_id\": 36, \"question_type\": \"A\", \"answer_value\": 2, \"answered_at\": \"2026-02-22T01:17:29.733207+00:00\"}, {\"question_id\": 37, \"question_type\": \"S\", \"answer_value\": 3, \"answered_at\": \"2026-02-22T01:17:29.733210+00:00\"}, {\"question_id\": 38, \"question_type\": \"S\", \"answer_value\": 4, \"answered_at\": \"2026-02-22T01:17:29.733212+00:00\"}, {\"question_id\": 39, \"question_type\": \"S\", \"answer_value\": 5, \"answered_at\": \"2026-02-22T01:17:29.733214+00:00\"}, {\"question_id\": 40, \"question_type\": \"S\", \"answer_value\": 1, \"answered_at\": \"2026-02-22T01:17:29.733215+00:00\"}, {\"question_id\": 41, \"question_type\": \"S\", \"answer_value\": 2, \"answered_at\": \"2026-02-22T01:17:29.733217+00:00\"}, {\"question_id\": 42, \"question_type\": \"S\", \"answer_value\": 3, \"answered_at\": \"2026-02-22T01:17:29.733218+00:00\"}, {\"question_id\": 43, \"question_type\": \"S\", \"answer_value\": 4, \"answered_at\": \"2026-02-22T01:17:29.733220+00:00\"}, {\"question_id\": 44, \"question_type\": \"S\", \"answer_value\": 5, \"answered_at\": \"2026-02-22T01:17:29.733221+00:00\"}, {\"question_id\": 45, \"question_type\": \"S\", \"answer_value\": 1, \"answered_at\": \"2026-02-22T01:17:29.733223+00:00\"}, {\"question_id\": 46, \"question_type\": \"S\", \"answer_value\": 2, \"answered_at\": \"2026-02-22T01:17:29.733226+00:00\"}, {\"question_id\": 47, \"question_type\": \"S\", \"answer_value\": 3, \"answered_at\": \"2026-02-22T01:17:29.733227+00:00\"}, {\"question_id\": 48, \"question_type\": \"S\", \"answer_value\": 4, \"answered_at\": \"2026-02-22T01:17:29.733229+00:00\"}, {\"question_id\": 49, \"question_type\": \"E\", \"answer_value\": 5, \"answered_at\": \"2026-02-22T01:17:29.733230+00:00\"}, {\"question_id\": 50, \"question_type\": \"E\", \"answer_value\": 1, \"answered_at\": \"2026-02-22T01:17:29.733232+00:00\"}, {\"question_id\": 51, \"question_type\": \"E\", \"answer_value\": 2, \"answered_at\": \"2026-02-22T01:17:29.733233+00:00\"}, {\"question_id\": 52, \"question_type\": \"E\", \"answer_value\": 3, \"answered_at\": \"2026-02-22T01:17:29.733235+00:00\"}, {\"question_id\": 53, \"question_type\": \"E\", \"answer_value\": 4, \"answered_at\": \"2026-02-22T01:17:29.733236+00:00\"}, {\"question_id\": 54, \"question_type\": \"E\", \"answer_value\": 5, \"answered_at\": \"2026-02-22T01:17:29.733238+00:00\"}, {\"question_id\": 55, \"question_type\": \"E\", \"answer_value\": 1, \"answered_at\": \"2026-02-22T01:17:29.733239+00:00\"}, {\"question_id\": 56, \"question_type\": \"E\", \"answer_value\": 2, \"answered_at\": \"2026-02-22T01:17:29.733241+00:00\"}, {\"question_id\": 57, \"question_type\": \"E\", \"answer_value\": 3, \"answered_at\": \"2026-02-22T01:17:29.733242+00:00\"}, {\"question_id\": 58, \"question_type\": \"E\", \"answer_value\": 4, \"answered_at\": \"2026-02-22T01:17:29.733244+00:00\"}, {\"question_id\": 59, \"question_type\": \"E\", \"answer_value\": 5, \"answered_at\": \"2026-02-22T01:17:29.733245+00:00\"}, {\"question_id\": 60, \"question_type\": \"E\", \"answer_value\": 1, \"answered_at\": \"2026-02-22T01:17:29.733247+00:00\"}, {\"question_id\": 61, \"question_type\": \"C\", \"answer_value\": 2, \"answered_at\": \"2026-02-22T01:17:29.733250+00:00\"}, {\"question_id\": 62, \"question_type\": \"C\", \"answer_value\": 3, \"answered_at\": \"2026-02-22T01:17:29.733252+00:00\"}, {\"question_id\": 63, \"question_type\": \"C\", \"answer_value\": 4, \"answered_at\": \"2026-02-22T01:17:29.733253+00:00\"}, {\"question_id\": 64, \"question_type\": \"C\", \"answer_value\": 5, \"answered_at\": \"2026-02-22T01:17:29.733255+00:00\"}, {\"question_id\": 65, \"question_type\": \"C\", \"answer_value\": 1, \"answered_at\": \"2026-02-22T01:17:29.733256+00:00\"}, {\"question_id\": 66, \"question_type\": \"C\", \"answer_value\": 2, \"answered_at\": \"2026-02-22T01:17:29.733258+00:00\"}, {\"question_id\": 67, \"question_type\": \"C\", \"answer_value\": 3, \"answered_at\": \"2026-02-22T01:17:29.733260+00:00\"}, {\"question_id\": 68, \"question_type\": \"C\", \"answer_value\": 4, \"answered_at\": \"2026-02-22T01:17:29.733261+00:00\"}, {\"question_id\": 69, \"question_type\": \"C\", \"answer_value\": 5, \"answered_at\": \"2026-02-22T01:17:29.733264+00:00\"}, {\"question_id\": 70, \"question_type\": \"C\", \"answer_value\": 1, \"answered_at\": \"2026-02-22T01:17:29.733266+00:00\"}, {\"question_id\": 71, \"question_type\": \"C\", \"answer_value\": 2, \"answered_at\": \"2026-02-22T01:17:29.733267+00:00\"}, {\"question_id\": 72, \"question_type\": \"C\", \"answer_value\": 3, \"answered_at\": \"2026-02-22T01:17:29.733269+00:00\"}]\n}"
+                        },
+                        "url": {
+                            "raw": "{{baseUrl}}/career-profile/riasec/submit",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "career-profile",
+                                "riasec",
+                                "submit"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "1C. Memulai Sesi Tes IKIGAI",
+                    "request": {
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "x-user-id",
+                                "value": "{{userId}}",
+                                "type": "text"
+                            },
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json",
+                                "type": "text"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n    \"session_token\": \"{{recSessionToken}}\"\n}"
+                        },
+                        "url": {
+                            "raw": "{{baseUrl}}/career-profile/ikigai/start",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "career-profile",
+                                "ikigai",
+                                "start"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "1D.1. Submit Dimensi Ikigai - what_you_love",
+                    "request": {
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "x-user-id",
+                                "value": "{{userId}}",
+                                "type": "text"
+                            },
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json",
+                                "type": "text"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n    \"session_token\": \"{{recSessionToken}}\",\n    \"dimension_name\": \"what_you_love\",\n    \"selected_profession_id\": 1,\n    \"selection_type\": \"selected\",\n    \"reasoning_text\": \"Saya suka menganalisa data dan memecahkan ruang masalah kompleks untuk industri.\"\n}"
+                        },
+                        "url": {
+                            "raw": "{{baseUrl}}/career-profile/ikigai/submit-dimension",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "career-profile",
+                                "ikigai",
+                                "submit-dimension"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "1D.2. Submit Dimensi Ikigai - what_you_are_good_at",
+                    "request": {
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "x-user-id",
+                                "value": "{{userId}}",
+                                "type": "text"
+                            },
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json",
+                                "type": "text"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n    \"session_token\": \"{{recSessionToken}}\",\n    \"dimension_name\": \"what_you_are_good_at\",\n    \"selected_profession_id\": 1,\n    \"selection_type\": \"selected\",\n    \"reasoning_text\": \"Saya pandai koding Python dan mahir public speaking.\"\n}"
+                        },
+                        "url": {
+                            "raw": "{{baseUrl}}/career-profile/ikigai/submit-dimension",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "career-profile",
+                                "ikigai",
+                                "submit-dimension"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "1D.3. Submit Dimensi Ikigai - what_the_world_needs",
+                    "request": {
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "x-user-id",
+                                "value": "{{userId}}",
+                                "type": "text"
+                            },
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json",
+                                "type": "text"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n    \"session_token\": \"{{recSessionToken}}\",\n    \"dimension_name\": \"what_the_world_needs\",\n    \"selected_profession_id\": null,\n    \"selection_type\": \"not_selected\",\n    \"reasoning_text\": \"Dunia butuh lebih banyak sistem ramah lingkungan.\"\n}"
+                        },
+                        "url": {
+                            "raw": "{{baseUrl}}/career-profile/ikigai/submit-dimension",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "career-profile",
+                                "ikigai",
+                                "submit-dimension"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "1D.4. Submit Dimensi Ikigai - what_you_can_be_paid_for",
+                    "request": {
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "x-user-id",
+                                "value": "{{userId}}",
+                                "type": "text"
+                            },
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json",
+                                "type": "text"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n    \"session_token\": \"{{recSessionToken}}\",\n    \"dimension_name\": \"what_you_can_be_paid_for\",\n    \"selected_profession_id\": 2,\n    \"selection_type\": \"selected\",\n    \"reasoning_text\": \"Saya yakin bisa dibayar tinggi sebagai Data Engineer.\"\n}"
+                        },
+                        "url": {
+                            "raw": "{{baseUrl}}/career-profile/ikigai/submit-dimension",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "career-profile",
+                                "ikigai",
+                                "submit-dimension"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "1E. Cek Hasil Rekomendasi",
+                    "request": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "x-user-id",
+                                "value": "{{userId}}",
+                                "type": "text"
+                            }
+                        ],
+                        "url": {
+                            "raw": "{{baseUrl}}/career-profile/result/recommendation/{{recSessionToken}}",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "career-profile",
+                                "result",
+                                "recommendation",
+                                "{{recSessionToken}}"
+                            ]
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "name": "2. SIKLUS B: Fit Check Flow",
+            "description": "Alur cek kecocokan profesi target dengan gaya kepribadian via RIASEC shortcut.",
+            "item": [
+                {
+                    "name": "2A. Memulai Sesi FIT CHECK",
+                    "event": [
+                        {
+                            "listen": "test",
+                            "script": {
+                                "exec": [
+                                    "var jsonData = pm.response.json();",
+                                    "if (jsonData.session_token) {",
+                                    "    pm.collectionVariables.set(\"fitCheckSessionToken\", jsonData.session_token);",
+                                    "}"
+                                ],
+                                "type": "text/javascript"
+                            }
+                        }
+                    ],
+                    "request": {
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "x-user-id",
+                                "value": "{{userId}}",
+                                "type": "text"
+                            },
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json",
+                                "type": "text"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n    \"persona_type\": \"BUILDER\",\n    \"target_profession_id\": 14\n}"
+                        },
+                        "url": {
+                            "raw": "{{baseUrl}}/career-profile/fit-check/start",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "career-profile",
+                                "fit-check",
+                                "start"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "2B. Submit Jawaban RIASEC Shortcut",
+                    "request": {
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "x-user-id",
+                                "value": "{{userId}}",
+                                "type": "text"
+                            },
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json",
+                                "type": "text"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n    \"session_token\": \"{{fitCheckSessionToken}}\",\n    \"responses\": [{\"question_id\": 1, \"question_type\": \"R\", \"answer_value\": 2, \"answered_at\": \"2026-02-22T01:17:29.733132+00:00\"}, {\"question_id\": 2, \"question_type\": \"R\", \"answer_value\": 3, \"answered_at\": \"2026-02-22T01:17:29.733144+00:00\"}, {\"question_id\": 3, \"question_type\": \"R\", \"answer_value\": 4, \"answered_at\": \"2026-02-22T01:17:29.733147+00:00\"}, {\"question_id\": 4, \"question_type\": \"R\", \"answer_value\": 5, \"answered_at\": \"2026-02-22T01:17:29.733149+00:00\"}, {\"question_id\": 5, \"question_type\": \"R\", \"answer_value\": 1, \"answered_at\": \"2026-02-22T01:17:29.733153+00:00\"}, {\"question_id\": 6, \"question_type\": \"R\", \"answer_value\": 2, \"answered_at\": \"2026-02-22T01:17:29.733155+00:00\"}, {\"question_id\": 7, \"question_type\": \"R\", \"answer_value\": 3, \"answered_at\": \"2026-02-22T01:17:29.733157+00:00\"}, {\"question_id\": 8, \"question_type\": \"R\", \"answer_value\": 4, \"answered_at\": \"2026-02-22T01:17:29.733163+00:00\"}, {\"question_id\": 9, \"question_type\": \"R\", \"answer_value\": 5, \"answered_at\": \"2026-02-22T01:17:29.733165+00:00\"}, {\"question_id\": 10, \"question_type\": \"R\", \"answer_value\": 1, \"answered_at\": \"2026-02-22T01:17:29.733167+00:00\"}, {\"question_id\": 11, \"question_type\": \"R\", \"answer_value\": 2, \"answered_at\": \"2026-02-22T01:17:29.733168+00:00\"}, {\"question_id\": 12, \"question_type\": \"R\", \"answer_value\": 3, \"answered_at\": \"2026-02-22T01:17:29.733170+00:00\"}, {\"question_id\": 13, \"question_type\": \"I\", \"answer_value\": 4, \"answered_at\": \"2026-02-22T01:17:29.733171+00:00\"}, {\"question_id\": 14, \"question_type\": \"I\", \"answer_value\": 5, \"answered_at\": \"2026-02-22T01:17:29.733173+00:00\"}, {\"question_id\": 15, \"question_type\": \"I\", \"answer_value\": 1, \"answered_at\": \"2026-02-22T01:17:29.733174+00:00\"}, {\"question_id\": 16, \"question_type\": \"I\", \"answer_value\": 2, \"answered_at\": \"2026-02-22T01:17:29.733176+00:00\"}, {\"question_id\": 17, \"question_type\": \"I\", \"answer_value\": 3, \"answered_at\": \"2026-02-22T01:17:29.733177+00:00\"}, {\"question_id\": 18, \"question_type\": \"I\", \"answer_value\": 4, \"answered_at\": \"2026-02-22T01:17:29.733179+00:00\"}, {\"question_id\": 19, \"question_type\": \"I\", \"answer_value\": 5, \"answered_at\": \"2026-02-22T01:17:29.733181+00:00\"}, {\"question_id\": 20, \"question_type\": \"I\", \"answer_value\": 1, \"answered_at\": \"2026-02-22T01:17:29.733182+00:00\"}, {\"question_id\": 21, \"question_type\": \"I\", \"answer_value\": 2, \"answered_at\": \"2026-02-22T01:17:29.733184+00:00\"}, {\"question_id\": 22, \"question_type\": \"I\", \"answer_value\": 3, \"answered_at\": \"2026-02-22T01:17:29.733185+00:00\"}, {\"question_id\": 23, \"question_type\": \"I\", \"answer_value\": 4, \"answered_at\": \"2026-02-22T01:17:29.733187+00:00\"}, {\"question_id\": 24, \"question_type\": \"I\", \"answer_value\": 5, \"answered_at\": \"2026-02-22T01:17:29.733189+00:00\"}, {\"question_id\": 25, \"question_type\": \"A\", \"answer_value\": 1, \"answered_at\": \"2026-02-22T01:17:29.733190+00:00\"}, {\"question_id\": 26, \"question_type\": \"A\", \"answer_value\": 2, \"answered_at\": \"2026-02-22T01:17:29.733192+00:00\"}, {\"question_id\": 27, \"question_type\": \"A\", \"answer_value\": 3, \"answered_at\": \"2026-02-22T01:17:29.733193+00:00\"}, {\"question_id\": 28, \"question_type\": \"A\", \"answer_value\": 4, \"answered_at\": \"2026-02-22T01:17:29.733195+00:00\"}, {\"question_id\": 29, \"question_type\": \"A\", \"answer_value\": 5, \"answered_at\": \"2026-02-22T01:17:29.733196+00:00\"}, {\"question_id\": 30, \"question_type\": \"A\", \"answer_value\": 1, \"answered_at\": \"2026-02-22T01:17:29.733198+00:00\"}, {\"question_id\": 31, \"question_type\": \"A\", \"answer_value\": 2, \"answered_at\": \"2026-02-22T01:17:29.733199+00:00\"}, {\"question_id\": 32, \"question_type\": \"A\", \"answer_value\": 3, \"answered_at\": \"2026-02-22T01:17:29.733201+00:00\"}, {\"question_id\": 33, \"question_type\": \"A\", \"answer_value\": 4, \"answered_at\": \"2026-02-22T01:17:29.733202+00:00\"}, {\"question_id\": 34, \"question_type\": \"A\", \"answer_value\": 5, \"answered_at\": \"2026-02-22T01:17:29.733204+00:00\"}, {\"question_id\": 35, \"question_type\": \"A\", \"answer_value\": 1, \"answered_at\": \"2026-02-22T01:17:29.733206+00:00\"}, {\"question_id\": 36, \"question_type\": \"A\", \"answer_value\": 2, \"answered_at\": \"2026-02-22T01:17:29.733207+00:00\"}, {\"question_id\": 37, \"question_type\": \"S\", \"answer_value\": 3, \"answered_at\": \"2026-02-22T01:17:29.733210+00:00\"}, {\"question_id\": 38, \"question_type\": \"S\", \"answer_value\": 4, \"answered_at\": \"2026-02-22T01:17:29.733212+00:00\"}, {\"question_id\": 39, \"question_type\": \"S\", \"answer_value\": 5, \"answered_at\": \"2026-02-22T01:17:29.733214+00:00\"}, {\"question_id\": 40, \"question_type\": \"S\", \"answer_value\": 1, \"answered_at\": \"2026-02-22T01:17:29.733215+00:00\"}, {\"question_id\": 41, \"question_type\": \"S\", \"answer_value\": 2, \"answered_at\": \"2026-02-22T01:17:29.733217+00:00\"}, {\"question_id\": 42, \"question_type\": \"S\", \"answer_value\": 3, \"answered_at\": \"2026-02-22T01:17:29.733218+00:00\"}, {\"question_id\": 43, \"question_type\": \"S\", \"answer_value\": 4, \"answered_at\": \"2026-02-22T01:17:29.733220+00:00\"}, {\"question_id\": 44, \"question_type\": \"S\", \"answer_value\": 5, \"answered_at\": \"2026-02-22T01:17:29.733221+00:00\"}, {\"question_id\": 45, \"question_type\": \"S\", \"answer_value\": 1, \"answered_at\": \"2026-02-22T01:17:29.733223+00:00\"}, {\"question_id\": 46, \"question_type\": \"S\", \"answer_value\": 2, \"answered_at\": \"2026-02-22T01:17:29.733226+00:00\"}, {\"question_id\": 47, \"question_type\": \"S\", \"answer_value\": 3, \"answered_at\": \"2026-02-22T01:17:29.733227+00:00\"}, {\"question_id\": 48, \"question_type\": \"S\", \"answer_value\": 4, \"answered_at\": \"2026-02-22T01:17:29.733229+00:00\"}, {\"question_id\": 49, \"question_type\": \"E\", \"answer_value\": 5, \"answered_at\": \"2026-02-22T01:17:29.733230+00:00\"}, {\"question_id\": 50, \"question_type\": \"E\", \"answer_value\": 1, \"answered_at\": \"2026-02-22T01:17:29.733232+00:00\"}, {\"question_id\": 51, \"question_type\": \"E\", \"answer_value\": 2, \"answered_at\": \"2026-02-22T01:17:29.733233+00:00\"}, {\"question_id\": 52, \"question_type\": \"E\", \"answer_value\": 3, \"answered_at\": \"2026-02-22T01:17:29.733235+00:00\"}, {\"question_id\": 53, \"question_type\": \"E\", \"answer_value\": 4, \"answered_at\": \"2026-02-22T01:17:29.733236+00:00\"}, {\"question_id\": 54, \"question_type\": \"E\", \"answer_value\": 5, \"answered_at\": \"2026-02-22T01:17:29.733238+00:00\"}, {\"question_id\": 55, \"question_type\": \"E\", \"answer_value\": 1, \"answered_at\": \"2026-02-22T01:17:29.733239+00:00\"}, {\"question_id\": 56, \"question_type\": \"E\", \"answer_value\": 2, \"answered_at\": \"2026-02-22T01:17:29.733241+00:00\"}, {\"question_id\": 57, \"question_type\": \"E\", \"answer_value\": 3, \"answered_at\": \"2026-02-22T01:17:29.733242+00:00\"}, {\"question_id\": 58, \"question_type\": \"E\", \"answer_value\": 4, \"answered_at\": \"2026-02-22T01:17:29.733244+00:00\"}, {\"question_id\": 59, \"question_type\": \"E\", \"answer_value\": 5, \"answered_at\": \"2026-02-22T01:17:29.733245+00:00\"}, {\"question_id\": 60, \"question_type\": \"E\", \"answer_value\": 1, \"answered_at\": \"2026-02-22T01:17:29.733247+00:00\"}, {\"question_id\": 61, \"question_type\": \"C\", \"answer_value\": 2, \"answered_at\": \"2026-02-22T01:17:29.733250+00:00\"}, {\"question_id\": 62, \"question_type\": \"C\", \"answer_value\": 3, \"answered_at\": \"2026-02-22T01:17:29.733252+00:00\"}, {\"question_id\": 63, \"question_type\": \"C\", \"answer_value\": 4, \"answered_at\": \"2026-02-22T01:17:29.733253+00:00\"}, {\"question_id\": 64, \"question_type\": \"C\", \"answer_value\": 5, \"answered_at\": \"2026-02-22T01:17:29.733255+00:00\"}, {\"question_id\": 65, \"question_type\": \"C\", \"answer_value\": 1, \"answered_at\": \"2026-02-22T01:17:29.733256+00:00\"}, {\"question_id\": 66, \"question_type\": \"C\", \"answer_value\": 2, \"answered_at\": \"2026-02-22T01:17:29.733258+00:00\"}, {\"question_id\": 67, \"question_type\": \"C\", \"answer_value\": 3, \"answered_at\": \"2026-02-22T01:17:29.733260+00:00\"}, {\"question_id\": 68, \"question_type\": \"C\", \"answer_value\": 4, \"answered_at\": \"2026-02-22T01:17:29.733261+00:00\"}, {\"question_id\": 69, \"question_type\": \"C\", \"answer_value\": 5, \"answered_at\": \"2026-02-22T01:17:29.733264+00:00\"}, {\"question_id\": 70, \"question_type\": \"C\", \"answer_value\": 1, \"answered_at\": \"2026-02-22T01:17:29.733266+00:00\"}, {\"question_id\": 71, \"question_type\": \"C\", \"answer_value\": 2, \"answered_at\": \"2026-02-22T01:17:29.733267+00:00\"}, {\"question_id\": 72, \"question_type\": \"C\", \"answer_value\": 3, \"answered_at\": \"2026-02-22T01:17:29.733269+00:00\"}]\n}"
+                        },
+                        "url": {
+                            "raw": "{{baseUrl}}/career-profile/riasec/submit",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "career-profile",
+                                "riasec",
+                                "submit"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "2C. Cek Hasil Pencocokan High/Medium/Low",
+                    "request": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "x-user-id",
+                                "value": "{{userId}}",
+                                "type": "text"
+                            }
+                        ],
+                        "url": {
+                            "raw": "{{baseUrl}}/career-profile/result/fit-check/{{fitCheckSessionToken}}",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "career-profile",
+                                "result",
+                                "fit-check",
+                                "{{fitCheckSessionToken}}"
+                            ]
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "name": "3. SIKLUS C: Personality Tabs",
+            "description": "Pengambilan data spesifik kepribadian pasca RIASEC.",
+            "item": [
+                {
+                    "name": "3A. Tab Kepribadian (Session A - Rec)",
+                    "request": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "x-user-id",
+                                "value": "{{userId}}",
+                                "type": "text"
+                            }
+                        ],
+                        "url": {
+                            "raw": "{{baseUrl}}/career-profile/result/personality/{{recSessionToken}}",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "career-profile",
+                                "result",
+                                "personality",
+                                "{{recSessionToken}}"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "3B. Tab Kepribadian (Session B - Fit)",
+                    "request": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "x-user-id",
+                                "value": "{{userId}}",
+                                "type": "text"
+                            }
+                        ],
+                        "url": {
+                            "raw": "{{baseUrl}}/career-profile/result/personality/{{fitCheckSessionToken}}",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "career-profile",
+                                "result",
+                                "personality",
+                                "{{fitCheckSessionToken}}"
+                            ]
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "name": "4. NEGATIVE / EDGE CASES",
+            "description": "Pengujian Use Case Alternatif untuk Validasi Backend Error Handling.",
+            "item": [
+                {
+                    "name": "4A. Menginisiasi Sesi (START) untuk Tes Negatif",
+                    "event": [
+                        {
+                            "listen": "test",
+                            "script": {
+                                "exec": [
+                                    "var jsonData = pm.response.json();",
+                                    "if (jsonData.session_token) {",
+                                    "    pm.collectionVariables.set(\"negativeSessionToken\", jsonData.session_token);",
+                                    "}"
+                                ],
+                                "type": "text/javascript"
+                            }
+                        }
+                    ],
+                    "request": {
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "x-user-id",
+                                "value": "{{userId}}",
+                                "type": "text"
+                            },
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json",
+                                "type": "text"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n    \"persona_type\": \"THINKER\"\n}"
+                        },
+                        "url": {
+                            "raw": "{{baseUrl}}/career-profile/recommendation/start",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "career-profile",
+                                "recommendation",
+                                "start"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "4B. [422] Anti-Cheat RIASEC (Semua Skor Sama)",
+                    "request": {
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "x-user-id",
+                                "value": "{{userId}}",
+                                "type": "text"
+                            },
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json",
+                                "type": "text"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n    \"session_token\": \"{{negativeSessionToken}}\",\n    \"responses\": [{\"question_id\": 1, \"question_type\": \"R\", \"answer_value\": 5, \"answered_at\": \"2026-02-22T01:17:29.733515+00:00\"}, {\"question_id\": 2, \"question_type\": \"R\", \"answer_value\": 5, \"answered_at\": \"2026-02-22T01:17:29.733520+00:00\"}, {\"question_id\": 3, \"question_type\": \"R\", \"answer_value\": 5, \"answered_at\": \"2026-02-22T01:17:29.733522+00:00\"}, {\"question_id\": 4, \"question_type\": \"R\", \"answer_value\": 5, \"answered_at\": \"2026-02-22T01:17:29.733524+00:00\"}, {\"question_id\": 5, \"question_type\": \"R\", \"answer_value\": 5, \"answered_at\": \"2026-02-22T01:17:29.733525+00:00\"}, {\"question_id\": 6, \"question_type\": \"R\", \"answer_value\": 5, \"answered_at\": \"2026-02-22T01:17:29.733527+00:00\"}, {\"question_id\": 7, \"question_type\": \"R\", \"answer_value\": 5, \"answered_at\": \"2026-02-22T01:17:29.733528+00:00\"}, {\"question_id\": 8, \"question_type\": \"R\", \"answer_value\": 5, \"answered_at\": \"2026-02-22T01:17:29.733530+00:00\"}, {\"question_id\": 9, \"question_type\": \"R\", \"answer_value\": 5, \"answered_at\": \"2026-02-22T01:17:29.733531+00:00\"}, {\"question_id\": 10, \"question_type\": \"R\", \"answer_value\": 5, \"answered_at\": \"2026-02-22T01:17:29.733533+00:00\"}, {\"question_id\": 11, \"question_type\": \"R\", \"answer_value\": 5, \"answered_at\": \"2026-02-22T01:17:29.733534+00:00\"}, {\"question_id\": 12, \"question_type\": \"R\", \"answer_value\": 5, \"answered_at\": \"2026-02-22T01:17:29.733535+00:00\"}, {\"question_id\": 13, \"question_type\": \"I\", \"answer_value\": 5, \"answered_at\": \"2026-02-22T01:17:29.733537+00:00\"}, {\"question_id\": 14, \"question_type\": \"I\", \"answer_value\": 5, \"answered_at\": \"2026-02-22T01:17:29.733539+00:00\"}, {\"question_id\": 15, \"question_type\": \"I\", \"answer_value\": 5, \"answered_at\": \"2026-02-22T01:17:29.733540+00:00\"}, {\"question_id\": 16, \"question_type\": \"I\", \"answer_value\": 5, \"answered_at\": \"2026-02-22T01:17:29.733542+00:00\"}, {\"question_id\": 17, \"question_type\": \"I\", \"answer_value\": 5, \"answered_at\": \"2026-02-22T01:17:29.733543+00:00\"}, {\"question_id\": 18, \"question_type\": \"I\", \"answer_value\": 5, \"answered_at\": \"2026-02-22T01:17:29.733545+00:00\"}, {\"question_id\": 19, \"question_type\": \"I\", \"answer_value\": 5, \"answered_at\": \"2026-02-22T01:17:29.733546+00:00\"}, {\"question_id\": 20, \"question_type\": \"I\", \"answer_value\": 5, \"answered_at\": \"2026-02-22T01:17:29.733547+00:00\"}, {\"question_id\": 21, \"question_type\": \"I\", \"answer_value\": 5, \"answered_at\": \"2026-02-22T01:17:29.733549+00:00\"}, {\"question_id\": 22, \"question_type\": \"I\", \"answer_value\": 5, \"answered_at\": \"2026-02-22T01:17:29.733550+00:00\"}, {\"question_id\": 23, \"question_type\": \"I\", \"answer_value\": 5, \"answered_at\": \"2026-02-22T01:17:29.733552+00:00\"}, {\"question_id\": 24, \"question_type\": \"I\", \"answer_value\": 5, \"answered_at\": \"2026-02-22T01:17:29.733553+00:00\"}, {\"question_id\": 25, \"question_type\": \"A\", \"answer_value\": 5, \"answered_at\": \"2026-02-22T01:17:29.733555+00:00\"}, {\"question_id\": 26, \"question_type\": \"A\", \"answer_value\": 5, \"answered_at\": \"2026-02-22T01:17:29.733556+00:00\"}, {\"question_id\": 27, \"question_type\": \"A\", \"answer_value\": 5, \"answered_at\": \"2026-02-22T01:17:29.733558+00:00\"}, {\"question_id\": 28, \"question_type\": \"A\", \"answer_value\": 5, \"answered_at\": \"2026-02-22T01:17:29.733559+00:00\"}, {\"question_id\": 29, \"question_type\": \"A\", \"answer_value\": 5, \"answered_at\": \"2026-02-22T01:17:29.733561+00:00\"}, {\"question_id\": 30, \"question_type\": \"A\", \"answer_value\": 5, \"answered_at\": \"2026-02-22T01:17:29.733562+00:00\"}, {\"question_id\": 31, \"question_type\": \"A\", \"answer_value\": 5, \"answered_at\": \"2026-02-22T01:17:29.733563+00:00\"}, {\"question_id\": 32, \"question_type\": \"A\", \"answer_value\": 5, \"answered_at\": \"2026-02-22T01:17:29.733567+00:00\"}, {\"question_id\": 33, \"question_type\": \"A\", \"answer_value\": 5, \"answered_at\": \"2026-02-22T01:17:29.733569+00:00\"}, {\"question_id\": 34, \"question_type\": \"A\", \"answer_value\": 5, \"answered_at\": \"2026-02-22T01:17:29.733570+00:00\"}, {\"question_id\": 35, \"question_type\": \"A\", \"answer_value\": 5, \"answered_at\": \"2026-02-22T01:17:29.733572+00:00\"}, {\"question_id\": 36, \"question_type\": \"A\", \"answer_value\": 5, \"answered_at\": \"2026-02-22T01:17:29.733573+00:00\"}, {\"question_id\": 37, \"question_type\": \"S\", \"answer_value\": 5, \"answered_at\": \"2026-02-22T01:17:29.733575+00:00\"}, {\"question_id\": 38, \"question_type\": \"S\", \"answer_value\": 5, \"answered_at\": \"2026-02-22T01:17:29.733576+00:00\"}, {\"question_id\": 39, \"question_type\": \"S\", \"answer_value\": 5, \"answered_at\": \"2026-02-22T01:17:29.733578+00:00\"}, {\"question_id\": 40, \"question_type\": \"S\", \"answer_value\": 5, \"answered_at\": \"2026-02-22T01:17:29.733579+00:00\"}, {\"question_id\": 41, \"question_type\": \"S\", \"answer_value\": 5, \"answered_at\": \"2026-02-22T01:17:29.733580+00:00\"}, {\"question_id\": 42, \"question_type\": \"S\", \"answer_value\": 5, \"answered_at\": \"2026-02-22T01:17:29.733582+00:00\"}, {\"question_id\": 43, \"question_type\": \"S\", \"answer_value\": 5, \"answered_at\": \"2026-02-22T01:17:29.733583+00:00\"}, {\"question_id\": 44, \"question_type\": \"S\", \"answer_value\": 5, \"answered_at\": \"2026-02-22T01:17:29.733585+00:00\"}, {\"question_id\": 45, \"question_type\": \"S\", \"answer_value\": 5, \"answered_at\": \"2026-02-22T01:17:29.733586+00:00\"}, {\"question_id\": 46, \"question_type\": \"S\", \"answer_value\": 5, \"answered_at\": \"2026-02-22T01:17:29.733588+00:00\"}, {\"question_id\": 47, \"question_type\": \"S\", \"answer_value\": 5, \"answered_at\": \"2026-02-22T01:17:29.733589+00:00\"}, {\"question_id\": 48, \"question_type\": \"S\", \"answer_value\": 5, \"answered_at\": \"2026-02-22T01:17:29.733591+00:00\"}, {\"question_id\": 49, \"question_type\": \"E\", \"answer_value\": 5, \"answered_at\": \"2026-02-22T01:17:29.733592+00:00\"}, {\"question_id\": 50, \"question_type\": \"E\", \"answer_value\": 5, \"answered_at\": \"2026-02-22T01:17:29.733593+00:00\"}, {\"question_id\": 51, \"question_type\": \"E\", \"answer_value\": 5, \"answered_at\": \"2026-02-22T01:17:29.733595+00:00\"}, {\"question_id\": 52, \"question_type\": \"E\", \"answer_value\": 5, \"answered_at\": \"2026-02-22T01:17:29.733596+00:00\"}, {\"question_id\": 53, \"question_type\": \"E\", \"answer_value\": 5, \"answered_at\": \"2026-02-22T01:17:29.733598+00:00\"}, {\"question_id\": 54, \"question_type\": \"E\", \"answer_value\": 5, \"answered_at\": \"2026-02-22T01:17:29.733599+00:00\"}, {\"question_id\": 55, \"question_type\": \"E\", \"answer_value\": 5, \"answered_at\": \"2026-02-22T01:17:29.733601+00:00\"}, {\"question_id\": 56, \"question_type\": \"E\", \"answer_value\": 5, \"answered_at\": \"2026-02-22T01:17:29.733602+00:00\"}, {\"question_id\": 57, \"question_type\": \"E\", \"answer_value\": 5, \"answered_at\": \"2026-02-22T01:17:29.733604+00:00\"}, {\"question_id\": 58, \"question_type\": \"E\", \"answer_value\": 5, \"answered_at\": \"2026-02-22T01:17:29.733605+00:00\"}, {\"question_id\": 59, \"question_type\": \"E\", \"answer_value\": 5, \"answered_at\": \"2026-02-22T01:17:29.733607+00:00\"}, {\"question_id\": 60, \"question_type\": \"E\", \"answer_value\": 5, \"answered_at\": \"2026-02-22T01:17:29.733608+00:00\"}, {\"question_id\": 61, \"question_type\": \"C\", \"answer_value\": 5, \"answered_at\": \"2026-02-22T01:17:29.733609+00:00\"}, {\"question_id\": 62, \"question_type\": \"C\", \"answer_value\": 5, \"answered_at\": \"2026-02-22T01:17:29.733611+00:00\"}, {\"question_id\": 63, \"question_type\": \"C\", \"answer_value\": 5, \"answered_at\": \"2026-02-22T01:17:29.733612+00:00\"}, {\"question_id\": 64, \"question_type\": \"C\", \"answer_value\": 5, \"answered_at\": \"2026-02-22T01:17:29.733615+00:00\"}, {\"question_id\": 65, \"question_type\": \"C\", \"answer_value\": 5, \"answered_at\": \"2026-02-22T01:17:29.733617+00:00\"}, {\"question_id\": 66, \"question_type\": \"C\", \"answer_value\": 5, \"answered_at\": \"2026-02-22T01:17:29.733618+00:00\"}, {\"question_id\": 67, \"question_type\": \"C\", \"answer_value\": 5, \"answered_at\": \"2026-02-22T01:17:29.733620+00:00\"}, {\"question_id\": 68, \"question_type\": \"C\", \"answer_value\": 5, \"answered_at\": \"2026-02-22T01:17:29.733621+00:00\"}, {\"question_id\": 69, \"question_type\": \"C\", \"answer_value\": 5, \"answered_at\": \"2026-02-22T01:17:29.733623+00:00\"}, {\"question_id\": 70, \"question_type\": \"C\", \"answer_value\": 5, \"answered_at\": \"2026-02-22T01:17:29.733624+00:00\"}, {\"question_id\": 71, \"question_type\": \"C\", \"answer_value\": 5, \"answered_at\": \"2026-02-22T01:17:29.733625+00:00\"}, {\"question_id\": 72, \"question_type\": \"C\", \"answer_value\": 5, \"answered_at\": \"2026-02-22T01:17:29.733627+00:00\"}]\n}"
+                        },
+                        "url": {
+                            "raw": "{{baseUrl}}/career-profile/riasec/submit",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "career-profile",
+                                "riasec",
+                                "submit"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "4C. [400] Duplikasi Submit Dimensi Ikigai",
+                    "request": {
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "x-user-id",
+                                "value": "{{userId}}",
+                                "type": "text"
+                            },
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json",
+                                "type": "text"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n    \"session_token\": \"{{recSessionToken}}\",\n    \"dimension_name\": \"what_you_love\",\n    \"selected_profession_id\": 1,\n    \"selection_type\": \"selected\",\n    \"reasoning_text\": \"Mencoba submit dimensi ini dua kali untuk trigger error.\"\n}"
+                        },
+                        "url": {
+                            "raw": "{{baseUrl}}/career-profile/ikigai/submit-dimension",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "career-profile",
+                                "ikigai",
+                                "submit-dimension"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "4D. [403] Memulai Sesi dengan Token Kurang",
+                    "request": {
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "x-user-id",
+                                "value": "empty-token-user-id-1234",
+                                "type": "text"
+                            },
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json",
+                                "type": "text"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n    \"persona_type\": \"PATHFINDER\"\n}"
+                        },
+                        "url": {
+                            "raw": "{{baseUrl}}/career-profile/recommendation/start",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "career-profile",
+                                "recommendation",
+                                "start"
+                            ]
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}

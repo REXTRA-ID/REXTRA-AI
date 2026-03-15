@@ -1,0 +1,506 @@
+{
+  "run_at": "2026-02-25 11:36:19",
+  "target_riasec": "RIA",
+  "hasil_riasec": "RIA",
+  "target_tercapai": true,
+  "persona": "Raka - Cloud & DevOps Engineer",
+  "kalibrasi_avg": {
+    "R": 4.5,
+    "I": 4.3,
+    "A": 4.0,
+    "S": 2.0,
+    "E": 1.7,
+    "C": 1.7
+  },
+  "riasec_scores_raw": {
+    "R": 54,
+    "I": 52,
+    "A": 44,
+    "S": 28,
+    "E": 19,
+    "C": 19
+  },
+  "jawaban_riasec": [
+    {
+      "no": 1,
+      "skor": 4,
+      "tipe": "R",
+      "soal": "Saya senang merakit dan memperbaiki perangkat elektronik atau komponen teknologi"
+    },
+    {
+      "no": 2,
+      "skor": 5,
+      "tipe": "R",
+      "soal": "Saya tertarik membangun dan mengatur infrastruktur jaringan komputer atau sistem penyimpanan data"
+    },
+    {
+      "no": 3,
+      "skor": 4,
+      "tipe": "R",
+      "soal": "Saya suka memasang dan mengatur perangkat otomatis (sensor, IoT) untuk memantau kondisi sistem fisik atau lingkungan"
+    },
+    {
+      "no": 4,
+      "skor": 5,
+      "tipe": "R",
+      "soal": "Saya merasa puas ketika berhasil menggunakan software teknis untuk desain atau simulasi sistem kompleks"
+    },
+    {
+      "no": 5,
+      "skor": 4,
+      "tipe": "R",
+      "soal": "Saya senang mengatur dan menyiapkan peralatan recording, streaming, atau equipment untuk produksi konten digital"
+    },
+    {
+      "no": 6,
+      "skor": 4,
+      "tipe": "R",
+      "soal": "Saya tertarik mengoptimalkan performa sistem digital, server, atau infrastruktur jaringan"
+    },
+    {
+      "no": 7,
+      "skor": 5,
+      "tipe": "R",
+      "soal": "Saya yakin bisa mengoperasikan dan merawat perangkat elektronik presisi tinggi yang sensitif"
+    },
+    {
+      "no": 8,
+      "skor": 5,
+      "tipe": "R",
+      "soal": "Saya yakin mampu mengatur sistem pelacakan dan monitoring untuk operasi logistik atau distribusi"
+    },
+    {
+      "no": 9,
+      "skor": 5,
+      "tipe": "R",
+      "soal": "Saya percaya diri bisa mengatur infrastruktur teknologi atau sistem pembayaran digital"
+    },
+    {
+      "no": 10,
+      "skor": 5,
+      "tipe": "R",
+      "soal": "Saya suka mengatur, merawat, dan memelihara server, sistem komputer, atau infrastruktur IT"
+    },
+    {
+      "no": 11,
+      "skor": 4,
+      "tipe": "R",
+      "soal": "Saya tertarik mencoba dan mengeksplorasi teknologi otomasi seperti chatbot, AI assistant, atau sistem pintar"
+    },
+    {
+      "no": 12,
+      "skor": 4,
+      "tipe": "R",
+      "soal": "Saya senang menggunakan sistem digital untuk mengelola dan mengorganisir berbagai keperluan"
+    },
+    {
+      "no": 13,
+      "skor": 5,
+      "tipe": "I",
+      "soal": "Saya senang menganalisis data transaksi atau keuangan untuk menemukan pola, anomali, atau wawasan bisnis"
+    },
+    {
+      "no": 14,
+      "skor": 4,
+      "tipe": "I",
+      "soal": "Saya tertarik meneliti dan menganalisis kumpulan data yang kompleks untuk menemukan pola atau insight penting"
+    },
+    {
+      "no": 15,
+      "skor": 4,
+      "tipe": "I",
+      "soal": "Saya suka menggunakan analisis data untuk meningkatkan efisiensi dan produktivitas operasional suatu sistem"
+    },
+    {
+      "no": 16,
+      "skor": 4,
+      "tipe": "I",
+      "soal": "Saya merasa tertantang untuk menganalisis kelemahan keamanan, celah sistem, atau ancaman digital"
+    },
+    {
+      "no": 17,
+      "skor": 4,
+      "tipe": "I",
+      "soal": "Saya senang meneliti perilaku pengguna dan tren pasar untuk mendukung keputusan strategis"
+    },
+    {
+      "no": 18,
+      "skor": 4,
+      "tipe": "I",
+      "soal": "Saya tertarik menganalisis data operasional untuk meningkatkan efisiensi proses dan pengambilan keputusan"
+    },
+    {
+      "no": 19,
+      "skor": 4,
+      "tipe": "I",
+      "soal": "Saya yakin bisa menganalisis performa konten digital atau engagement untuk optimasi strategi"
+    },
+    {
+      "no": 20,
+      "skor": 5,
+      "tipe": "I",
+      "soal": "Saya percaya diri dapat menganalisis data aset atau investasi untuk menghasilkan wawasan strategis"
+    },
+    {
+      "no": 21,
+      "skor": 5,
+      "tipe": "I",
+      "soal": "Saya yakin mampu meneliti dan menganalisis data sumber daya untuk keberlanjutan dan efisiensi"
+    },
+    {
+      "no": 22,
+      "skor": 4,
+      "tipe": "I",
+      "soal": "Saya suka menganalisis informasi secara mendalam untuk membuat kesimpulan atau keputusan yang tepat"
+    },
+    {
+      "no": 23,
+      "skor": 4,
+      "tipe": "I",
+      "soal": "Saya tertarik melakukan riset mendalam tentang suatu topik atau masalah yang kompleks"
+    },
+    {
+      "no": 24,
+      "skor": 5,
+      "tipe": "I",
+      "soal": "Saya senang menggunakan tools atau aplikasi untuk mengolah dan menganalisis data"
+    },
+    {
+      "no": 25,
+      "skor": 3,
+      "tipe": "A",
+      "soal": "Saya senang mendesain tampilan antarmuka digital (UI/UX) yang menarik dan mudah digunakan"
+    },
+    {
+      "no": 26,
+      "skor": 3,
+      "tipe": "A",
+      "soal": "Saya tertarik membuat konten kreatif visual untuk media sosial dan kampanye digital"
+    },
+    {
+      "no": 27,
+      "skor": 3,
+      "tipe": "A",
+      "soal": "Saya suka mendesain identitas visual dan brand untuk perusahaan atau produk digital"
+    },
+    {
+      "no": 28,
+      "skor": 3,
+      "tipe": "A",
+      "soal": "Saya merasa kreatif ketika membuat konten edukasi, infografis, atau materi visual pembelajaran"
+    },
+    {
+      "no": 29,
+      "skor": 4,
+      "tipe": "A",
+      "soal": "Saya senang mendesain visualisasi data atau dashboard yang menarik dan mudah dipahami"
+    },
+    {
+      "no": 30,
+      "skor": 5,
+      "tipe": "A",
+      "soal": "Saya tertarik membuat video, motion graphics, animasi, atau konten multimedia interaktif"
+    },
+    {
+      "no": 31,
+      "skor": 4,
+      "tipe": "A",
+      "soal": "Saya yakin bisa mendesain materi presentasi visual atau konten marketing yang persuasif dan menarik"
+    },
+    {
+      "no": 32,
+      "skor": 4,
+      "tipe": "A",
+      "soal": "Saya percaya diri dapat mendesain antarmuka aplikasi yang user-friendly untuk sistem yang kompleks"
+    },
+    {
+      "no": 33,
+      "skor": 4,
+      "tipe": "A",
+      "soal": "Saya yakin mampu membuat kampanye kreatif atau visual storytelling yang engaging untuk berbagai produk"
+    },
+    {
+      "no": 34,
+      "skor": 4,
+      "tipe": "A",
+      "soal": "Saya suka membuat dan mengeksplorasi berbagai bentuk konten visual seperti poster, infografis, atau video"
+    },
+    {
+      "no": 35,
+      "skor": 3,
+      "tipe": "A",
+      "soal": "Saya tertarik menggunakan aplikasi atau tools desain untuk menciptakan karya visual yang kreatif"
+    },
+    {
+      "no": 36,
+      "skor": 4,
+      "tipe": "A",
+      "soal": "Saya senang membuat presentasi visual atau laporan yang menarik dan mudah dipahami"
+    },
+    {
+      "no": 37,
+      "skor": 2,
+      "tipe": "S",
+      "soal": "Saya senang membangun dan mengelola komunitas online atau grup diskusi digital"
+    },
+    {
+      "no": 38,
+      "skor": 3,
+      "tipe": "S",
+      "soal": "Saya tertarik menjadi instruktur, mentor, atau fasilitator untuk mengajarkan keterampilan digital"
+    },
+    {
+      "no": 39,
+      "skor": 2,
+      "tipe": "S",
+      "soal": "Saya suka melakukan riset pengguna, wawancara, atau user testing untuk memahami kebutuhan orang lain"
+    },
+    {
+      "no": 40,
+      "skor": 2,
+      "tipe": "S",
+      "soal": "Saya merasa puas ketika bisa membantu orang lain menggunakan teknologi atau sistem digital dengan lebih baik"
+    },
+    {
+      "no": 41,
+      "skor": 2,
+      "tipe": "S",
+      "soal": "Saya senang memfasilitasi pelatihan, workshop, atau sesi pembelajaran tentang adopsi teknologi"
+    },
+    {
+      "no": 42,
+      "skor": 3,
+      "tipe": "S",
+      "soal": "Saya tertarik membantu usaha kecil atau komunitas menggunakan teknologi digital untuk berkembang"
+    },
+    {
+      "no": 43,
+      "skor": 2,
+      "tipe": "S",
+      "soal": "Saya yakin bisa berkolaborasi dengan tim jarak jauh menggunakan tools kolaborasi digital dengan efektif"
+    },
+    {
+      "no": 44,
+      "skor": 2,
+      "tipe": "S",
+      "soal": "Saya percaya diri dapat berkontribusi dalam proyek teknologi yang berdampak sosial atau kemanusiaan"
+    },
+    {
+      "no": 45,
+      "skor": 3,
+      "tipe": "S",
+      "soal": "Saya yakin mampu memberikan dukungan dan bantuan teknis kepada pengguna melalui saluran digital"
+    },
+    {
+      "no": 46,
+      "skor": 2,
+      "tipe": "S",
+      "soal": "Saya suka membantu orang lain menyelesaikan masalah teknologi atau mengajarkan cara menggunakan aplikasi baru"
+    },
+    {
+      "no": 47,
+      "skor": 2,
+      "tipe": "S",
+      "soal": "Saya tertarik berpartisipasi atau mengorganisir acara online, webinar, atau diskusi virtual"
+    },
+    {
+      "no": 48,
+      "skor": 3,
+      "tipe": "S",
+      "soal": "Saya senang berinteraksi dan membantu orang lain melalui berbagai platform digital"
+    },
+    {
+      "no": 49,
+      "skor": 2,
+      "tipe": "E",
+      "soal": "Saya tertarik membangun startup teknologi atau bisnis digital dari nol"
+    },
+    {
+      "no": 50,
+      "skor": 2,
+      "tipe": "E",
+      "soal": "Saya senang memimpin kampanye digital marketing dan strategi pertumbuhan bisnis"
+    },
+    {
+      "no": 51,
+      "skor": 2,
+      "tipe": "E",
+      "soal": "Saya merasa termotivasi ketika memimpin proyek inovasi teknologi atau transformasi digital"
+    },
+    {
+      "no": 52,
+      "skor": 1,
+      "tipe": "E",
+      "soal": "Saya tertarik mengembangkan bisnis pembelajaran online atau platform edukasi digital"
+    },
+    {
+      "no": 53,
+      "skor": 2,
+      "tipe": "E",
+      "soal": "Saya suka memimpin inisiatif transformasi digital untuk meningkatkan efektivitas organisasi"
+    },
+    {
+      "no": 54,
+      "skor": 1,
+      "tipe": "E",
+      "soal": "Saya senang mengidentifikasi dan mengembangkan peluang bisnis dengan memanfaatkan teknologi modern"
+    },
+    {
+      "no": 55,
+      "skor": 2,
+      "tipe": "E",
+      "soal": "Saya yakin bisa memimpin tim penjualan atau pengembangan bisnis untuk produk teknologi"
+    },
+    {
+      "no": 56,
+      "skor": 1,
+      "tipe": "E",
+      "soal": "Saya percaya diri dapat mengembangkan strategi bisnis dan model inovasi untuk sektor digital"
+    },
+    {
+      "no": 57,
+      "skor": 1,
+      "tipe": "E",
+      "soal": "Saya yakin mampu memimpin tim untuk mengembangkan solusi digital yang scalable dan inovatif"
+    },
+    {
+      "no": 58,
+      "skor": 1,
+      "tipe": "E",
+      "soal": "Saya suka terlibat dalam kegiatan kewirausahaan, mengembangkan bisnis, atau proyek yang saya inisiasi sendiri"
+    },
+    {
+      "no": 59,
+      "skor": 2,
+      "tipe": "E",
+      "soal": "Saya tertarik memimpin tim, proyek, atau mengambil inisiatif kepemimpinan dalam berbagai konteks"
+    },
+    {
+      "no": 60,
+      "skor": 2,
+      "tipe": "E",
+      "soal": "Saya senang mencari dan menganalisis peluang bisnis, tren pasar, atau model bisnis baru"
+    },
+    {
+      "no": 61,
+      "skor": 2,
+      "tipe": "C",
+      "soal": "Saya senang membuat dokumentasi teknis, prosedur kerja, atau panduan sistem yang terstruktur"
+    },
+    {
+      "no": 62,
+      "skor": 2,
+      "tipe": "C",
+      "soal": "Saya tertarik mengelola database dan memastikan akurasi serta integritas data"
+    },
+    {
+      "no": 63,
+      "skor": 1,
+      "tipe": "C",
+      "soal": "Saya suka mengoptimalkan alur kerja dan proses bisnis menggunakan tools otomatisasi atau sistem"
+    },
+    {
+      "no": 64,
+      "skor": 2,
+      "tipe": "C",
+      "soal": "Saya merasa penting untuk memastikan kepatuhan terhadap regulasi, standar, atau prosedur yang berlaku"
+    },
+    {
+      "no": 65,
+      "skor": 1,
+      "tipe": "C",
+      "soal": "Saya senang mengelola inventori, tracking data, atau sistem pencatatan dengan rapi dan terorganisir"
+    },
+    {
+      "no": 66,
+      "skor": 2,
+      "tipe": "C",
+      "soal": "Saya tertarik memastikan kualitas, testing, dan quality assurance untuk software atau sistem"
+    },
+    {
+      "no": 67,
+      "skor": 2,
+      "tipe": "C",
+      "soal": "Saya yakin bisa mengelola aset digital, perpustakaan konten, atau sistem manajemen informasi dengan sistematis"
+    },
+    {
+      "no": 68,
+      "skor": 2,
+      "tipe": "C",
+      "soal": "Saya percaya diri dapat membuat dan memelihara sistem checklist, tracking progress, atau monitoring yang detail"
+    },
+    {
+      "no": 69,
+      "skor": 1,
+      "tipe": "C",
+      "soal": "Saya yakin mampu mengaudit, memeriksa, dan memastikan akurasi data atau dokumen dengan teliti"
+    },
+    {
+      "no": 70,
+      "skor": 2,
+      "tipe": "C",
+      "soal": "Saya suka mengatur jadwal, timeline proyek, atau perencanaan sumber daya dengan sistematis"
+    },
+    {
+      "no": 71,
+      "skor": 1,
+      "tipe": "C",
+      "soal": "Saya senang menggunakan spreadsheet, sistem database, atau tools untuk mengorganisir informasi"
+    },
+    {
+      "no": 72,
+      "skor": 1,
+      "tipe": "C",
+      "soal": "Saya tertarik memastikan efisiensi operasional dan pengelolaan resource dengan cermat"
+    }
+  ],
+  "ikigai_kandidat": [
+    {
+      "id": 1,
+      "name": "Software Engineer",
+      "dimension_options": {
+        "what_you_love": "Mengerjakan tantangan yang menarik setiap hari",
+        "what_you_are_good_at": "Menyelesaikan masalah menggunakan keahlian inti",
+        "what_the_world_needs": "Memberikan dampak nyata bagi masyarakat",
+        "what_you_can_be_paid_for": "Pekerjaan dengan penghasilan kompetitif"
+      }
+    },
+    {
+      "id": 7,
+      "name": "Backend Engineer",
+      "dimension_options": {
+        "what_you_love": "Mengerjakan tantangan yang menarik setiap hari",
+        "what_you_are_good_at": "Menyelesaikan masalah menggunakan keahlian inti",
+        "what_the_world_needs": "Memberikan dampak nyata bagi masyarakat",
+        "what_you_can_be_paid_for": "Pekerjaan dengan penghasilan kompetitif"
+      }
+    }
+  ],
+  "ikigai_jawaban": {
+    "what_you_love": {
+      "pilihan": [
+        "Software Engineer"
+      ],
+      "alasan": "Saya paling antusias saat merancang pipeline deployment yang efisien atau debugging masalah infrastructure yang tricky. Melihat sistem berjalan stabil di production setelah incident adalah kepuasan tersendiri yang sulit dijelaskan. Saya paling hidup saat merancang arsitektur backend dari nol atau memecahkan masalah performance yang sudah bikin tim lain frustrasi berminggu-minggu."
+    },
+    "what_you_are_good_at": {
+      "pilihan": [
+        "Software Engineer"
+      ],
+      "alasan": "Saya kuat di cloud platforms (AWS/GCP), container orchestration dengan Kubernetes, dan scripting otomasi dengan Bash/Python. Cepat mendiagnosis bottleneck sistem dan terbiasa kerja di bawah tekanan saat ada incident produksi. Saya kuat di backend engineering — REST/gRPC API design, database optimization, caching strategy, dan distributed systems."
+    },
+    "what_the_world_needs": {
+      "pilihan": [
+        "Software Engineer"
+      ],
+      "alasan": "Dunia butuh infrastruktur digital yang reliabel dan scalable. Tanpa DevOps engineer yang solid, produk sebagus apapun tidak akan bisa deliver ke jutaan pengguna dengan stabil. Saya ingin jadi fondasi yang tidak kelihatan tapi krusial."
+    },
+    "what_you_can_be_paid_for": {
+      "pilihan": [
+        "Software Engineer"
+      ],
+      "alasan": "Saya cocok dengan perusahaan tech yang punya infrastruktur kompleks — startup Series B ke atas atau enterprise. Model kerja remote atau hybrid dengan kompensasi berbasis seniority dan on-call allowance adalah yang paling ideal buat saya. Saya cocok dengan model kerja remote-first di tech company atau product startup."
+    }
+  },
+  "rekomendasi_akhir": {}
+}

@@ -1,0 +1,6 @@
+[project]
+name = "kenali-diri-api"
+version = "0.1.0"
+
+[tool.setuptools]
+packages = ["app"]

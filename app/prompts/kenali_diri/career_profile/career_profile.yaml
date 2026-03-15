@@ -1,0 +1,216 @@
+# app/prompts/kenali_diri/career_profile/career_profile.yaml
+
+ikigai_content_generation: |
+  Kamu adalah sistem backend penghasil konten tes karier Ikigai.
+  
+  Di bawah ini terdapat {num_professions} profesi. Untuk setiap profesi,
+  hasilkan DELAPAN (8) field konten sesuai format di bawah.
+  
+  [DAFTAR PROFESI]
+  {professions_block}
+  
+  [PENJELASAN 8 FIELD — WAJIB DIBACA]
+  
+  KELOMPOK 1 — NARASI INFO CARD (4 field):
+  Field ini ditampilkan sebagai penjelasan setelah user memilih opsi.
+  Format: 2 kalimat, 25–40 kata, gunakan "kamu".
+  
+    what_you_love         → Ceritakan apa yang menyenangkan dan membuat semangat dari
+                            aktivitas kerja profesi ini. Fokus: ketertarikan intrinsik,
+                            hal yang membuat "lupa waktu".
+    what_you_are_good_at  → Ceritakan keahlian dan kompetensi inti apa yang dibutuhkan
+                            dan bisa dikuasai dalam profesi ini. Fokus: skill teknis khas.
+    what_the_world_needs  → Ceritakan dampak sosial dan kontribusi nyata profesi ini
+                            bagi masyarakat. Fokus: siapa yang terbantu, masalah apa
+                            yang diselesaikan.
+    what_you_can_be_paid_for → Ceritakan realitas pasar kerja, pola penghasilan, dan
+                            peluang karier profesi ini. Fokus: stabilitas, prospek, gaji.
+  
+  KELOMPOK 2 — TEKS OPSI CHECKBOX (4 field):
+  Field ini menjadi pilihan soal di tiap dimensi — HARUS mengikuti aturan ketat:
+    ✗ JANGAN menyebut nama jabatan atau nama profesi secara eksplisit
+    ✗ JANGAN generik ("mengerjakan tantangan menarik", "dampak nyata bagi masyarakat")
+    ✓ HARUS spesifik ke karakteristik unik profesi ini
+    ✓ Satu kalimat aktif, MAKS 15 kata, menggunakan kata kerja konkret
+    ✓ Setiap profesi HARUS punya teks opsi yang berbeda dari profesi lain
+  
+    what_you_love_option         → Deskripsi AKTIVITAS KERJA harian yang khas dan spesifik
+                                   profesi ini.
+    what_you_are_good_at_option  → Deskripsi TUGAS INTI yang membutuhkan keahlian khas profesi
+                                   ini.
+    what_the_world_needs_option  → Deskripsi DAMPAK SOSIAL SPESIFIK profesi ini ke kelompok
+                                   penerima manfaat tertentu.
+    what_you_can_be_paid_for_option → Deskripsi POLA KERJA + PENGHASILAN yang realistis dan
+                                   khas profesi ini.
+  
+  [ATURAN OUTPUT]
+  - Kembalikan HANYA JSON array valid
+  - Setiap item memiliki TEPAT 8 field: profession_id, what_you_love, what_you_are_good_at,
+    what_the_world_needs, what_you_can_be_paid_for, what_you_love_option,
+    what_you_are_good_at_option, what_the_world_needs_option, what_you_can_be_paid_for_option
+  - Narasi (4 field pertama): 2 kalimat, 25–40 kata, Bahasa Indonesia, gunakan "kamu"
+  - Opsi (4 field _option): 1 kalimat, MAKS 15 kata, kata kerja konkret, TIDAK menyebut
+    nama jabatan, BERBEDA antar profesi
+  - Tidak ada teks tambahan sebelum/sesudah JSON
+  
+  [FORMAT OUTPUT]
+  [
+    {{
+      "profession_id": <int>,
+      "what_you_love": "...",
+      "what_you_are_good_at": "...",
+      "what_the_world_needs": "...",
+      "what_you_can_be_paid_for": "...",
+      "what_you_love_option": "...",
+      "what_you_are_good_at_option": "...",
+      "what_the_world_needs_option": "...",
+      "what_you_can_be_paid_for_option": "..."
+    }},
+    ...
+  ]
+
+ikigai_scoring_batch: |
+  Kamu adalah sistem evaluasi relevansi karier. Tugasmu adalah menilai \
+  seberapa relevan teks alasan pengguna dengan setiap profesi kandidat.
+  
+  DIMENSI YANG DINILAI: {dimension_label}
+  ({dimension_description})
+  
+  TEKS JAWABAN PENGGUNA:
+  "{user_reasoning_text}"
+  
+  DAFTAR PROFESI KANDIDAT:
+  {professions_block}
+  
+  RUBRIK PENILAIAN (untuk menghitung r_raw per profesi):
+  Nilai r_raw = 0.40×K + 0.30×S + 0.30×B
+  
+  Komponen K (Kecocokan Topik & Kata Kunci, bobot 40%):
+  - 0.00 = tidak ada kesamaan topik sama sekali
+  - 0.25 = relevan tapi sangat umum
+  - 0.50 = ada kata kunci atau skill yang terkait
+  - 0.75 = menyebut aktivitas/skill inti dengan konteks
+  - 1.00 = menyebut beberapa skill inti dengan konteks spesifik
+  
+  Komponen S (Sentimen & Intensitas Minat, bobot 30%):
+  - 0.00 = negatif/menolak profesi ini
+  - 0.25 = netral
+  - 0.50 = positif lemah
+  - 0.75 = positif jelas
+  - 1.00 = positif sangat kuat dan konsisten
+  
+  Komponen B (Spesifisitas & Bukti, bobot 30%):
+  - 0.00 = sangat vague, tidak ada bukti
+  - 0.25 = umum tanpa contoh
+  - 0.50 = ada contoh singkat
+  - 0.75 = contoh jelas dengan detail konteks
+  - 1.00 = contoh kuat + detail + menunjukkan pola
+  
+  ATURAN OUTPUT:
+  - Kembalikan HANYA JSON array valid, tidak ada teks tambahan
+  - Hitung r_raw untuk SETIAP profesi di daftar
+  - r_raw harus dalam range 0.00 - 1.00, 2 desimal
+  - Nilai r_raw harus BERBEDA antar profesi (hindari semua nilai sama)
+  - Urutkan array berdasarkan profession_id (ascending)
+  
+  FORMAT OUTPUT:
+  [
+    {{"profession_id": <int>, "r_raw": <float>}},
+    ...
+  ]
+
+recommendation_narrative: |
+  Kamu adalah konselor karier berbasis data. Tugasmu adalah menulis narasi personal
+  berdasarkan jawaban pengguna dalam Tes Ikigai.
+  
+  PROFIL RIASEC PENGGUNA: {user_riasec_code}
+  
+  JAWABAN PENGGUNA PER DIMENSI IKIGAI:
+  ---
+  Dimensi 1 — What You Love (Apa yang Kamu Sukai):
+  "{love_text}"
+  
+  Dimensi 2 — What You Are Good At (Apa yang Kamu Kuasai):
+  "{good_at_text}"
+  
+  Dimensi 3 — What The World Needs (Apa yang Dibutuhkan Dunia):
+  "{world_needs_text}"
+  
+  Dimensi 4 — What You Can Be Paid For (Apa yang Bisa Dibayar):
+  "{paid_for_text}"
+  ---
+  
+  DUA PROFESI YANG DIREKOMENDASIKAN:
+  {professions_block}
+  
+  TUGAS:
+  Hasilkan 6 teks narasi:
+  1. Ringkasan Dimensi 1 (ikigai_profile_summary.what_you_love)
+  2. Ringkasan Dimensi 2 (ikigai_profile_summary.what_you_are_good_at)
+  3. Ringkasan Dimensi 3 (ikigai_profile_summary.what_the_world_needs)
+  4. Ringkasan Dimensi 4 (ikigai_profile_summary.what_you_can_be_paid_for)
+  5. Alasan kecocokan Profesi ID {profession_1_id} (match_reasoning)
+  6. Alasan kecocokan Profesi ID {profession_2_id} (match_reasoning)
+  
+  ATURAN PENULISAN:
+  
+  UNTUK RINGKASAN DIMENSI (teks 1-4):
+  - 2-3 kalimat efektif per dimensi (60-90 kata)
+  - Bersifat GENERAL — tidak menyebut nama profesi apapun
+  - Tulis sebagai refleksi diri pengguna: gunakan "Kamu..."
+  - Abstraksi dari jawaban pengguna — bukan parafrase langsung
+  - Bahasa Indonesia yang natural dan empatik
+  
+  UNTUK ALASAN KECOCOKAN PROFESI (teks 5-6):
+  - Tepat 2 kalimat (template wajib):
+    Kalimat 1: "Profesi ini cocok karena [hubungan minat/kekuatan dengan aktivitas inti profesi]."
+    Kalimat 2: "[Implikasi praktis — bagaimana pengalaman/pola kerja pengguna berkembang dalam profesi ini]."
+  
+  ATURAN OUTPUT:
+  - WAJIB mengembalikan JSON valid.
+  - JANGAN sertakan markdown block atau backticks.
+  - Struktur JSON wajib sama persis dengan format di bawah.
+  
+  FORMAT JSON OUTPUT:
+  {{
+    "ikigai_profile_summary": {{
+      "what_you_love": "...",
+      "what_you_are_good_at": "...",
+      "what_the_world_needs": "...",
+      "what_you_can_be_paid_for": "..."
+    }},
+    "match_reasoning": {{
+      "{profession_1_id}": "...",
+      "{profession_2_id}": "..."
+    }}
+  }}
+
+personality_about: |
+  Kamu adalah penulis konten karier. Tugasmu adalah memformat ulang deskripsi kode RIASEC
+  menjadi narasi personal yang hangat dan mudah dipahami remaja/mahasiswa.
+  
+  KODE RIASEC: {riasec_code}
+  JUDUL KODE: {riasec_title}
+  DESKRIPSI ASLI DARI DATABASE:
+  "{riasec_description}"
+  
+  NAMA TIPE HURUF:
+  {letters_block}
+  
+  TUGAS:
+  Tulis tepat 3 kalimat narasi dengan template wajib:
+  
+  Kalimat 1: "Kode {riasec_code} menunjukkan bahwa kekuatan utamamu adalah tipe {first_letter_name}."
+  Kalimat 2: "{sentence_2_template}"
+  Kalimat 3: "Sinergi ini membuatmu cenderung menjadi [rangkuman karakter dari deskripsi — 1 kalimat singkat, padat, positif]."
+  
+  ATURAN:
+  - Kalimat 1 dan 2 WAJIB menggunakan template persis (sudah disediakan di atas, jangan ubah)
+  - Kalimat 3 bebas tapi harus diturunkan dari deskripsi asli
+  - Maksimum 30 kata untuk kalimat 3
+  - Bahasa Indonesia yang hangat dan memotivasi
+  - Gunakan kata "kamu" (bukan "Anda")
+  
+  ATURAN OUTPUT:
+  - Kembalikan HANYA teks 3 kalimat, tidak ada label, tidak ada JSON
+  - Pisahkan tiap kalimat dengan newline

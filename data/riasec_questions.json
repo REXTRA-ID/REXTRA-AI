@@ -1,0 +1,976 @@
+{
+    "version": "1.0",
+    "total_questions": 72,
+    "questions_per_type": 12,
+    "types": {
+        "R": "Realistic",
+        "I": "Investigative",
+        "A": "Artistic",
+        "S": "Social",
+        "E": "Enterprising",
+        "C": "Conventional"
+    },
+    "scale": {
+        "min": 1,
+        "max": 5,
+        "labels": {
+            "1": "Sangat Tidak Setuju",
+            "2": "Tidak Setuju",
+            "3": "Netral",
+            "4": "Setuju",
+            "5": "Sangat Setuju"
+        }
+    },
+    "questions": [
+        {
+            "question_id": 1,
+            "code": "R1",
+            "riasec_type": "Realistic",
+            "dimension": "Minat",
+            "question_text": "Saya senang merakit dan memperbaiki perangkat elektronik atau komponen teknologi"
+        },
+        {
+            "question_id": 2,
+            "code": "R2",
+            "riasec_type": "Realistic",
+            "dimension": "Minat",
+            "question_text": "Saya tertarik membangun dan mengatur infrastruktur jaringan komputer atau sistem penyimpanan data"
+        },
+        {
+            "question_id": 3,
+            "code": "R3",
+            "riasec_type": "Realistic",
+            "dimension": "Minat",
+            "question_text": "Saya suka memasang dan mengatur perangkat otomatis (sensor, IoT) untuk memantau kondisi sistem fisik atau lingkungan"
+        },
+        {
+            "question_id": 4,
+            "code": "R4",
+            "riasec_type": "Realistic",
+            "dimension": "Minat",
+            "question_text": "Saya merasa puas ketika berhasil menggunakan software teknis untuk desain atau simulasi sistem kompleks"
+        },
+        {
+            "question_id": 5,
+            "code": "R5",
+            "riasec_type": "Realistic",
+            "dimension": "Minat",
+            "question_text": "Saya senang mengatur dan menyiapkan peralatan recording, streaming, atau equipment untuk produksi konten digital"
+        },
+        {
+            "question_id": 6,
+            "code": "R6",
+            "riasec_type": "Realistic",
+            "dimension": "Minat",
+            "question_text": "Saya tertarik mengoptimalkan performa sistem digital, server, atau infrastruktur jaringan"
+        },
+        {
+            "question_id": 7,
+            "code": "R7",
+            "riasec_type": "Realistic",
+            "dimension": "Kompetensi",
+            "question_text": "Saya yakin bisa mengoperasikan dan merawat perangkat elektronik presisi tinggi yang sensitif"
+        },
+        {
+            "question_id": 8,
+            "code": "R8",
+            "riasec_type": "Realistic",
+            "dimension": "Kompetensi",
+            "question_text": "Saya yakin mampu mengatur sistem pelacakan dan monitoring untuk operasi logistik atau distribusi"
+        },
+        {
+            "question_id": 9,
+            "code": "R9",
+            "riasec_type": "Realistic",
+            "dimension": "Kompetensi",
+            "question_text": "Saya percaya diri bisa mengatur infrastruktur teknologi atau sistem pembayaran digital"
+        },
+        {
+            "question_id": 10,
+            "code": "R10",
+            "riasec_type": "Realistic",
+            "dimension": "Minat",
+            "question_text": "Saya suka mengatur, merawat, dan memelihara server, sistem komputer, atau infrastruktur IT"
+        },
+        {
+            "question_id": 11,
+            "code": "R11",
+            "riasec_type": "Realistic",
+            "dimension": "Minat",
+            "question_text": "Saya tertarik mencoba dan mengeksplorasi teknologi otomasi seperti chatbot, AI assistant, atau sistem pintar"
+        },
+        {
+            "question_id": 12,
+            "code": "R12",
+            "riasec_type": "Realistic",
+            "dimension": "Minat",
+            "question_text": "Saya senang menggunakan sistem digital untuk mengelola dan mengorganisir berbagai keperluan"
+        },
+        {
+            "question_id": 13,
+            "code": "I1",
+            "riasec_type": "Investigative",
+            "dimension": "Minat",
+            "question_text": "Saya senang menganalisis data transaksi atau keuangan untuk menemukan pola, anomali, atau wawasan bisnis"
+        },
+        {
+            "question_id": 14,
+            "code": "I2",
+            "riasec_type": "Investigative",
+            "dimension": "Minat",
+            "question_text": "Saya tertarik meneliti dan menganalisis kumpulan data yang kompleks untuk menemukan pola atau insight penting"
+        },
+        {
+            "question_id": 15,
+            "code": "I3",
+            "riasec_type": "Investigative",
+            "dimension": "Minat",
+            "question_text": "Saya suka menggunakan analisis data untuk meningkatkan efisiensi dan produktivitas operasional suatu sistem"
+        },
+        {
+            "question_id": 16,
+            "code": "I4",
+            "riasec_type": "Investigative",
+            "dimension": "Minat",
+            "question_text": "Saya merasa tertantang untuk menganalisis kelemahan keamanan, celah sistem, atau ancaman digital"
+        },
+        {
+            "question_id": 17,
+            "code": "I5",
+            "riasec_type": "Investigative",
+            "dimension": "Minat",
+            "question_text": "Saya senang meneliti perilaku pengguna dan tren pasar untuk mendukung keputusan strategis"
+        },
+        {
+            "question_id": 18,
+            "code": "I6",
+            "riasec_type": "Investigative",
+            "dimension": "Minat",
+            "question_text": "Saya tertarik menganalisis data operasional untuk meningkatkan efisiensi proses dan pengambilan keputusan"
+        },
+        {
+            "question_id": 19,
+            "code": "I7",
+            "riasec_type": "Investigative",
+            "dimension": "Kompetensi",
+            "question_text": "Saya yakin bisa menganalisis performa konten digital atau engagement untuk optimasi strategi"
+        },
+        {
+            "question_id": 20,
+            "code": "I8",
+            "riasec_type": "Investigative",
+            "dimension": "Kompetensi",
+            "question_text": "Saya percaya diri dapat menganalisis data aset atau investasi untuk menghasilkan wawasan strategis"
+        },
+        {
+            "question_id": 21,
+            "code": "I9",
+            "riasec_type": "Investigative",
+            "dimension": "Kompetensi",
+            "question_text": "Saya yakin mampu meneliti dan menganalisis data sumber daya untuk keberlanjutan dan efisiensi"
+        },
+        {
+            "question_id": 22,
+            "code": "I10",
+            "riasec_type": "Investigative",
+            "dimension": "Minat",
+            "question_text": "Saya suka menganalisis informasi secara mendalam untuk membuat kesimpulan atau keputusan yang tepat"
+        },
+        {
+            "question_id": 23,
+            "code": "I11",
+            "riasec_type": "Investigative",
+            "dimension": "Minat",
+            "question_text": "Saya tertarik melakukan riset mendalam tentang suatu topik atau masalah yang kompleks"
+        },
+        {
+            "question_id": 24,
+            "code": "I12",
+            "riasec_type": "Investigative",
+            "dimension": "Minat",
+            "question_text": "Saya senang menggunakan tools atau aplikasi untuk mengolah dan menganalisis data"
+        },
+        {
+            "question_id": 25,
+            "code": "A1",
+            "riasec_type": "Artistic",
+            "dimension": "Minat",
+            "question_text": "Saya senang mendesain tampilan antarmuka digital (UI/UX) yang menarik dan mudah digunakan"
+        },
+        {
+            "question_id": 26,
+            "code": "A2",
+            "riasec_type": "Artistic",
+            "dimension": "Minat",
+            "question_text": "Saya tertarik membuat konten kreatif visual untuk media sosial dan kampanye digital"
+        },
+        {
+            "question_id": 27,
+            "code": "A3",
+            "riasec_type": "Artistic",
+            "dimension": "Minat",
+            "question_text": "Saya suka mendesain identitas visual dan brand untuk perusahaan atau produk digital"
+        },
+        {
+            "question_id": 28,
+            "code": "A4",
+            "riasec_type": "Artistic",
+            "dimension": "Minat",
+            "question_text": "Saya merasa kreatif ketika membuat konten edukasi, infografis, atau materi visual pembelajaran"
+        },
+        {
+            "question_id": 29,
+            "code": "A5",
+            "riasec_type": "Artistic",
+            "dimension": "Minat",
+            "question_text": "Saya senang mendesain visualisasi data atau dashboard yang menarik dan mudah dipahami"
+        },
+        {
+            "question_id": 30,
+            "code": "A6",
+            "riasec_type": "Artistic",
+            "dimension": "Minat",
+            "question_text": "Saya tertarik membuat video, motion graphics, animasi, atau konten multimedia interaktif"
+        },
+        {
+            "question_id": 31,
+            "code": "A7",
+            "riasec_type": "Artistic",
+            "dimension": "Kompetensi",
+            "question_text": "Saya yakin bisa mendesain materi presentasi visual atau konten marketing yang persuasif dan menarik"
+        },
+        {
+            "question_id": 32,
+            "code": "A8",
+            "riasec_type": "Artistic",
+            "dimension": "Kompetensi",
+            "question_text": "Saya percaya diri dapat mendesain antarmuka aplikasi yang user-friendly untuk sistem yang kompleks"
+        },
+        {
+            "question_id": 33,
+            "code": "A9",
+            "riasec_type": "Artistic",
+            "dimension": "Kompetensi",
+            "question_text": "Saya yakin mampu membuat kampanye kreatif atau visual storytelling yang engaging untuk berbagai produk"
+        },
+        {
+            "question_id": 34,
+            "code": "A10",
+            "riasec_type": "Artistic",
+            "dimension": "Minat",
+            "question_text": "Saya suka membuat dan mengeksplorasi berbagai bentuk konten visual seperti poster, infografis, atau video"
+        },
+        {
+            "question_id": 35,
+            "code": "A11",
+            "riasec_type": "Artistic",
+            "dimension": "Minat",
+            "question_text": "Saya tertarik menggunakan aplikasi atau tools desain untuk menciptakan karya visual yang kreatif"
+        },
+        {
+            "question_id": 36,
+            "code": "A12",
+            "riasec_type": "Artistic",
+            "dimension": "Minat",
+            "question_text": "Saya senang membuat presentasi visual atau laporan yang menarik dan mudah dipahami"
+        },
+        {
+            "question_id": 37,
+            "code": "S1",
+            "riasec_type": "Social",
+            "dimension": "Minat",
+            "question_text": "Saya senang membangun dan mengelola komunitas online atau grup diskusi digital"
+        },
+        {
+            "question_id": 38,
+            "code": "S2",
+            "riasec_type": "Social",
+            "dimension": "Minat",
+            "question_text": "Saya tertarik menjadi instruktur, mentor, atau fasilitator untuk mengajarkan keterampilan digital"
+        },
+        {
+            "question_id": 39,
+            "code": "S3",
+            "riasec_type": "Social",
+            "dimension": "Minat",
+            "question_text": "Saya suka melakukan riset pengguna, wawancara, atau user testing untuk memahami kebutuhan orang lain"
+        },
+        {
+            "question_id": 40,
+            "code": "S4",
+            "riasec_type": "Social",
+            "dimension": "Minat",
+            "question_text": "Saya merasa puas ketika bisa membantu orang lain menggunakan teknologi atau sistem digital dengan lebih baik"
+        },
+        {
+            "question_id": 41,
+            "code": "S5",
+            "riasec_type": "Social",
+            "dimension": "Minat",
+            "question_text": "Saya senang memfasilitasi pelatihan, workshop, atau sesi pembelajaran tentang adopsi teknologi"
+        },
+        {
+            "question_id": 42,
+            "code": "S6",
+            "riasec_type": "Social",
+            "dimension": "Minat",
+            "question_text": "Saya tertarik membantu usaha kecil atau komunitas menggunakan teknologi digital untuk berkembang"
+        },
+        {
+            "question_id": 43,
+            "code": "S7",
+            "riasec_type": "Social",
+            "dimension": "Kompetensi",
+            "question_text": "Saya yakin bisa berkolaborasi dengan tim jarak jauh menggunakan tools kolaborasi digital dengan efektif"
+        },
+        {
+            "question_id": 44,
+            "code": "S8",
+            "riasec_type": "Social",
+            "dimension": "Kompetensi",
+            "question_text": "Saya percaya diri dapat berkontribusi dalam proyek teknologi yang berdampak sosial atau kemanusiaan"
+        },
+        {
+            "question_id": 45,
+            "code": "S9",
+            "riasec_type": "Social",
+            "dimension": "Kompetensi",
+            "question_text": "Saya yakin mampu memberikan dukungan dan bantuan teknis kepada pengguna melalui saluran digital"
+        },
+        {
+            "question_id": 46,
+            "code": "S10",
+            "riasec_type": "Social",
+            "dimension": "Minat",
+            "question_text": "Saya suka membantu orang lain menyelesaikan masalah teknologi atau mengajarkan cara menggunakan aplikasi baru"
+        },
+        {
+            "question_id": 47,
+            "code": "S11",
+            "riasec_type": "Social",
+            "dimension": "Minat",
+            "question_text": "Saya tertarik berpartisipasi atau mengorganisir acara online, webinar, atau diskusi virtual"
+        },
+        {
+            "question_id": 48,
+            "code": "S12",
+            "riasec_type": "Social",
+            "dimension": "Minat",
+            "question_text": "Saya senang berinteraksi dan membantu orang lain melalui berbagai platform digital"
+        },
+        {
+            "question_id": 49,
+            "code": "E1",
+            "riasec_type": "Enterprising",
+            "dimension": "Minat",
+            "question_text": "Saya tertarik membangun startup teknologi atau bisnis digital dari nol"
+        },
+        {
+            "question_id": 50,
+            "code": "E2",
+            "riasec_type": "Enterprising",
+            "dimension": "Minat",
+            "question_text": "Saya senang memimpin kampanye digital marketing dan strategi pertumbuhan bisnis"
+        },
+        {
+            "question_id": 51,
+            "code": "E3",
+            "riasec_type": "Enterprising",
+            "dimension": "Minat",
+            "question_text": "Saya merasa termotivasi ketika memimpin proyek inovasi teknologi atau transformasi digital"
+        },
+        {
+            "question_id": 52,
+            "code": "E4",
+            "riasec_type": "Enterprising",
+            "dimension": "Minat",
+            "question_text": "Saya tertarik mengembangkan bisnis pembelajaran online atau platform edukasi digital"
+        },
+        {
+            "question_id": 53,
+            "code": "E5",
+            "riasec_type": "Enterprising",
+            "dimension": "Minat",
+            "question_text": "Saya suka memimpin inisiatif transformasi digital untuk meningkatkan efektivitas organisasi"
+        },
+        {
+            "question_id": 54,
+            "code": "E6",
+            "riasec_type": "Enterprising",
+            "dimension": "Minat",
+            "question_text": "Saya senang mengidentifikasi dan mengembangkan peluang bisnis dengan memanfaatkan teknologi modern"
+        },
+        {
+            "question_id": 55,
+            "code": "E7",
+            "riasec_type": "Enterprising",
+            "dimension": "Kompetensi",
+            "question_text": "Saya yakin bisa memimpin tim penjualan atau pengembangan bisnis untuk produk teknologi"
+        },
+        {
+            "question_id": 56,
+            "code": "E8",
+            "riasec_type": "Enterprising",
+            "dimension": "Kompetensi",
+            "question_text": "Saya percaya diri dapat mengembangkan strategi bisnis dan model inovasi untuk sektor digital"
+        },
+        {
+            "question_id": 57,
+            "code": "E9",
+            "riasec_type": "Enterprising",
+            "dimension": "Kompetensi",
+            "question_text": "Saya yakin mampu memimpin tim untuk mengembangkan solusi digital yang scalable dan inovatif"
+        },
+        {
+            "question_id": 58,
+            "code": "E10",
+            "riasec_type": "Enterprising",
+            "dimension": "Minat",
+            "question_text": "Saya suka terlibat dalam kegiatan kewirausahaan, mengembangkan bisnis, atau proyek yang saya inisiasi sendiri"
+        },
+        {
+            "question_id": 59,
+            "code": "E11",
+            "riasec_type": "Enterprising",
+            "dimension": "Minat",
+            "question_text": "Saya tertarik memimpin tim, proyek, atau mengambil inisiatif kepemimpinan dalam berbagai konteks"
+        },
+        {
+            "question_id": 60,
+            "code": "E12",
+            "riasec_type": "Enterprising",
+            "dimension": "Minat",
+            "question_text": "Saya senang mencari dan menganalisis peluang bisnis, tren pasar, atau model bisnis baru"
+        },
+        {
+            "question_id": 61,
+            "code": "C1",
+            "riasec_type": "Conventional",
+            "dimension": "Minat",
+            "question_text": "Saya senang membuat dokumentasi teknis, prosedur kerja, atau panduan sistem yang terstruktur"
+        },
+        {
+            "question_id": 62,
+            "code": "C2",
+            "riasec_type": "Conventional",
+            "dimension": "Minat",
+            "question_text": "Saya tertarik mengelola database dan memastikan akurasi serta integritas data"
+        },
+        {
+            "question_id": 63,
+            "code": "C3",
+            "riasec_type": "Conventional",
+            "dimension": "Minat",
+            "question_text": "Saya suka mengoptimalkan alur kerja dan proses bisnis menggunakan tools otomatisasi atau sistem"
+        },
+        {
+            "question_id": 64,
+            "code": "C4",
+            "riasec_type": "Conventional",
+            "dimension": "Minat",
+            "question_text": "Saya merasa penting untuk memastikan kepatuhan terhadap regulasi, standar, atau prosedur yang berlaku"
+        },
+        {
+            "question_id": 65,
+            "code": "C5",
+            "riasec_type": "Conventional",
+            "dimension": "Minat",
+            "question_text": "Saya senang mengelola inventori, tracking data, atau sistem pencatatan dengan rapi dan terorganisir"
+        },
+        {
+            "question_id": 66,
+            "code": "C6",
+            "riasec_type": "Conventional",
+            "dimension": "Minat",
+            "question_text": "Saya tertarik memastikan kualitas, testing, dan quality assurance untuk software atau sistem"
+        },
+        {
+            "question_id": 67,
+            "code": "C7",
+            "riasec_type": "Conventional",
+            "dimension": "Kompetensi",
+            "question_text": "Saya yakin bisa mengelola aset digital, perpustakaan konten, atau sistem manajemen informasi dengan sistematis"
+        },
+        {
+            "question_id": 68,
+            "code": "C8",
+            "riasec_type": "Conventional",
+            "dimension": "Kompetensi",
+            "question_text": "Saya percaya diri dapat membuat dan memelihara sistem checklist, tracking progress, atau monitoring yang detail"
+        },
+        {
+            "question_id": 69,
+            "code": "C9",
+            "riasec_type": "Conventional",
+            "dimension": "Kompetensi",
+            "question_text": "Saya yakin mampu mengaudit, memeriksa, dan memastikan akurasi data atau dokumen dengan teliti"
+        },
+        {
+            "question_id": 70,
+            "code": "C10",
+            "riasec_type": "Conventional",
+            "dimension": "Minat",
+            "question_text": "Saya suka mengatur jadwal, timeline proyek, atau perencanaan sumber daya dengan sistematis"
+        },
+        {
+            "question_id": 71,
+            "code": "C11",
+            "riasec_type": "Conventional",
+            "dimension": "Minat",
+            "question_text": "Saya senang menggunakan spreadsheet, sistem database, atau tools untuk mengorganisir informasi"
+        },
+        {
+            "question_id": 72,
+            "code": "C12",
+            "riasec_type": "Conventional",
+            "dimension": "Minat",
+            "question_text": "Saya tertarik memastikan efisiensi operasional dan pengelolaan resource dengan cermat"
+        }
+    ],
+    "questions_by_type": {
+        "R": [
+            {
+                "question_id": 1,
+                "code": "R1",
+                "dimension": "Minat",
+                "question_text": "Saya senang merakit dan memperbaiki perangkat elektronik atau komponen teknologi"
+            },
+            {
+                "question_id": 2,
+                "code": "R2",
+                "dimension": "Minat",
+                "question_text": "Saya tertarik membangun dan mengatur infrastruktur jaringan komputer atau sistem penyimpanan data"
+            },
+            {
+                "question_id": 3,
+                "code": "R3",
+                "dimension": "Minat",
+                "question_text": "Saya suka memasang dan mengatur perangkat otomatis (sensor, IoT) untuk memantau kondisi sistem fisik atau lingkungan"
+            },
+            {
+                "question_id": 4,
+                "code": "R4",
+                "dimension": "Minat",
+                "question_text": "Saya merasa puas ketika berhasil menggunakan software teknis untuk desain atau simulasi sistem kompleks"
+            },
+            {
+                "question_id": 5,
+                "code": "R5",
+                "dimension": "Minat",
+                "question_text": "Saya senang mengatur dan menyiapkan peralatan recording, streaming, atau equipment untuk produksi konten digital"
+            },
+            {
+                "question_id": 6,
+                "code": "R6",
+                "dimension": "Minat",
+                "question_text": "Saya tertarik mengoptimalkan performa sistem digital, server, atau infrastruktur jaringan"
+            },
+            {
+                "question_id": 7,
+                "code": "R7",
+                "dimension": "Kompetensi",
+                "question_text": "Saya yakin bisa mengoperasikan dan merawat perangkat elektronik presisi tinggi yang sensitif"
+            },
+            {
+                "question_id": 8,
+                "code": "R8",
+                "dimension": "Kompetensi",
+                "question_text": "Saya yakin mampu mengatur sistem pelacakan dan monitoring untuk operasi logistik atau distribusi"
+            },
+            {
+                "question_id": 9,
+                "code": "R9",
+                "dimension": "Kompetensi",
+                "question_text": "Saya percaya diri bisa mengatur infrastruktur teknologi atau sistem pembayaran digital"
+            },
+            {
+                "question_id": 10,
+                "code": "R10",
+                "dimension": "Minat",
+                "question_text": "Saya suka mengatur, merawat, dan memelihara server, sistem komputer, atau infrastruktur IT"
+            },
+            {
+                "question_id": 11,
+                "code": "R11",
+                "dimension": "Minat",
+                "question_text": "Saya tertarik mencoba dan mengeksplorasi teknologi otomasi seperti chatbot, AI assistant, atau sistem pintar"
+            },
+            {
+                "question_id": 12,
+                "code": "R12",
+                "dimension": "Minat",
+                "question_text": "Saya senang menggunakan sistem digital untuk mengelola dan mengorganisir berbagai keperluan"
+            }
+        ],
+        "I": [
+            {
+                "question_id": 13,
+                "code": "I1",
+                "dimension": "Minat",
+                "question_text": "Saya senang menganalisis data transaksi atau keuangan untuk menemukan pola, anomali, atau wawasan bisnis"
+            },
+            {
+                "question_id": 14,
+                "code": "I2",
+                "dimension": "Minat",
+                "question_text": "Saya tertarik meneliti dan menganalisis kumpulan data yang kompleks untuk menemukan pola atau insight penting"
+            },
+            {
+                "question_id": 15,
+                "code": "I3",
+                "dimension": "Minat",
+                "question_text": "Saya suka menggunakan analisis data untuk meningkatkan efisiensi dan produktivitas operasional suatu sistem"
+            },
+            {
+                "question_id": 16,
+                "code": "I4",
+                "dimension": "Minat",
+                "question_text": "Saya merasa tertantang untuk menganalisis kelemahan keamanan, celah sistem, atau ancaman digital"
+            },
+            {
+                "question_id": 17,
+                "code": "I5",
+                "dimension": "Minat",
+                "question_text": "Saya senang meneliti perilaku pengguna dan tren pasar untuk mendukung keputusan strategis"
+            },
+            {
+                "question_id": 18,
+                "code": "I6",
+                "dimension": "Minat",
+                "question_text": "Saya tertarik menganalisis data operasional untuk meningkatkan efisiensi proses dan pengambilan keputusan"
+            },
+            {
+                "question_id": 19,
+                "code": "I7",
+                "dimension": "Kompetensi",
+                "question_text": "Saya yakin bisa menganalisis performa konten digital atau engagement untuk optimasi strategi"
+            },
+            {
+                "question_id": 20,
+                "code": "I8",
+                "dimension": "Kompetensi",
+                "question_text": "Saya percaya diri dapat menganalisis data aset atau investasi untuk menghasilkan wawasan strategis"
+            },
+            {
+                "question_id": 21,
+                "code": "I9",
+                "dimension": "Kompetensi",
+                "question_text": "Saya yakin mampu meneliti dan menganalisis data sumber daya untuk keberlanjutan dan efisiensi"
+            },
+            {
+                "question_id": 22,
+                "code": "I10",
+                "dimension": "Minat",
+                "question_text": "Saya suka menganalisis informasi secara mendalam untuk membuat kesimpulan atau keputusan yang tepat"
+            },
+            {
+                "question_id": 23,
+                "code": "I11",
+                "dimension": "Minat",
+                "question_text": "Saya tertarik melakukan riset mendalam tentang suatu topik atau masalah yang kompleks"
+            },
+            {
+                "question_id": 24,
+                "code": "I12",
+                "dimension": "Minat",
+                "question_text": "Saya senang menggunakan tools atau aplikasi untuk mengolah dan menganalisis data"
+            }
+        ],
+        "A": [
+            {
+                "question_id": 25,
+                "code": "A1",
+                "dimension": "Minat",
+                "question_text": "Saya senang mendesain tampilan antarmuka digital (UI/UX) yang menarik dan mudah digunakan"
+            },
+            {
+                "question_id": 26,
+                "code": "A2",
+                "dimension": "Minat",
+                "question_text": "Saya tertarik membuat konten kreatif visual untuk media sosial dan kampanye digital"
+            },
+            {
+                "question_id": 27,
+                "code": "A3",
+                "dimension": "Minat",
+                "question_text": "Saya suka mendesain identitas visual dan brand untuk perusahaan atau produk digital"
+            },
+            {
+                "question_id": 28,
+                "code": "A4",
+                "dimension": "Minat",
+                "question_text": "Saya merasa kreatif ketika membuat konten edukasi, infografis, atau materi visual pembelajaran"
+            },
+            {
+                "question_id": 29,
+                "code": "A5",
+                "dimension": "Minat",
+                "question_text": "Saya senang mendesain visualisasi data atau dashboard yang menarik dan mudah dipahami"
+            },
+            {
+                "question_id": 30,
+                "code": "A6",
+                "dimension": "Minat",
+                "question_text": "Saya tertarik membuat video, motion graphics, animasi, atau konten multimedia interaktif"
+            },
+            {
+                "question_id": 31,
+                "code": "A7",
+                "dimension": "Kompetensi",
+                "question_text": "Saya yakin bisa mendesain materi presentasi visual atau konten marketing yang persuasif dan menarik"
+            },
+            {
+                "question_id": 32,
+                "code": "A8",
+                "dimension": "Kompetensi",
+                "question_text": "Saya percaya diri dapat mendesain antarmuka aplikasi yang user-friendly untuk sistem yang kompleks"
+            },
+            {
+                "question_id": 33,
+                "code": "A9",
+                "dimension": "Kompetensi",
+                "question_text": "Saya yakin mampu membuat kampanye kreatif atau visual storytelling yang engaging untuk berbagai produk"
+            },
+            {
+                "question_id": 34,
+                "code": "A10",
+                "dimension": "Minat",
+                "question_text": "Saya suka membuat dan mengeksplorasi berbagai bentuk konten visual seperti poster, infografis, atau video"
+            },
+            {
+                "question_id": 35,
+                "code": "A11",
+                "dimension": "Minat",
+                "question_text": "Saya tertarik menggunakan aplikasi atau tools desain untuk menciptakan karya visual yang kreatif"
+            },
+            {
+                "question_id": 36,
+                "code": "A12",
+                "dimension": "Minat",
+                "question_text": "Saya senang membuat presentasi visual atau laporan yang menarik dan mudah dipahami"
+            }
+        ],
+        "S": [
+            {
+                "question_id": 37,
+                "code": "S1",
+                "dimension": "Minat",
+                "question_text": "Saya senang membangun dan mengelola komunitas online atau grup diskusi digital"
+            },
+            {
+                "question_id": 38,
+                "code": "S2",
+                "dimension": "Minat",
+                "question_text": "Saya tertarik menjadi instruktur, mentor, atau fasilitator untuk mengajarkan keterampilan digital"
+            },
+            {
+                "question_id": 39,
+                "code": "S3",
+                "dimension": "Minat",
+                "question_text": "Saya suka melakukan riset pengguna, wawancara, atau user testing untuk memahami kebutuhan orang lain"
+            },
+            {
+                "question_id": 40,
+                "code": "S4",
+                "dimension": "Minat",
+                "question_text": "Saya merasa puas ketika bisa membantu orang lain menggunakan teknologi atau sistem digital dengan lebih baik"
+            },
+            {
+                "question_id": 41,
+                "code": "S5",
+                "dimension": "Minat",
+                "question_text": "Saya senang memfasilitasi pelatihan, workshop, atau sesi pembelajaran tentang adopsi teknologi"
+            },
+            {
+                "question_id": 42,
+                "code": "S6",
+                "dimension": "Minat",
+                "question_text": "Saya tertarik membantu usaha kecil atau komunitas menggunakan teknologi digital untuk berkembang"
+            },
+            {
+                "question_id": 43,
+                "code": "S7",
+                "dimension": "Kompetensi",
+                "question_text": "Saya yakin bisa berkolaborasi dengan tim jarak jauh menggunakan tools kolaborasi digital dengan efektif"
+            },
+            {
+                "question_id": 44,
+                "code": "S8",
+                "dimension": "Kompetensi",
+                "question_text": "Saya percaya diri dapat berkontribusi dalam proyek teknologi yang berdampak sosial atau kemanusiaan"
+            },
+            {
+                "question_id": 45,
+                "code": "S9",
+                "dimension": "Kompetensi",
+                "question_text": "Saya yakin mampu memberikan dukungan dan bantuan teknis kepada pengguna melalui saluran digital"
+            },
+            {
+                "question_id": 46,
+                "code": "S10",
+                "dimension": "Minat",
+                "question_text": "Saya suka membantu orang lain menyelesaikan masalah teknologi atau mengajarkan cara menggunakan aplikasi baru"
+            },
+            {
+                "question_id": 47,
+                "code": "S11",
+                "dimension": "Minat",
+                "question_text": "Saya tertarik berpartisipasi atau mengorganisir acara online, webinar, atau diskusi virtual"
+            },
+            {
+                "question_id": 48,
+                "code": "S12",
+                "dimension": "Minat",
+                "question_text": "Saya senang berinteraksi dan membantu orang lain melalui berbagai platform digital"
+            }
+        ],
+        "E": [
+            {
+                "question_id": 49,
+                "code": "E1",
+                "dimension": "Minat",
+                "question_text": "Saya tertarik membangun startup teknologi atau bisnis digital dari nol"
+            },
+            {
+                "question_id": 50,
+                "code": "E2",
+                "dimension": "Minat",
+                "question_text": "Saya senang memimpin kampanye digital marketing dan strategi pertumbuhan bisnis"
+            },
+            {
+                "question_id": 51,
+                "code": "E3",
+                "dimension": "Minat",
+                "question_text": "Saya merasa termotivasi ketika memimpin proyek inovasi teknologi atau transformasi digital"
+            },
+            {
+                "question_id": 52,
+                "code": "E4",
+                "dimension": "Minat",
+                "question_text": "Saya tertarik mengembangkan bisnis pembelajaran online atau platform edukasi digital"
+            },
+            {
+                "question_id": 53,
+                "code": "E5",
+                "dimension": "Minat",
+                "question_text": "Saya suka memimpin inisiatif transformasi digital untuk meningkatkan efektivitas organisasi"
+            },
+            {
+                "question_id": 54,
+                "code": "E6",
+                "dimension": "Minat",
+                "question_text": "Saya senang mengidentifikasi dan mengembangkan peluang bisnis dengan memanfaatkan teknologi modern"
+            },
+            {
+                "question_id": 55,
+                "code": "E7",
+                "dimension": "Kompetensi",
+                "question_text": "Saya yakin bisa memimpin tim penjualan atau pengembangan bisnis untuk produk teknologi"
+            },
+            {
+                "question_id": 56,
+                "code": "E8",
+                "dimension": "Kompetensi",
+                "question_text": "Saya percaya diri dapat mengembangkan strategi bisnis dan model inovasi untuk sektor digital"
+            },
+            {
+                "question_id": 57,
+                "code": "E9",
+                "dimension": "Kompetensi",
+                "question_text": "Saya yakin mampu memimpin tim untuk mengembangkan solusi digital yang scalable dan inovatif"
+            },
+            {
+                "question_id": 58,
+                "code": "E10",
+                "dimension": "Minat",
+                "question_text": "Saya suka terlibat dalam kegiatan kewirausahaan, mengembangkan bisnis, atau proyek yang saya inisiasi sendiri"
+            },
+            {
+                "question_id": 59,
+                "code": "E11",
+                "dimension": "Minat",
+                "question_text": "Saya tertarik memimpin tim, proyek, atau mengambil inisiatif kepemimpinan dalam berbagai konteks"
+            },
+            {
+                "question_id": 60,
+                "code": "E12",
+                "dimension": "Minat",
+                "question_text": "Saya senang mencari dan menganalisis peluang bisnis, tren pasar, atau model bisnis baru"
+            }
+        ],
+        "C": [
+            {
+                "question_id": 61,
+                "code": "C1",
+                "dimension": "Minat",
+                "question_text": "Saya senang membuat dokumentasi teknis, prosedur kerja, atau panduan sistem yang terstruktur"
+            },
+            {
+                "question_id": 62,
+                "code": "C2",
+                "dimension": "Minat",
+                "question_text": "Saya tertarik mengelola database dan memastikan akurasi serta integritas data"
+            },
+            {
+                "question_id": 63,
+                "code": "C3",
+                "dimension": "Minat",
+                "question_text": "Saya suka mengoptimalkan alur kerja dan proses bisnis menggunakan tools otomatisasi atau sistem"
+            },
+            {
+                "question_id": 64,
+                "code": "C4",
+                "dimension": "Minat",
+                "question_text": "Saya merasa penting untuk memastikan kepatuhan terhadap regulasi, standar, atau prosedur yang berlaku"
+            },
+            {
+                "question_id": 65,
+                "code": "C5",
+                "dimension": "Minat",
+                "question_text": "Saya senang mengelola inventori, tracking data, atau sistem pencatatan dengan rapi dan terorganisir"
+            },
+            {
+                "question_id": 66,
+                "code": "C6",
+                "dimension": "Minat",
+                "question_text": "Saya tertarik memastikan kualitas, testing, dan quality assurance untuk software atau sistem"
+            },
+            {
+                "question_id": 67,
+                "code": "C7",
+                "dimension": "Kompetensi",
+                "question_text": "Saya yakin bisa mengelola aset digital, perpustakaan konten, atau sistem manajemen informasi dengan sistematis"
+            },
+            {
+                "question_id": 68,
+                "code": "C8",
+                "dimension": "Kompetensi",
+                "question_text": "Saya percaya diri dapat membuat dan memelihara sistem checklist, tracking progress, atau monitoring yang detail"
+            },
+            {
+                "question_id": 69,
+                "code": "C9",
+                "dimension": "Kompetensi",
+                "question_text": "Saya yakin mampu mengaudit, memeriksa, dan memastikan akurasi data atau dokumen dengan teliti"
+            },
+            {
+                "question_id": 70,
+                "code": "C10",
+                "dimension": "Minat",
+                "question_text": "Saya suka mengatur jadwal, timeline proyek, atau perencanaan sumber daya dengan sistematis"
+            },
+            {
+                "question_id": 71,
+                "code": "C11",
+                "dimension": "Minat",
+                "question_text": "Saya senang menggunakan spreadsheet, sistem database, atau tools untuk mengorganisir informasi"
+            },
+            {
+                "question_id": 72,
+                "code": "C12",
+                "dimension": "Minat",
+                "question_text": "Saya tertarik memastikan efisiensi operasional dan pengelolaan resource dengan cermat"
+            }
+        ]
+    }
+}
