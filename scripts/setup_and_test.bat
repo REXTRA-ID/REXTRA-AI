@@ -3,15 +3,15 @@ setlocal enabledelayedexpansion
 chcp 65001 >nul 2>&1
 
 :: ============================================================
-::  KENALI DIRI API - Setup & Test Runner
+::  REXTRA-AI API - Setup & Test Runner
 ::  Jalankan file ini dari root folder project (kenali-diri-main)
 :: ============================================================
 
-title Kenali Diri - Setup & Test Runner
+title REXTRA-AI - Setup & Test Runner
 
 echo.
 echo ╔══════════════════════════════════════════════════════════╗
-echo ║        KENALI DIRI API - SETUP ^& TEST RUNNER           ║
+echo ║        REXTRA-AI API - SETUP ^& TEST RUNNER           ║
 echo ║           FastAPI Career Profile System                  ║
 echo ╚══════════════════════════════════════════════════════════╝
 echo.
@@ -52,9 +52,9 @@ if not exist ".env" (
     echo           Membuat .env dari template default...
     echo.
     (
-        echo APP_NAME="Kenali Diri API"
+        echo APP_NAME="REXTRA-AI API"
         echo APP_VERSION="0.1.0"
-        echo DATABASE_URL=postgresql://user:password@localhost:5432/kenali_diri
+        echo DATABASE_URL=postgresql://user:password@localhost:5432/features
         echo REDIS_URL=redis://localhost:6379/0
         echo CELERY_BROKER_URL=redis://localhost:6379/1
         echo OPENROUTER_API_KEY=sk-or-v1-xxxxx
@@ -150,7 +150,7 @@ echo       Server akan berjalan di: %BASE_URL%
 echo.
 
 :: Jalankan server di background window baru
-start "Kenali Diri API Server" cmd /k "%PYTHON% -m uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload"
+start "REXTRA-AI API Server" cmd /k "%PYTHON% -m uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload"
 
 :: Tunggu server siap (coba setiap 2 detik, max 30 detik)
 echo       Menunggu server siap...
@@ -452,7 +452,7 @@ echo ═════════════════════════
 echo.
 echo  Server FastAPI masih berjalan di window terpisah.
 echo  Buka %BASE_URL%/docs untuk Swagger UI.
-echo  Tutup window "Kenali Diri API Server" untuk menghentikan server.
+echo  Tutup window "REXTRA-AI API Server" untuk menghentikan server.
 echo.
 pause
 endlocal

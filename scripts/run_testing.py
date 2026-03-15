@@ -1,6 +1,6 @@
 """
 ╔══════════════════════════════════════════════════════════════╗
-║      KENALI DIRI API - Full Test Runner v4                   ║
+║      REXTRA-AI API - Full Test Runner v4                   ║
 ║  Jalankan: python test_all_api.py                            ║
 ║  - Tampilkan error DB asli (field "error" dari response)     ║
 ║  - Rate limit sudah dinaikkan untuk testing                  ║
@@ -100,7 +100,7 @@ def build_riasec_payload(session_token, question_ids):
 # ═══════════════════════════════════════════════════════════════
 print()
 print("╔══════════════════════════════════════════════════════════════╗")
-print("║         KENALI DIRI API - Full Test Runner v4                ║")
+print("║         REXTRA-AI API - Full Test Runner v4                ║")
 print(f"║  {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}                                          ║")
 print("╚══════════════════════════════════════════════════════════════╝")
 

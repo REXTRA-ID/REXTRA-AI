@@ -34,7 +34,7 @@ def seed_all():
     print("\nThis script will seed all required data in the correct order.\n")
     
     seeders = [
-        ("Kenali Diri Categories", seed_kenalidiri_categories),
+        ("REXTRA-AI Categories", seed_kenalidiri_categories),
         ("Users", seed_users),
         ("RIASEC Codes", seed_riasec_codes),
         ("Digital Professions", seed_digital_professions),

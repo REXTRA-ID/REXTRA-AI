@@ -1,6 +1,6 @@
 # app/shared/scoring_utils.py
 """
-Scoring Utilities for Kenali Diri Application
+Scoring Utilities for REXTRA-AI Application
 
 This module contains helper functions for calculating and normalizing scores
 in the career profiling system, particularly for Ikigai evaluation.

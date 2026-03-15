@@ -31,7 +31,7 @@ class PromptManager:
             for file in files:
                 if file.endswith(".yaml") or file.endswith(".yml"):
                     file_path = os.path.join(root, file)
-                    # Gunakan path relatif sebagai namespace (misal: kenali_diri/career_profile)
+                    # Gunakan path relatif sebagai namespace (misal: features/career_profile)
                     rel_path = os.path.relpath(file_path, base_path)
                     namespace = os.path.splitext(rel_path)[0].replace(os.sep, "/")
                     
@@ -49,7 +49,7 @@ class PromptManager:
         Mengambil prompt dari namespace dan key tertentu, lalu memformatnya dengan kwargs.
         
         Contoh:
-        manager.get_prompt("kenali_diri/career_profile", "ikigai_scoring_batch", user_text="...")
+        manager.get_prompt("features/career_profile", "ikigai_scoring_batch", user_text="...")
         """
         namespace_data = self._prompts.get(namespace)
         if not namespace_data:

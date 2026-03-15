@@ -1,4 +1,4 @@
-# Use Case System: Kenali Diri – Career Profile (RIASEC & Ikigai)
+# Use Case System: REXTRA-AI – Career Profile (RIASEC & Ikigai)
 
 Dokumen ini memetakan _Use Case_ atau skenario penggunaan sistem utama dari backend AI Rextra berdasarkan 4 brief teknikal:
 
@@ -13,7 +13,7 @@ Dokumen ini memetakan _Use Case_ atau skenario penggunaan sistem utama dari back
 
 Sistem ini melibatkan 1 Aktor Utama dan 2 Aktor Pasif (System/Services):
 
-1. **User (Klien Aplikasi Flutter)**: Aktor yang menginisiasi tes RIASEC & Ikigai melalui antarmuka mobile apps Kenali Diri. User diasumsikan sudah tervalidasi via _JWT Middleware_.
+1. **User (Klien Aplikasi Flutter)**: Aktor yang menginisiasi tes RIASEC & Ikigai melalui antarmuka mobile apps REXTRA-AI. User diasumsikan sudah tervalidasi via _JWT Middleware_.
 2. **PostgreSQL Database (System)**: Aktor pasif yang menyimpan data master profesi, log transaksi _Wallet Token_, rekam jejak _Sessions_, hasil _RIASEC_, dan _Ikigai Responses_.
 3. **OpenRouter AI (System)**: Aktor pasif Generative AI (Google Gemini via OpenRouter) yang memproses penalaran dimensi dan skoring profil kandidat terhadap user.
 4. **Redis Cache (System)**: Aktor pasif penyimpan _Rate Limiting_ dan _Generative Content_ (Prompt AI) yang bersifat sementara (opsi profesi).

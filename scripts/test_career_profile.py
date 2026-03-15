@@ -823,7 +823,7 @@ def _print_persona_info(persona: dict, target_code: str):
 
 def main():
     now = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-    print(f"\n{BD}{CY}  KENALI DIRI - AI Test Runner  |  {now}{RS}\n")
+    print(f"\n{BD}{CY}  REXTRA-AI - AI Test Runner  |  {now}{RS}\n")
 
     if not OR_KEY or "xxxxx" in OR_KEY:
         err("OPENROUTER_API_KEY belum diset!"); sys.exit(1)

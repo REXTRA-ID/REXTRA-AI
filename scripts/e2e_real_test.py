@@ -2,7 +2,7 @@
 """
 End-to-End (E2E) Real Test Script
 
-This script performs a complete real test of the Kenali Diri Career Profiling API,
+This script performs a complete real test of the REXTRA-AI Career Profiling API,
 including RIASEC assessment and AI-powered Ikigai evaluation.
 
 Usage:
@@ -82,7 +82,7 @@ DIMENSION_KEYS = ["what_you_love", "what_you_are_good_at", "what_the_world_needs
 # =============================================================================
 def print_header():
     print("\n" + "=" * 70)
-    print("🚀 KENALI DIRI - End-to-End Real Test")
+    print("🚀 REXTRA-AI - End-to-End Real Test")
     print("=" * 70)
     print(f"   Base URL: {BASE_URL}")
     print(f"   Started:  {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")

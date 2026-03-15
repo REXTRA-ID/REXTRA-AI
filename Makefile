@@ -1,4 +1,4 @@
-# Makefile for Kenali Diri API (Python/FastAPI)
+# Makefile for REXTRA-AI API (Python/FastAPI)
 
 # Default Environment: dev (can be overridden with ENV=prod)
 ENV ?= dev

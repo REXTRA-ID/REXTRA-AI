@@ -302,7 +302,7 @@ def main():
         sys.exit(1)
 
     print("=" * 60)
-    print(f"  KENALI DIRI — Seeder 50 Profesi Digital")
+    print(f"  REXTRA-AI — Seeder 50 Profesi Digital")
     print(f"  Host: {DB_HOST}:{DB_PORT}  DB: {DB_NAME}")
     print("=" * 60)
 

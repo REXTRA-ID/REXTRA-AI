@@ -25,7 +25,7 @@ services:
       - db
       - redis
     environment:
-      APP_NAME: "Kenali Diri API (Prod)"
+      APP_NAME: "REXTRA-AI API (Prod)"
       DATABASE_URL: postgresql://${POSTGRES_USER}:${POSTGRES_PASSWORD}@db:5432/${POSTGRES_DB}
       REDIS_URL: redis://redis:6379/0
       OPENROUTER_API_KEY: ${OPENROUTER_API_KEY}

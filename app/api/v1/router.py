@@ -6,9 +6,9 @@ This module aggregates all API v1 routers including the career profile endpoints
 """
 from fastapi import APIRouter
 
-from app.api.v1.kenali_diri.career_profile.routers import session, riasec, ikigai, result
-from app.api.v1.kenali_diri.career_profile.routers import user_career_profile
-from app.api.v1.kenali_diri import history_router as history
+from app.api.v1.features.career_profile.routers import session, riasec, ikigai, result
+from app.api.v1.features.career_profile.routers import user_career_profile
+from app.api.v1.features import history_router as history
 from app.api.v1.master_data.routers import category
 
 # Create main v1 router
@@ -67,7 +67,7 @@ async def api_root():
     Provides overview of available API endpoints.
     """
     return {
-        "message": "Welcome to Kenali Diri Career Profile API v1",
+        "message": "Welcome to REXTRA-AI Career Profile API v1",
         "documentation": "/docs",
         "openapi_spec": "/openapi.json",
         "available_endpoints": {

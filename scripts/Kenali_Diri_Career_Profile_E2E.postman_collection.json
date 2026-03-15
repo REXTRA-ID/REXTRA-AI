@@ -1,6 +1,6 @@
 {
     "info": {
-        "name": "Kenali Diri - Career Profile E2E (With Edge Cases)",
+        "name": "REXTRA-AI - Career Profile E2E (With Edge Cases)",
         "description": "Postman Collection for E2E Testing of Career Profile modules: Recommendation, Fit Check, and Negative Scenarios based on Use Cases.",
         "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
     },
