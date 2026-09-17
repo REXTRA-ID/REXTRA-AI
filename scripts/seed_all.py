@@ -21,7 +21,7 @@ sys.path.insert(0, str(Path(__file__).parent.parent))
 from scripts.seed_kenalidiri_categories import seed_kenalidiri_categories
 from scripts.seed_users import seed_users
 from scripts.seed_riasec_codes import seed_riasec_codes
-from scripts.seed_digital_professions import seed_digital_professions
+# from scripts.seed_digital_professions import seed_digital_professions
 
 
 def seed_all():
@@ -37,7 +37,7 @@ def seed_all():
         ("REXTRA-AI Categories", seed_kenalidiri_categories),
         ("Users", seed_users),
         ("RIASEC Codes", seed_riasec_codes),
-        ("Digital Professions", seed_digital_professions),
+        # ("Digital Professions", seed_digital_professions),
     ]
     
     results = []

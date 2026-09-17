@@ -52,6 +52,14 @@ def upgrade() -> None:
     sa.UniqueConstraint('riasec_code')
     )
 
+    # --- Mock users table for local AI DB ---
+    op.create_table('users',
+        sa.Column('id', postgresql.UUID(as_uuid=True), primary_key=True),
+        sa.Column('email', sa.String(255), unique=True, nullable=False),
+        sa.Column('name', sa.String(255), nullable=False)
+    )
+    # ----------------------------------------
+
     op.create_table('careerprofile_test_sessions',
     sa.Column('id', sa.BigInteger(), autoincrement=True, nullable=False),
     sa.Column('user_id', sa.UUID(), nullable=False),

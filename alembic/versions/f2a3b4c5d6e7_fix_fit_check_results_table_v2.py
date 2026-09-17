@@ -22,6 +22,7 @@ def upgrade() -> None:
     op.execute("DO $$ BEGIN IF NOT EXISTS (SELECT 1 FROM pg_type WHERE typname = 'match_category_enum') THEN CREATE TYPE match_category_enum AS ENUM ('HIGH', 'MEDIUM', 'LOW'); END IF; END $$;")
 
     # 2. Create the fit_check_results table with correct columns
+    op.execute('DROP TABLE IF EXISTS fit_check_results CASCADE')
     op.create_table(
         'fit_check_results',
         sa.Column('id', sa.BigInteger(), autoincrement=True, nullable=False),

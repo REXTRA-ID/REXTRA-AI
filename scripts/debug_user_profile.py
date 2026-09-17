@@ -1,8 +1,8 @@
 # debug_user_profile.py
 import uuid
 from app.db.session import SessionLocal
-from app.api.v1.categories.career_profile.services.user_career_profile_service import UserCareerProfileService
-from app.api.v1.categories.career_profile.models.user_career_profile import UserCareerProfile
+from app.api.v1.features.career_profile.services.user_career_profile_service import UserCareerProfileService
+from app.api.v1.features.career_profile.models.user_career_profile import UserCareerProfile
 from app.db.models.user import User
 
 def debug_get_profile():

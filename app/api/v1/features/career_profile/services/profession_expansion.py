@@ -33,7 +33,7 @@ from app.api.v1.features.career_profile.repositories.profession_repo import (
     Profession,
 )
 from app.api.v1.features.career_profile.repositories.riasec_repo import RIASECRepository
-from app.api.v1.features.career_profile.models.profession import IkigaiCandidateProfession
+from app.api.v1.features.career_profile.models.ikigai import IkigaiCandidateProfession
 
 # ──────────────────────────────────────────────────────────────────────
 # Konstanta

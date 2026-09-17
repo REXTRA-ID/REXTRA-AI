@@ -1,7 +1,7 @@
 from pydantic import BaseModel, ConfigDict
 from datetime import datetime
 from uuid import UUID
-from app.api.v1.general.schemas.catogory import CategoryResponse
+from app.api.v1.master_data.schemas.category import CategoryResponse
 
 
 class HistoryResponse(BaseModel):

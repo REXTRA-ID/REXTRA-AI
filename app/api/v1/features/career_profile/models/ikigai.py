@@ -3,6 +3,24 @@ from sqlalchemy.dialects.postgresql import JSONB
 from sqlalchemy.sql import func
 from app.db.base import Base
 
+class IkigaiCandidateProfession(Base):
+    """
+    Menyimpan hasil ekspansi profesi dari RIASEC untuk digunakan oleh Ikigai.
+    """
+    __tablename__ = "ikigai_candidate_professions"
+
+    id = Column(BigInteger, primary_key=True, autoincrement=True)
+    test_session_id = Column(
+        BigInteger,
+        ForeignKey("careerprofile_test_sessions.id", ondelete="CASCADE"),
+        nullable=False,
+        unique=True
+    )
+    candidates_data = Column(JSONB, nullable=False)
+    total_candidates = Column(Integer, default=0)
+    generation_strategy = Column(String(50), nullable=True)
+    created_at = Column(TIMESTAMP(timezone=True), server_default=func.now())
+
 class IkigaiResponse(Base):
     """
     Menyimpan jawaban user untuk 4 dimensi Ikigai.

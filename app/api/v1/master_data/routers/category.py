@@ -1,8 +1,8 @@
 from fastapi import APIRouter, Depends
 from sqlalchemy.orm import Session
 from app.db.session import get_db
-from app.api.v1.general.repositories.category_repo import CategoryRepository
-from app.api.v1.general.schemas import CategoryResponse
+from app.api.v1.master_data.repositories.category_repo import CategoryRepository
+from app.api.v1.master_data.schemas.category import CategoryResponse
 from app.core.rate_limit import limiter
 from fastapi import Request
 

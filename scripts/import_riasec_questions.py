@@ -6,7 +6,7 @@ from sqlalchemy.orm import Session
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
 from app.db.session import SessionLocal
-from app.api.v1.categories.career_profile.models.riasec import RIASECQuestionSet
+from app.api.v1.features.career_profile.models.riasec import RIASECQuestionSet
 
 def import_riasec_questions():
     db: Session = SessionLocal()

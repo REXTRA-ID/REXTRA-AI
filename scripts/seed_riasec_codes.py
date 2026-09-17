@@ -24,7 +24,7 @@ sys.path.insert(0, str(Path(__file__).parent.parent))
 
 from sqlalchemy import select, text
 from app.db.session import SessionLocal
-from app.api.v1.categories.career_profile.models.riasec import RIASECCode
+from app.api.v1.features.career_profile.models.riasec import RIASECCode
 
 
 # =============================================================================
@@ -46,7 +46,7 @@ RIASEC_CODES_DATA = [
         "strategies": ["Focus on hands-on learning", "Seek technical roles", "Build tangible projects"],
         "work_environments": ["Outdoors", "Workshops", "Laboratories", "Construction sites"],
         "interaction_styles": ["Direct", "Task-focused", "Practical"],
-        "congruent_code_ids": []  # Will be updated after all codes exist
+          # Will be updated after all codes exist
     },
     {
         "riasec_code": "I",
@@ -57,7 +57,7 @@ RIASEC_CODES_DATA = [
         "strategies": ["Pursue continuous learning", "Seek research opportunities", "Ask deep questions"],
         "work_environments": ["Research labs", "Universities", "Think tanks", "Tech companies"],
         "interaction_styles": ["Thoughtful", "Reserved", "Curious"],
-        "congruent_code_ids": []
+        
     },
     {
         "riasec_code": "A",
@@ -68,7 +68,7 @@ RIASEC_CODES_DATA = [
         "strategies": ["Seek creative outlets", "Embrace experimentation", "Build portfolio"],
         "work_environments": ["Studios", "Theaters", "Design agencies", "Media companies"],
         "interaction_styles": ["Expressive", "Independent", "Unconventional"],
-        "congruent_code_ids": []
+        
     },
     {
         "riasec_code": "S",
@@ -79,7 +79,7 @@ RIASEC_CODES_DATA = [
         "strategies": ["Develop listening skills", "Seek mentorship roles", "Build communities"],
         "work_environments": ["Schools", "Hospitals", "Community centers", "HR departments"],
         "interaction_styles": ["Friendly", "Supportive", "Collaborative"],
-        "congruent_code_ids": []
+        
     },
     {
         "riasec_code": "E",
@@ -90,7 +90,7 @@ RIASEC_CODES_DATA = [
         "strategies": ["Seek leadership roles", "Develop negotiation skills", "Take calculated risks"],
         "work_environments": ["Corporate offices", "Sales floors", "Startups", "Politics"],
         "interaction_styles": ["Confident", "Persuasive", "Ambitious"],
-        "congruent_code_ids": []
+        
     },
     {
         "riasec_code": "C",
@@ -101,7 +101,7 @@ RIASEC_CODES_DATA = [
         "strategies": ["Create systems", "Document processes", "Seek stable environments"],
         "work_environments": ["Offices", "Banks", "Government agencies", "Accounting firms"],
         "interaction_styles": ["Methodical", "Reliable", "Precise"],
-        "congruent_code_ids": []
+        
     },
     
     # =========================================================================
@@ -110,106 +110,106 @@ RIASEC_CODES_DATA = [
     # R combinations
     {"riasec_code": "RI", "riasec_title": "Realistic-Investigative", 
      "riasec_description": "Combines hands-on skills with analytical thinking. Enjoys technical research and engineering.", 
-     "strengths": [], "challenges": [], "strategies": [], "work_environments": [], "interaction_styles": [], "congruent_code_ids": []},
+     "strengths": [], "challenges": [], "strategies": [], "work_environments": [], "interaction_styles": [], },
     {"riasec_code": "RA", "riasec_title": "Realistic-Artistic", 
      "riasec_description": "Combines craftsmanship with creativity. Enjoys building artistic or design objects.", 
-     "strengths": [], "challenges": [], "strategies": [], "work_environments": [], "interaction_styles": [], "congruent_code_ids": []},
+     "strengths": [], "challenges": [], "strategies": [], "work_environments": [], "interaction_styles": [], },
     {"riasec_code": "RS", "riasec_title": "Realistic-Social", 
      "riasec_description": "Combines practical skills with people orientation. Enjoys teaching trades or physical therapy.", 
-     "strengths": [], "challenges": [], "strategies": [], "work_environments": [], "interaction_styles": [], "congruent_code_ids": []},
+     "strengths": [], "challenges": [], "strategies": [], "work_environments": [], "interaction_styles": [], },
     {"riasec_code": "RE", "riasec_title": "Realistic-Enterprising", 
      "riasec_description": "Combines technical work with leadership. Enjoys managing technical operations.", 
-     "strengths": [], "challenges": [], "strategies": [], "work_environments": [], "interaction_styles": [], "congruent_code_ids": []},
+     "strengths": [], "challenges": [], "strategies": [], "work_environments": [], "interaction_styles": [], },
     {"riasec_code": "RC", "riasec_title": "Realistic-Conventional", 
      "riasec_description": "Combines hands-on work with systematic organization. Enjoys quality control and operations.", 
-     "strengths": [], "challenges": [], "strategies": [], "work_environments": [], "interaction_styles": [], "congruent_code_ids": []},
+     "strengths": [], "challenges": [], "strategies": [], "work_environments": [], "interaction_styles": [], },
     
     # I combinations (excluding IR which equals RI)
     {"riasec_code": "IA", "riasec_title": "Investigative-Artistic", 
      "riasec_description": "Combines research with creativity. Enjoys design research and innovative solutions.", 
-     "strengths": [], "challenges": [], "strategies": [], "work_environments": [], "interaction_styles": [], "congruent_code_ids": []},
+     "strengths": [], "challenges": [], "strategies": [], "work_environments": [], "interaction_styles": [], },
     {"riasec_code": "IS", "riasec_title": "Investigative-Social", 
      "riasec_description": "Combines analysis with helping others. Enjoys psychology, medical research.", 
-     "strengths": [], "challenges": [], "strategies": [], "work_environments": [], "interaction_styles": [], "congruent_code_ids": []},
+     "strengths": [], "challenges": [], "strategies": [], "work_environments": [], "interaction_styles": [], },
     {"riasec_code": "IE", "riasec_title": "Investigative-Enterprising", 
      "riasec_description": "Combines analysis with business acumen. Enjoys consulting and strategy.", 
-     "strengths": [], "challenges": [], "strategies": [], "work_environments": [], "interaction_styles": [], "congruent_code_ids": []},
+     "strengths": [], "challenges": [], "strategies": [], "work_environments": [], "interaction_styles": [], },
     {"riasec_code": "IC", "riasec_title": "Investigative-Conventional", 
      "riasec_description": "Combines research with systematic approaches. Enjoys data science and statistics.", 
-     "strengths": [], "challenges": [], "strategies": [], "work_environments": [], "interaction_styles": [], "congruent_code_ids": []},
+     "strengths": [], "challenges": [], "strategies": [], "work_environments": [], "interaction_styles": [], },
     
     # A combinations
     {"riasec_code": "AS", "riasec_title": "Artistic-Social", 
      "riasec_description": "Combines creativity with helping others. Enjoys art therapy and teaching arts.", 
-     "strengths": [], "challenges": [], "strategies": [], "work_environments": [], "interaction_styles": [], "congruent_code_ids": []},
+     "strengths": [], "challenges": [], "strategies": [], "work_environments": [], "interaction_styles": [], },
     {"riasec_code": "AE", "riasec_title": "Artistic-Enterprising", 
      "riasec_description": "Combines creativity with business skills. Enjoys marketing and creative direction.", 
-     "strengths": [], "challenges": [], "strategies": [], "work_environments": [], "interaction_styles": [], "congruent_code_ids": []},
+     "strengths": [], "challenges": [], "strategies": [], "work_environments": [], "interaction_styles": [], },
     {"riasec_code": "AC", "riasec_title": "Artistic-Conventional", 
      "riasec_description": "Combines creativity with organization. Enjoys technical art and production.", 
-     "strengths": [], "challenges": [], "strategies": [], "work_environments": [], "interaction_styles": [], "congruent_code_ids": []},
+     "strengths": [], "challenges": [], "strategies": [], "work_environments": [], "interaction_styles": [], },
     
     # S combinations
     {"riasec_code": "SE", "riasec_title": "Social-Enterprising", 
      "riasec_description": "Combines helping with leadership. Enjoys management in service industries.", 
-     "strengths": [], "challenges": [], "strategies": [], "work_environments": [], "interaction_styles": [], "congruent_code_ids": []},
+     "strengths": [], "challenges": [], "strategies": [], "work_environments": [], "interaction_styles": [], },
     {"riasec_code": "SC", "riasec_title": "Social-Conventional", 
      "riasec_description": "Combines helping with organization. Enjoys administrative support roles.", 
-     "strengths": [], "challenges": [], "strategies": [], "work_environments": [], "interaction_styles": [], "congruent_code_ids": []},
+     "strengths": [], "challenges": [], "strategies": [], "work_environments": [], "interaction_styles": [], },
     
     # E combinations
     {"riasec_code": "EC", "riasec_title": "Enterprising-Conventional", 
      "riasec_description": "Combines leadership with organization. Enjoys operations management.", 
-     "strengths": [], "challenges": [], "strategies": [], "work_environments": [], "interaction_styles": [], "congruent_code_ids": []},
+     "strengths": [], "challenges": [], "strategies": [], "work_environments": [], "interaction_styles": [], },
     
     # =========================================================================
     # REVERSE PAIRS (for symmetry - some apps may use these)
     # =========================================================================
     {"riasec_code": "IR", "riasec_title": "Investigative-Realistic", 
      "riasec_description": "Combines analytical thinking with hands-on skills. Enjoys engineering and technical research.", 
-     "strengths": [], "challenges": [], "strategies": [], "work_environments": [], "interaction_styles": [], "congruent_code_ids": []},
+     "strengths": [], "challenges": [], "strategies": [], "work_environments": [], "interaction_styles": [], },
     {"riasec_code": "AR", "riasec_title": "Artistic-Realistic", 
      "riasec_description": "Combines creativity with craftsmanship. Enjoys design and fabrication.", 
-     "strengths": [], "challenges": [], "strategies": [], "work_environments": [], "interaction_styles": [], "congruent_code_ids": []},
+     "strengths": [], "challenges": [], "strategies": [], "work_environments": [], "interaction_styles": [], },
     {"riasec_code": "AI", "riasec_title": "Artistic-Investigative", 
      "riasec_description": "Combines creativity with research. Enjoys design research and innovation.", 
-     "strengths": [], "challenges": [], "strategies": [], "work_environments": [], "interaction_styles": [], "congruent_code_ids": []},
+     "strengths": [], "challenges": [], "strategies": [], "work_environments": [], "interaction_styles": [], },
     {"riasec_code": "SR", "riasec_title": "Social-Realistic", 
      "riasec_description": "Combines people skills with practical work. Enjoys healthcare and therapy.", 
-     "strengths": [], "challenges": [], "strategies": [], "work_environments": [], "interaction_styles": [], "congruent_code_ids": []},
+     "strengths": [], "challenges": [], "strategies": [], "work_environments": [], "interaction_styles": [], },
     {"riasec_code": "SI", "riasec_title": "Social-Investigative", 
      "riasec_description": "Combines helping with analysis. Enjoys counseling and social research.", 
-     "strengths": [], "challenges": [], "strategies": [], "work_environments": [], "interaction_styles": [], "congruent_code_ids": []},
+     "strengths": [], "challenges": [], "strategies": [], "work_environments": [], "interaction_styles": [], },
     {"riasec_code": "SA", "riasec_title": "Social-Artistic", 
      "riasec_description": "Combines helping with creativity. Enjoys art therapy and creative teaching.", 
-     "strengths": [], "challenges": [], "strategies": [], "work_environments": [], "interaction_styles": [], "congruent_code_ids": []},
+     "strengths": [], "challenges": [], "strategies": [], "work_environments": [], "interaction_styles": [], },
     {"riasec_code": "ER", "riasec_title": "Enterprising-Realistic", 
      "riasec_description": "Combines leadership with practical skills. Enjoys managing technical operations.", 
-     "strengths": [], "challenges": [], "strategies": [], "work_environments": [], "interaction_styles": [], "congruent_code_ids": []},
+     "strengths": [], "challenges": [], "strategies": [], "work_environments": [], "interaction_styles": [], },
     {"riasec_code": "EI", "riasec_title": "Enterprising-Investigative", 
      "riasec_description": "Combines leadership with analysis. Enjoys strategic consulting.", 
-     "strengths": [], "challenges": [], "strategies": [], "work_environments": [], "interaction_styles": [], "congruent_code_ids": []},
+     "strengths": [], "challenges": [], "strategies": [], "work_environments": [], "interaction_styles": [], },
     {"riasec_code": "EA", "riasec_title": "Enterprising-Artistic", 
      "riasec_description": "Combines leadership with creativity. Enjoys advertising and creative business.", 
-     "strengths": [], "challenges": [], "strategies": [], "work_environments": [], "interaction_styles": [], "congruent_code_ids": []},
+     "strengths": [], "challenges": [], "strategies": [], "work_environments": [], "interaction_styles": [], },
     {"riasec_code": "ES", "riasec_title": "Enterprising-Social", 
      "riasec_description": "Combines leadership with helping. Enjoys managing service organizations.", 
-     "strengths": [], "challenges": [], "strategies": [], "work_environments": [], "interaction_styles": [], "congruent_code_ids": []},
+     "strengths": [], "challenges": [], "strategies": [], "work_environments": [], "interaction_styles": [], },
     {"riasec_code": "CR", "riasec_title": "Conventional-Realistic", 
      "riasec_description": "Combines organization with hands-on work. Enjoys operations and logistics.", 
-     "strengths": [], "challenges": [], "strategies": [], "work_environments": [], "interaction_styles": [], "congruent_code_ids": []},
+     "strengths": [], "challenges": [], "strategies": [], "work_environments": [], "interaction_styles": [], },
     {"riasec_code": "CI", "riasec_title": "Conventional-Investigative", 
      "riasec_description": "Combines organization with analysis. Enjoys data management and research.", 
-     "strengths": [], "challenges": [], "strategies": [], "work_environments": [], "interaction_styles": [], "congruent_code_ids": []},
+     "strengths": [], "challenges": [], "strategies": [], "work_environments": [], "interaction_styles": [], },
     {"riasec_code": "CA", "riasec_title": "Conventional-Artistic", 
      "riasec_description": "Combines organization with creativity. Enjoys production and layout.", 
-     "strengths": [], "challenges": [], "strategies": [], "work_environments": [], "interaction_styles": [], "congruent_code_ids": []},
+     "strengths": [], "challenges": [], "strategies": [], "work_environments": [], "interaction_styles": [], },
     {"riasec_code": "CS", "riasec_title": "Conventional-Social", 
      "riasec_description": "Combines organization with helping. Enjoys administrative support.", 
-     "strengths": [], "challenges": [], "strategies": [], "work_environments": [], "interaction_styles": [], "congruent_code_ids": []},
+     "strengths": [], "challenges": [], "strategies": [], "work_environments": [], "interaction_styles": [], },
     {"riasec_code": "CE", "riasec_title": "Conventional-Enterprising", 
      "riasec_description": "Combines organization with leadership. Enjoys financial management.", 
-     "strengths": [], "challenges": [], "strategies": [], "work_environments": [], "interaction_styles": [], "congruent_code_ids": []},
+     "strengths": [], "challenges": [], "strategies": [], "work_environments": [], "interaction_styles": [], },
 ]
 
 
@@ -250,7 +250,7 @@ def seed_riasec_codes():
                 strategies=code_data["strategies"],
                 work_environments=code_data["work_environments"],
                 interaction_styles=code_data["interaction_styles"],
-                congruent_code_ids=code_data["congruent_code_ids"]
+                
             )
             db.add(new_code)
             db.flush()

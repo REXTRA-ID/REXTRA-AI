@@ -17,6 +17,7 @@ depends_on: Union[str, Sequence[str], None] = None
 
 def upgrade() -> None:
     # Create the fit_check_results table
+    op.execute('DROP TABLE IF EXISTS fit_check_results CASCADE')
     op.create_table(
         'fit_check_results',
         sa.Column('id', sa.BigInteger(), autoincrement=True, nullable=False),

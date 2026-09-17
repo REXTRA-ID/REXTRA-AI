@@ -22,8 +22,23 @@ from sqlalchemy import select
 from sqlalchemy.orm import Session
 
 from app.db.session import SessionLocal
-from app.api.v1.categories.career_profile.models.riasec import RIASECCode
-from app.api.v1.categories.career_profile.models.digital_profession import DigitalProfession
+from app.api.v1.features.career_profile.models.riasec import RIASECCode
+
+from sqlalchemy import Column, Integer, String, Text, BigInteger, ForeignKey, DateTime
+from sqlalchemy.dialects.postgresql import JSONB
+from sqlalchemy.sql import func
+from app.db.base import Base
+
+class DigitalProfession(Base):
+    __tablename__ = 'digital_professions'
+    id = Column(BigInteger, primary_key=True)
+    title = Column(String(255), unique=True, nullable=False)
+    description = Column(Text, nullable=True)
+    riasec_code_id = Column(BigInteger, ForeignKey('riasec_codes.id', ondelete='RESTRICT'), nullable=False)
+    meta_data = Column(JSONB, nullable=False, server_default='{}')
+    created_at = Column(DateTime(timezone=True), server_default=func.now(), nullable=False)
+    updated_at = Column(DateTime(timezone=True), server_default=func.now(), nullable=False)
+
 
 
 # =============================================================================
@@ -354,7 +369,7 @@ def seed_digital_professions():
                 title=title,
                 description=prof_data["description"],
                 riasec_code_id=riasec_code_id,
-                meta_data=prof_data["meta_data"]
+                meta_data=prof_data.get("meta_data", {})
             )
             db.add(new_profession)
             db.flush()  # Get the ID

@@ -1,8 +1,8 @@
 from fastapi import APIRouter, Depends, Query, HTTPException, Request
 from sqlalchemy.orm import Session
 from app.db.session import get_db
-from app.api.v1.general.repositories.history_repo import HistoryRepository
-from app.api.v1.general.schemas.history import HistoryResponse
+from app.api.v1.features.history_repo import HistoryRepository
+from app.api.v1.features.history_schema import HistoryResponse
 from app.core.rate_limit import limiter
 
 router = APIRouter(prefix="/history", tags=["History"])
