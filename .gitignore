@@ -11,5 +11,6 @@ venv/
 .todo
 *:Zone.Identifier
 *.txt
+!requirements.txt
 GEMINI.md
 TODO.md
