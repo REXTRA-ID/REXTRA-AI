@@ -1,0 +1,14 @@
+fastapi
+uvicorn
+sqlalchemy
+alembic
+psycopg2-binary
+redis
+httpx
+pydantic
+pydantic-settings
+structlog
+slowapi
+pyyaml
+prometheus-client
+celery
