@@ -1,4 +1,4 @@
-from sqlalchemy import (
+﻿from sqlalchemy import (
     Column, BigInteger, String, Boolean, Integer,
     ForeignKey, Index, CheckConstraint
 )
@@ -17,11 +17,11 @@ class RIASECCode(Base):
     riasec_code = Column(String(3), unique=True, nullable=False)
     riasec_title = Column(String(255), nullable=False)
     riasec_description = Column(String, nullable=True)
-    strengths = Column(JSONB, server_default="'[]'")
-    challenges = Column(JSONB, server_default="'[]'")
-    strategies = Column(JSONB, server_default="'[]'")
-    work_environments = Column(JSONB, server_default="'[]'")
-    interaction_styles = Column(JSONB, server_default="'[]'")
+    strengths = Column(JSONB, server_default="[]")
+    challenges = Column(JSONB, server_default="[]")
+    strategies = Column(JSONB, server_default="[]")
+    work_environments = Column(JSONB, server_default="[]")
+    interaction_styles = Column(JSONB, server_default="[]")
     created_at = Column(TIMESTAMP(timezone=True), server_default=func.now())
 
 
@@ -41,7 +41,7 @@ class RIASECQuestionSet(Base):
         unique=True   # One-to-one dengan session
     )
     # Array 72 integer, contoh: [15, 23, 8, 45, 67, 2, 38, 51, 12, 60, 19, 44, ...]
-    # (72 soal total = 12 soal × 6 tipe, diacak urutannya — bukan dikelompokkan per tipe)
+    # (72 soal total = 12 soal Ã— 6 tipe, diacak urutannya â€” bukan dikelompokkan per tipe)
     # Urutan array = urutan tampil soal ke user
     question_ids = Column(JSONB, nullable=False)
     generated_at = Column(TIMESTAMP(timezone=True), server_default=func.now())
@@ -82,7 +82,7 @@ class RIASECResult(Base):
         unique=True
     )
 
-    # Skor mentah per tipe (range 12-60: 12 soal × nilai 1-5)
+    # Skor mentah per tipe (range 12-60: 12 soal Ã— nilai 1-5)
     score_r = Column(Integer, nullable=False)
     score_i = Column(Integer, nullable=False)
     score_a = Column(Integer, nullable=False)
@@ -119,3 +119,4 @@ class RIASECResult(Base):
         ),
         Index("idx_riasec_results_session", "test_session_id"),
     )
+

@@ -75,3 +75,14 @@ class RIASECSubmitResponse(BaseModel):
     display_candidates_count: int          # Jumlah profesi yang ditampilkan sebagai opsi UI
     validity_warning: Optional[str] = None # Peringatan jika skor rendah
     next_step: str                          # "ikigai" atau "fit_check_result"
+from typing import List
+from pydantic import BaseModel
+
+class RIASECQuestionItem(BaseModel):
+    id: str
+    pertanyaan: str
+
+class RIASECQuestionListResponse(BaseModel):
+    success: bool = True
+    message: str = "success get riasec questions"
+    data: List[RIASECQuestionItem]

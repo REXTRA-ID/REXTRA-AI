@@ -1,28 +1,28 @@
-"""
+﻿"""
 app/models/profession.py
 -------------------------
 Entity  : professions
 Relasi  :
-    (N) → (1) profession_main_categories  via main_category_id
-    (N) → (1) profession_sub_categories   via sub_category_id
-    (N) → (1) riasec_codes                via riasec_code_id  [nullable]
-    (1) → (N) profession_aliases
-    (1) → (N) profession_activities
-    (1) → (N) profession_market_insights
-    (1) → (N) profession_career_paths
-    (N) ↔ (N) skills       via profession_skill_rels
-    (N) ↔ (N) tools        via profession_tool_rels
-    (N) ↔ (N) study_programs via profession_study_program_rels
+    (N) â†’ (1) profession_main_categories  via main_category_id
+    (N) â†’ (1) profession_sub_categories   via sub_category_id
+    (N) â†’ (1) riasec_codes                via riasec_code_id  [nullable]
+    (1) â†’ (N) profession_aliases
+    (1) â†’ (N) profession_activities
+    (1) â†’ (N) profession_market_insights
+    (1) â†’ (N) profession_career_paths
+    (N) â†” (N) skills       via profession_skill_rels
+    (N) â†” (N) tools        via profession_tool_rels
+    (N) â†” (N) study_programs via profession_study_program_rels
 
 Catatan kolom:
-    slug             → public identifier di URL (/professions/data-engineer), UNIQUE
-    riasec_code_id   → nullable; profesi tanpa nilai ini tidak ikut matching RIASEC
-    riasec_description → wajib diisi bersamaan saat riasec_code_id diisi (validasi di service)
-    image_url, about_description, riasec_description → nullable (isi bertahap)
+    slug             â†’ public identifier di URL (/professions/data-engineer), UNIQUE
+    riasec_code_id   â†’ nullable; profesi tanpa nilai ini tidak ikut matching RIASEC
+    riasec_description â†’ wajib diisi bersamaan saat riasec_code_id diisi (validasi di service)
+    image_url, about_description, riasec_description â†’ nullable (isi bertahap)
 
-⚠️  Akses DB:
+âš ï¸  Akses DB:
     Tabel sudah ada di PostgreSQL online (103.171.84.248:5433/rextra).
-    Model ini HANYA merefleksikan tabel — tidak membuat atau mengubah tabel.
+    Model ini HANYA merefleksikan tabel â€” tidak membuat atau mengubah tabel.
 """
 
 from datetime import datetime
@@ -37,7 +37,7 @@ if TYPE_CHECKING:
     from app.models.profession_career_path import ProfessionCareerPath
     from app.models.profession_skill_rel import ProfessionSkillRel
     from app.models.profession_tool_rel import ProfessionToolRel
-    from app.models.profession_study_program_rel import ProfessionStudyProgramRel
+
 from sqlalchemy import Integer, String, Text, DateTime, ForeignKey
 from sqlalchemy.orm import Mapped, mapped_column, relationship
 from app.db.base import Base
@@ -46,11 +46,11 @@ from app.db.base import Base
 class Profession(Base):
     __tablename__ = "professions"
 
-    # ── Kolom ─────────────────────────────────────────────────────────────────
+    # â”€â”€ Kolom â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
     id: Mapped[int] = mapped_column(Integer, primary_key=True, autoincrement=True)
 
-    # Public identifier untuk URL — generate otomatis dari name di service layer
-    # Contoh: "Data Engineer" → "data-engineer"
+    # Public identifier untuk URL â€” generate otomatis dari name di service layer
+    # Contoh: "Data Engineer" â†’ "data-engineer"
     slug: Mapped[str] = mapped_column(String(120), unique=True, nullable=False)
 
     name: Mapped[str] = mapped_column(String(100), nullable=False)
@@ -63,21 +63,21 @@ class Profession(Base):
         Integer, ForeignKey("profession_sub_categories.id", ondelete="RESTRICT"), nullable=False, index=True
     )
 
-    # Nullable FK ke riasec_codes — profesi tanpa nilai ini tidak ikut matching RIASEC
+    # Nullable FK ke riasec_codes â€” profesi tanpa nilai ini tidak ikut matching RIASEC
     riasec_code_id: Mapped[Optional[int]] = mapped_column(
         Integer, ForeignKey("riasec_codes.id", ondelete="RESTRICT"), nullable=True, index=True
     )
 
     about_description: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
 
-    # Wajib diisi bersamaan dengan riasec_code_id — validasi di service layer
+    # Wajib diisi bersamaan dengan riasec_code_id â€” validasi di service layer
     riasec_description: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
 
     created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), nullable=False)  # [FIX-3]
     updated_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), nullable=False)  # [FIX-3]
 
-    # ── Relasi ────────────────────────────────────────────────────────────────
-    # [FIX-2] Ditambahkan back_populates="professions" — sebelumnya tidak ada
+    # â”€â”€ Relasi â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    # [FIX-2] Ditambahkan back_populates="professions" â€” sebelumnya tidak ada
     main_category: Mapped["ProfessionMainCategory"] = relationship(
         "ProfessionMainCategory", back_populates="professions", lazy="select"
     )
@@ -109,10 +109,7 @@ class Profession(Base):
         "ProfessionToolRel", back_populates="profession",
         cascade="all, delete-orphan", lazy="select",
     )
-    study_program_rels: Mapped[list["ProfessionStudyProgramRel"]] = relationship(
-        "ProfessionStudyProgramRel", back_populates="profession",
-        cascade="all, delete-orphan", lazy="select",
-    )
 
     def __repr__(self) -> str:
         return f"<Profession id={self.id} slug={self.slug}>"
+

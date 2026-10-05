@@ -351,6 +351,6 @@ SubmitWithClicksRequest = IkigaiSubmitWithClicksRequest
 
 # ── Extra backward-compat aliases untuk versi server yang berbeda ────────────
 # Tambah alias untuk semua nama lama yang mungkin diimport oleh router server
-IkigaiDimensionsResponse    = IkigaiCompletionResponse      # alias lama
+# CATATAN: IkigaiDimensionsResponse TIDAK di-alias karena class aslinya sudah benar di atas
 IkigaiContentStartResponse  = IkigaiContentResponse         # alias lama
 IkigaiSubmitDimensionRequest = SubmitDimensionRequest        # alias lama

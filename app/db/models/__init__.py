@@ -10,6 +10,7 @@ from app.api.v1.features.career_profile.models.riasec import (
     RIASECResponse,
     RIASECResult
 )
+from app.api.v1.features.career_profile.models.riasec_question import RIASECQuestion
 from app.api.v1.features.career_profile.models.session import CareerProfileTestSession
 from app.api.v1.features.career_profile.models.ikigai import (
     IkigaiCandidateProfession,

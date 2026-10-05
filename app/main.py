@@ -1,4 +1,4 @@
-# app/main.py
+﻿# app/main.py
 """
 Main Application
 """
@@ -60,7 +60,6 @@ async def lifespan(app: FastAPI):
     # Create database tables if they don't exist
     # NOTE: In production, use Alembic migrations instead
     try:
-        Base.metadata.create_all(bind=engine)
         logger.info("Database tables verified/created")
     except Exception as e:
         logger.error(f"Failed to create tables: {str(e)}")

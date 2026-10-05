@@ -1,4 +1,4 @@
-from sqlalchemy import Column, BigInteger, Boolean, String, Integer, ForeignKey, CheckConstraint, TIMESTAMP
+﻿from sqlalchemy import Column, BigInteger, Boolean, String, Integer, ForeignKey, CheckConstraint, TIMESTAMP
 from sqlalchemy.dialects.postgresql import JSONB
 from sqlalchemy.sql import func
 from app.db.base import Base
@@ -60,8 +60,8 @@ class IkigaiDimensionScores(Base):
     """
     Skor per dimensi untuk semua kandidat profesi.
     INSERT sekali setelah 4 dimensi selesai dan AI scoring batch selesai.
-    Immutable — tidak pernah di-UPDATE.
-    Data intermediate — dapat dihapus setelah 6–12 bulan untuk menghemat storage.
+    Immutable â€” tidak pernah di-UPDATE.
+    Data intermediate â€” dapat dihapus setelah 6â€“12 bulan untuk menghemat storage.
     One-to-one dengan careerprofile_test_sessions.
     """
     __tablename__ = "ikigai_dimension_scores"
@@ -87,7 +87,7 @@ class IkigaiTotalScores(Base):
     """
     Skor total agregasi dari 4 dimensi untuk semua kandidat profesi.
     INSERT sekali setelah agregasi selesai.
-    Immutable dan PERMANEN — tidak pernah dihapus (bagian dari riwayat user).
+    Immutable dan PERMANEN â€” tidak pernah dihapus (bagian dari riwayat user).
     One-to-one dengan careerprofile_test_sessions.
     """
     __tablename__ = "ikigai_total_scores"
@@ -100,14 +100,15 @@ class IkigaiTotalScores(Base):
         unique=True
     )
     scores_data = Column(JSONB, nullable=False)
-    top_profession_1_id = Column(BigInteger, nullable=True, name="top_profession1_id")
-    top_profession_2_id = Column(BigInteger, nullable=True, name="top_profession2_id")
+    top_profession1_id = Column(BigInteger, nullable=True, name="top_profession1_id")
+    top_profession2_id = Column(BigInteger, nullable=True, name="top_profession2_id")
     calculated_at = Column(TIMESTAMP(timezone=True), server_default=func.now())
 
     __table_args__ = (
         CheckConstraint(
-            "top_profession_1_id IS NULL OR top_profession_2_id IS NULL OR "
-            "top_profession_1_id != top_profession_2_id",
+            "top_profession1_id IS NULL OR top_profession2_id IS NULL OR "
+            "top_profession1_id != top_profession2_id",
             name="chk_different_top_professions"
         ),
     )
+
